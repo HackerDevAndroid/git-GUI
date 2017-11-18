@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--ADD NT-LWL 16/11/17 Alipay payment FR-->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/loading_01"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/loading_02"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/loading_03"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/loading_04"
+        android:duration="500" />
+</animation-list><!--ADD NT-LWL 16/11/17 Alipay payment TO-->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DayToShipLayout">
+        <attr name="labelFontSize" format="integer" />
+        <attr name="colonFontSize" format="integer" />
+        <attr name="dayFontSize" format="integer" />
+        <attr name="periodFontSize" format="integer" />
+    </declare-styleable>
+</resources>

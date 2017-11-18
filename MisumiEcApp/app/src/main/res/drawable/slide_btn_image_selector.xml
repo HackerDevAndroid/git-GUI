@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 選択（開いた）状態 -->
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/morebtn_minus" />
+
+    <!-- 通常（閉じた）状態 -->
+    <item
+        android:drawable="@drawable/morebtn_plus" />
+
+</selector>

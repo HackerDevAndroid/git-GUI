@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="vn.edu.topica.hoccackythuatxulysukien.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập a" />
+
+    <EditText
+        android:id="@+id/txtA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập b" />
+
+    <EditText
+        android:id="@+id/txtB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnCong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="xuLyPhepCong"
+        android:text="(+) onClickXML"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnTru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="(-) Anomous Listener"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnNhan"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="(*) Variable Listener"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnChia"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:text="(/) Variable Listener"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnHidden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity As Listener"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explicit Class Listener"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switch Screen"
+        android:onClick="switchScreen"
+        android:textAllCaps="false" />
+
+</LinearLayout>

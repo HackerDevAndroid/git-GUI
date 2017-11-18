@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><!--ADD NT-SLJ 16/11/12 Alipay payment FR-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/item_selector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:src="@drawable/enter_icon" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/dp_14"
+        android:textColor="@color/color_detail_text"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:id="@+id/question_name" />
+</LinearLayout><!--ADD NT-SLJ 16/11/12 Alipay payment TO-->

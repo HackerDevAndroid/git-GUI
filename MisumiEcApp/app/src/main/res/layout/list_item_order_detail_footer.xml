@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	>
+
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+		android:background="@color/color_list_divider_9C"
+		/>
+	<!--ADD NT-LWL 16/11/13 AliPay Payment FR-->
+	<Button
+		android:id="@+id/buttonPay"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/button_height_45dp"
+		android:paddingRight="@dimen/padding_15dp"
+		android:layout_marginLeft="@dimen/margin_15dp"
+		android:layout_marginRight="@dimen/margin_15dp"
+		android:layout_marginTop="@dimen/margin_15dp"
+		android:text="@string/order_list_go_to_pay"
+		android:textSize="@dimen/font_button_type3_15dp"
+		android:textColor="@color/button_orange_text_selector"
+		android:textStyle="bold"
+		android:drawableRight="@drawable/btn_icon_lbtn_w"
+		android:background="@drawable/btn_bg_orange_selector"
+		/>
+	<!--ADD NT-LWL 16/11/13 AliPay Payment TO-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_15"
+            android:id="@+id/cancelInfo"
+            android:textSize="@dimen/dp_12"
+            android:layout_gravity="left"
+            android:textColor="@color/color_text_default"
+            android:textColorLink="@color/color_text_link"
+            android:background="@color/color_background_annotation_r"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

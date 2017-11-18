@@ -1,0 +1,761 @@
+<resources>
+    <string name="app_name">ﾐｽﾐ eｶﾀﾛｸﾞ</string>
+
+    <string name="label_day_to_ship_0">当日出荷</string>
+    <string name="label_day_to_ship_1ro98_1"/>
+    <string name="label_day_to_ship_1ro98_2">日間</string>
+    <string name="label_day_to_ship_1ro98_1_quote"/>
+    <string name="label_day_to_ship_1ro98_2_quote">日間</string>
+    <string name="label_day_to_ship_99">都度お見積り</string>
+    <string name="label_shiptype_1">在庫品</string>
+    <string name="label_shiptype_2">在庫手配中</string>
+    <string name="label_shiptype_3">土祝含まず</string>
+    <string name="label_shiptype_4">土曜含まず</string>
+    <string name="label_shiptype_5">祝日含まず</string>
+
+    <string name="label_hyphen">&#8211;</string>
+    <string name="label_stoke_t">当日出荷（ストークT）</string>
+    <string name="label_stoke_a">翌日出荷（ストークA）</string>
+    <string name="label_stoke_a_rapid">翌日出荷（ストークA早割）</string>
+    <string name="label_stoke_b">3日目出荷（ストークB）</string>
+    <string name="label_stoke_c">5日目出荷（ストークC）</string>
+    <string name="label_stoke_z">ストークZ</string>
+    <string name="label_stoke_l">ストークL</string>
+    <string name="label_express_deadline">后截止受理</string>
+
+    <string name="text_quantity_hint"/>
+
+    <!--アクティビティ-->
+    <string name="main_label_input_keyword_hint">キーワードまたは型番を入力してください</string>
+
+    <!--ログイン-->
+    <string name="login_label_title">ログイン</string>
+    <string name="login_label_login_id">ログインID</string>
+    <string name="login_label_password">パスワード</string>
+    <string name="login_label_hint_login_id">ログインID</string>
+    <string name="login_label_hint_password">パスワード</string>
+    <string name="login_label_password_forget">ログインID、パスワードを忘れた方はこちら　＞</string>
+    <string name="login_label_check_input_omit">次回から入力を省略</string>
+    <string name="login_label_mode_normal"/>
+    <string name="login_label_mode_session">セッションが切れたため、再度ログインしてください。</string>
+    <string name="login_label_mode_require">この機能を利用するためにはログインが必要です</string>
+    <string name="login_button_label_login">ログイン</string>
+    <string name="login_button_label_close">閉じる</string>
+
+    <!--トップ-->
+    <string name="top_label_welcome">ようこそミスミへ</string>
+    <string name="top_label_login">ログイン</string>
+    <string name="top_label_logout">ログアウト</string>
+    <string name="top_label_status_check">受付状況</string>
+    <string name="top_label_customer_code">（得意先コード：%s）</string>
+    <string name="top_label_status_title">見積注文受付ステータス</string>
+    <string name="top_label_quotation_status_title">お見積</string>
+    <string name="top_label_order_status_title">ご注文</string>
+    <string name="top_label_status_accept">受付中</string>
+    <string name="top_label_status_accept_next_day">受付中（翌営業日扱）</string>
+    <string name="top_label_status_maintenance">メンテナンス中</string>
+    <string name="top_label_status_unset">&#8211;</string>
+    <string name="top_label_status_day_of_week_1">日</string>
+    <string name="top_label_status_day_of_week_2">月</string>
+    <string name="top_label_status_day_of_week_3">火</string>
+    <string name="top_label_status_day_of_week_4">水</string>
+    <string name="top_label_status_day_of_week_5">木</string>
+    <string name="top_label_status_day_of_week_6">金</string>
+    <string name="top_label_status_day_of_week_7">土</string>
+    <string name="top_label_information">現在お知らせはありません。</string>
+    <string name="top_label_input_keyword_hint">キーワードまたは型番を入力してください</string>
+    <string name="top_label_calendar_01">top_cal_month_1.png</string>
+    <string name="top_label_calendar_02">top_cal_month_2.png</string>
+    <string name="top_label_calendar_03">top_cal_month_3.png</string>
+    <string name="top_label_calendar_04">top_cal_month_4.png</string>
+    <string name="top_label_calendar_05">top_cal_month_5.png</string>
+    <string name="top_label_calendar_06">top_cal_month_6.png</string>
+    <string name="top_label_calendar_07">top_cal_month_7.png</string>
+    <string name="top_label_calendar_08">top_cal_month_8.png</string>
+    <string name="top_label_calendar_09">top_cal_month_9.png</string>
+    <string name="top_label_calendar_10">top_cal_month_10.png</string>
+    <string name="top_label_calendar_11">top_cal_month_11.png</string>
+    <string name="top_label_calendar_12">top_cal_month_12.png</string>
+    <string name="top_label_category_list">カテゴリ一覧</string>
+    <string name="top_label_my_parts">My部品表</string>
+    <string name="top_label_estimate_history">見積履歴</string>
+    <string name="top_label_order_history">注文履歴</string>
+    <string name="top_label_guide">ご利用ガイド</string>
+
+    <!-- メニューボタン -->
+    <string name="menu_label_debug">デバッグ</string>
+    <string name="menu_label_top">TOP</string>
+    <string name="menu_label_login">ログイン</string>
+    <string name="menu_label_logout">ログアウト</string>
+    <string name="menu_label_category_list">カテゴリ一覧</string>
+    <string name="menu_label_cart">カート</string>
+    <string name="menu_label_my_parts">My部品表</string>
+    <string name="menu_label_estimate_history">見積履歴</string>
+    <string name="menu_label_order_history">注文履歴</string>
+    <string name="menu_label_working_hour">営業日・営業時間</string>
+    <string name="menu_label_guide">ご利用ガイド</string>
+    <string name="menu_label_agreements">ご利用規約</string>
+    <string name="menu_label_personal_info">個人情報・お客様情報</string>
+    <string name="menu_label_register">会員登録</string>
+    <string name="menu_label_contact">お問い合わせ</string>
+    <string name="menu_label_device_information">端末情報確認</string>
+    <string name="menu_label_language_setting">言語設定</string>
+    <string name="menu_label_sms_setting">SMS設定</string>
+
+    <!-- メッセージ　-->
+    <string name="message_timeout_error">圏外またはネットワークに接続できません。\nネットワークの状態を確認してください。</string>
+    <string name="message_network_error">圏外またはネットワークに接続できません。\nネットワークの状態を確認してください。</string>
+    <string name="message_session_error">一定時間が経過したか、他の端末からログインされたため再ログインが必要です。\nログインしますか？</string>
+    <string name="message_session_scheme_error">セッションが無効です。</string>
+    <string name="message_logout">ログアウトしますか？</string>
+    <string name="message_logout_success">ログアウトしました。</string>
+    <string name="message_update_require">新しいバージョンがあります。\nアップデートしてください。</string>
+    <string name="message_update_exist">新しいバージョンがあります。\n今すぐアップデートしますか。</string>
+    <!--<string name="message_maintenance_error">维护中。\n请稍后再试。</string>-->
+    <string name="message_request_copy">端末情報をコピーしました</string>
+    <!--<string name="message_request_tell">通过电话来咨询吗？</string>-->
+    <!--<string name="message_request_sms">通过短信来咨询吗？</string>-->
+    <string name="message_apllication_finish">アプリケーションを終了しますか？</string>
+    <string name="message_write_file_error">予期せぬエラーが発生しました。\n空き容量をご確認ください。\n</string>
+    <!--<string name="message_ascii_error">型号请用半角英文和数字输入。</string>-->
+    <string name="message_progress_transmitting">通信中…</string>
+    <string name="message_unknown_error">予期せぬエラーが発生しました。\n電話機を再起動して再度お試しください。\n改善しない場合は、ミスミサポートセンター（0120&#8211;343&#8211;256）にお問い合せください。</string>
+    <!--<string name="message_limited_session">ログインしていないと云々</string>-->
+    <string name="message_input_qty">数量を入力してください</string>
+
+
+    <!-- ダイアログ用ボタン -->
+    <!--<string name="dialog_button_ok">OK</string>-->
+    <string name="dialog_button_yes">はい</string>
+    <string name="dialog_button_kettei">決定</string>
+    <string name="dialog_button_no">いいえ</string>
+    <string name="dialog_button_retry">リトライ</string>
+    <string name="dialog_button_cancel">キャンセル</string>
+    <string name="dialog_button_close">閉じる</string>
+    <string name="dialog_button_add">追加する</string>
+    <string name="dialog_button_delete">削除する</string>
+    <string name="dialog_button_go_cart">カートを見る</string>
+    <string name="dialog_button_go_my_part">My部品表を開く</string>
+
+
+    <string name="message_and_over">〜</string>
+
+
+    <!--<string name="emergency_header_service">瞬达服务（加急出货）</string>-->
+    <!--<string name="emergency_header_price">料 金</string>-->
+
+    <string name="money_format">%1$,3.0f</string>
+
+    <!--<string name="spinnerSortType">並べ替え</string>-->
+    <!--<string name="spinnerSortTypeOrder">並べ替え</string>-->
+    <!--<string name="spinnerCreditDiv">お支払い回数</string>-->
+
+    <string name="label_currency_jpy">円</string>
+    <string name="label_currency_rmb">元</string>
+    <string name="label_currency_usd">＄</string>
+    <string name="label_currency_none"/>
+
+    <string name="format_currency_jpy">%s円</string>
+    <string name="format_currency_rmb">%s元</string>
+    <string name="format_currency_usd">＄%s</string>
+    <string name="format_currency_none">%s</string>
+
+
+    <!--前表記式-->
+    <string name="label_currency_jpy_pre">￥</string>
+    <string name="label_currency_rmb_pre">￥</string>
+    <string name="label_currency_usd_pre">＄</string>
+
+    <string name="format_currency_jpy_wtax">%s円(内税)</string>
+    <string name="format_currency_rmb_wtax">%s元(内税)</string>
+    <string name="format_currency_usd_wtax">＄%s(内税)</string>
+
+
+    <!-- SPv1_09 My部品表 -->
+    <string name="my_parts_title">My部品表</string>
+    <string name="my_parts_folder_label">フォルダリスト</string>
+    <string name="my_parts_add_card">カートへ追加する</string>
+    <string name="my_parts_count_str">件</string>
+    <!--<string name="my_parts_empty_str">TODO:0件UI、My部品表情報がありません。</string>-->
+    <string name="my_parts_item_count_1">商品</string>
+    <string name="my_parts_item_count_2">件</string>
+    <string name="my_parts_item_colon">：</string>
+    <string name="my_parts_quantity_main">数　量：</string>
+    <string name="my_parts_parts_number">型番:</string>
+    <string name="my_parts_product_name">名称:</string>
+    <string name="my_parts_unit_price">単価:</string>
+    <string name="my_parts_quantity">個数:</string>
+    <string name="my_parts_quantity_unit">個</string>
+    <string name="my_parts_module_label">構成部品一覧を見る</string>
+    <string name="my_parts_pack_quantity">（%s個入り）</string>
+    <string name="my_parts_dialog_added_cart">商品をカートに追加しました。</string>
+    <string name="my_parts_dialog_added_cart_title">カートへ追加</string>
+    <string name="my_parts_dialog_added_my_parts">My部品表のメインフォルダに追加しました。</string>
+    <string name="my_parts_dialog_moved_my_parts">My部品表（メインフォルダ）へ移動しました。</string>
+
+
+    <!-- SPv1_11 見積履歴一覧 -->
+    <string name="quote_hist_title">見積履歴</string>
+    <string name="quote_hist_count_str1"/>
+    <string name="quote_hist_count_str2">件の見積履歴があります</string>
+    <!--<string name="quote_hist_empty_str">履歴情報がありません。</string>-->
+    <string name="quote_hist_slip_no">見積書番号</string>
+    <string name="quote_hist_date">見積日時</string>
+    <string name="quote_hist_expire">見積有効期限</string>
+    <string name="quote_hist_item_count">商品件数</string>
+    <string name="quote_hist_count_unit">件</string>
+    <string name="quote_hist_misumi_check_str">内、ミスミ確認中%s件</string>
+    <string name="quote_hist_total_price">合計金額</string>
+    <string name="quote_hist_total_price_unit">（外税）</string>
+    <string name="quote_hist_total_price_tax">合計金額</string>
+    <string name="quote_hist_total_price_tax_unit">（内税）</string>
+    <string name="quote_hist_empty_list_item">アプリで表示できるお見積り履歴はございません。</string>
+
+
+    <!--SPv1_12 見積履歴詳細-->
+    <string name="quote_hist_detail_slip_no">見積書番号</string>
+    <string name="quote_hist_detail_date">見積日時</string>
+    <string name="quote_hist_detail_expire">見積有効期限</string>
+    <string name="quote_hist_detail_user_name">ご担当者名</string>
+    <string name="quote_hist_detail_item_count">商品件数</string>
+    <string name="quote_hist_detail_count_unit">件</string>
+    <string name="quote_hist_detail_misumi_check_str">内、ミスミ確認中%s件</string>
+    <string name="quote_hist_detail_total_price">合計金額（外税）</string>
+    <!--<string name="quote_hist_detail_total_price_unit">円</string>-->
+    <string name="quote_hist_detail_total_price_tax">合計金額（内税）</string>
+    <string name="quote_hist_detail_total_price_checking">※上記金額にミスミ確認中の商品は含まれておりません。</string>
+    <string name="quote_hist_detail_add_my">My部品表に追加</string>
+    <string name="quote_hist_detail_add_card">カートへ追加</string>
+    <string name="quote_hist_detail_price_checking">この商品はミスミ確認中です</string>
+    <string name="quote_hist_detail_unit_price_main">単　価：</string>
+    <string name="quote_hist_detail_unit_price_unit_main">（外税）</string>
+    <string name="quote_hist_detail_unit_price_unit_main_CHN">（外税）</string>
+    <string name="quote_hist_detail_quantity_main">数　量：</string>
+    <string name="quote_hist_detail_shipdate_main">実働日：</string>
+    <string name="quote_hist_detail_emarg_main">緊急出荷サービス：</string>
+    <string name="quote_hist_detail_status_main">状　態：</string>
+    <string name="quote_hist_detail_subtotal_main">小計：</string>
+    <string name="quote_hist_detail_subtotal_unit_main">（外税）</string>
+    <string name="quote_hist_detail_subtotal_unit_main_CHN">（外税）</string>
+    <string name="quote_hist_detail_subtotal_unit_main_tax">（内税）</string>
+    <string name="quote_hist_detail_pack_quantity">（%s個入り）</string>
+    <string name="common_sale_format">SALE %sまで</string>
+    <string name="quote_hist_detail_dialog_added_cart">商品をカートに追加しました。</string>
+    <string name="quote_hist_detail_dialog_added_my_parts">My部品表のメインフォルダに追加しました。</string>
+
+
+    <string name="label_stoke_t0">当日出荷（ストークT）</string>
+    <string name="label_stoke_a0">翌日出荷（ストークA）</string>
+    <string name="label_stoke_b0">3日目出荷（ストークB）</string>
+    <string name="label_stoke_c0">5日目出荷（ストークC）</string>
+    <string name="label_stoke_0z">ストークZ</string>
+    <string name="label_stoke_0l">ストークL</string>
+    <!--<string name="label_stoke_0v">Ｖストーク</string>-->
+    <string name="label_stoke_0a">翌日出荷（ストークA早割）</string>
+    <string name="label_stoke_etc">利用しない</string>
+    <string name="label_stoke_etc2">&#8211;</string>
+
+    <!-- SPv1_13 注文履歴一覧 -->
+    <string name="order_hist_title">注文履歴</string>
+    <string name="order_hist_count_str1"/>
+    <string name="order_hist_count_str2">件の注文履歴があります</string>
+    <string name="order_hist_status">状　　態</string>
+    <string name="order_hist_slip_no">注文書番号</string>
+    <string name="order_hist_date">注文日時</string>
+    <string name="order_hist_item_count">商品件数</string>
+    <string name="order_hist_count_unit">件</string>
+    <string name="order_hist_misumi_check_str">内、ミスミ確認中%s件</string>
+    <string name="order_hist_total_price">合計金額</string>
+    <!--<string name="order_hist_total_price_unit">円(外税)</string>-->
+    <string name="order_hist_total_price_tax">合計金額</string>
+    <!--<string name="order_hist_total_price_tax_unit">(内税)</string>-->
+    <string name="order_hist_empty_list_item">アプリで表示できるご注文履歴はございません。</string>
+
+    <!--注文履歴詳細-->
+    <string name="order_detail_cod_charge">うち代引き手数料（内税）</string>
+
+    <string name="order_detail_add_my_parts">My部品表へ追加</string>
+    <string name="order_detail_slip_no">注文書番号</string>
+    <string name="order_detail_date">注文日時</string>
+    <string name="order_detail_expire">見積有効期限</string>
+    <string name="order_detail_user_name">ご担当者名/</string>
+    <string name="order_detail_user_method">注文方法</string>
+    <string name="order_detail_deliverycompanyname">配送会社名</string>
+    <string name="order_detail_item_count">商品件数</string>
+    <string name="order_detail_count_unit">件</string>
+    <string name="order_detail_misumi_check_str">内、ミスミ確認中%s件</string>
+    <!--<string name="order_detail_total_price">合計金額(外税)</string>-->
+    <!--<string name="order_detail_total_price_unit">re円</string>-->
+    <!--<string name="order_detail_total_price_tax">合計金額(内税)</string>-->
+    <string name="order_detail_total_price_checking">※上記金額にミスミ確認中の商品は含まれておりません。</string>
+    <string name="order_detail_deadline_info1"/>
+    <string name="order_detail_deadline_info2"/>
+    <string name="order_detail_deadline_info3"/>
+    <string name="order_detail_deadline_info4"/>
+    <string name="order_detail_add_my">My部品表へ追加</string>
+    <string name="order_detail_add_card">カートへ追加</string>
+    <string name="order_detail_price_checking">この商品はミスミ確認中です</string>
+    <string name="order_detail_unit_price_main">単　価：</string>
+    <string name="order_detail_unit_price_unit_main">（外税）</string>
+    <string name="order_detail_unit_price_unit_main_CHN">（外税）</string>
+    <string name="order_detail_subtotal_unit_main_tax">（内税）</string>
+    <string name="order_detail_quantity_main">数　量：</string>
+    <string name="order_detail_shipdate_main">出荷日：</string>
+    <string name="order_detail_emarg_main">緊急出荷サービス：</string>
+    <string name="order_detail_status_main">状　態：</string>
+    <string name="order_detail_status_invoice">配送状況：</string>
+    <string name="order_detail_subtotal_main">小計：</string>
+    <string name="order_detail_pack_quantity">（%s個入り）</string>
+
+    <string name="order_detail_misumi_No">ミスミ受付No：</string>
+
+    <!--<string name="order_detail_type_mail">MAIL</string>-->
+    <!--<string name="order_detail_type_fax">FAX</string>-->
+    <!--<string name="order_detail_type_tel">TEL</string>-->
+    <!--<string name="order_detail_type_edi">EDI</string>-->
+    <string name="order_detail_type_other">その他</string>
+    <!--<string name="order_detail_type_web">WEB</string>-->
+    <string name="order_detail_type_default">&#8211;</string>
+    <string name="order_detail_type_srash">/</string>
+    <string name="order_detail_cancel_info">注文変更・キャンセル・返品についてはこちらをご確認ください。</string>
+    <string name="order_detail_cancel_info_link">こちら</string>
+
+    <!--注文完了-->
+    <string name="order_complete_title">ご注文が完了いたしました。\nご登録メールアドレスに、注文確認メールをお送りいたします。</string>
+    <string name="order_complete_confirm_info_title">ミスミにて確認中の商品について</string>
+    <string name="order_complete_confirm_info_memo1">ご注文は完了いたしましたが、ミスミにて出荷日や価格等の確認が必要な商品が含まれております。\nミスミにて確認が必要な商品については、早急にミスミにて確認しご連絡いたします。</string>
+    <string name="order_complete_confirm_info_memo2">早急にミスミにて内容確認後、メールによる連絡及び、パソコン上でメッセージを表示致します。\nメッセージが表示されている場合は、内容をご確認の上、対応をよろしくお願い致します。</string>
+    <string name="order_complete_confirm_info_memo3">一部商品にミスミ確認中の商品がございます。</string>
+    <string name="order_complete_cancel_info_title">注文変更・キャンセル・返品について</string>
+    <string name="order_complete_cancel_info_memo">商品変更、キャンセル、返品については[こちら]をご確認ください。</string>
+    <string name="order_complete_cancel_info_memo_link">[こちら]</string>
+    <string name="order_complete_info_title">注文情報</string>
+    <string name="order_complete_info_image_message">ミスミからのメッセージ表示イメージ（PCサイト）</string>
+    <string name="order_complete_button_return_cart">カートへ戻る</string>
+    <string name="order_complete_button_return_quote">見積へ戻る</string>
+
+    <string name="order_complete_slip_no">注文書番号</string>
+    <string name="order_complete_item_count">商品件数</string>
+    <string name="order_complete_count_unit">件</string>
+    <string name="order_complete_misumi_check_str">（内、ミスミ確認中商品%s件）</string>
+    <string name="order_complete_total_price">合計金額（外税）</string>
+    <string name="order_complete_total_price_unit_yen">円</string>
+    <string name="order_complete_total_price_unit_gen">元</string>
+    <string name="order_complete_total_price_unit_dollar">＄</string>
+    <string name="order_complete_total_price_tax">合計金額（内税）</string>
+    <!--<string name="order_complete_total_price_tax_unit">円</string>-->
+    <string name="order_complete_price_checking">※上記金額にミスミ確認中の商品は含まれておりません。</string>
+    <string name="order_complete_date">注文日時</string>
+
+
+    <!--注文確認 直送先の選択-->
+    <string name="order_confirm_directship_select_title">直送先の選択</string>
+    <string name="order_confirm_directship_select_info">下記からご希望の直送先をお選びください。</string>
+    <string name="order_confirm_directship_select_label">登録済み直送先一覧</string>
+    <string name="order_confirm_directship_select">選択</string>
+    <string name="confirm_directship_selected">選択中</string>
+
+
+    <!--注文確認 ストークの選択-->
+    <string name="order_confirm_express_type_select_title">ストークを選択してください</string>
+    <string name="order_confirm_express_type_select_info">出荷日をご確認の上、下記からご希望のストーク種別をお選びください。</string>
+    <string name="quote_confirm_express_type_select_info">ご希望の出荷日を選択してください。</string>
+    <string name="order_confirm_express_type_label">ご利用可能な緊急出荷サービス(ストーク)</string>
+    <string name="order_confirm_express_type_select">選択</string>
+    <string name="confirm_express_type_express">ストーク種別：</string>
+    <string name="confirm_express_type_days">出荷日：</string>
+    <string name="confirm_express_type_days_quote">実働日：</string>
+    <string name="confirm_express_type_dead">締め時刻：</string>
+    <string name="confirm_express_type_charge">追加料金：</string>
+    <string name="confirm_express_type_charge_unit">円</string>
+    <string name="confirm_express_type_charge_unit_dollar">$</string>
+    <string name="confirm_express_type_selected">選択中</string>
+    <string name="confirm_express_type_disable">選択不可</string>
+    <string name="confirm_express_type_limit">数量が%s以上の場合はストーク利用不可となります。</string>
+    <string name="confirm_express_type_caution_label">ご注意事項</string>
+    <string name="confirm_express_type_caution">数量によってはストークをご利用いただけない場合があります。</string>
+
+
+    <!-- SPv1_16 見積り完了 -->
+    <string name="quote_comp_title">お見積りが完了いたしました。</string>
+    <string name="quote_comp_checking_str1">お見積は完了いたしましたが、ミスミにて出荷日や価格等の確認が必要な商品が含まれております。\nミスミにて確認が必要な商品については、早急にミスミにて確認し、ご連絡いたします。</string>
+    <string name="quote_comp_info">見積情報</string>
+    <string name="quote_comp_close">カートに戻る</string>
+
+    <string name="quote_comp_slip_no">見積書番号</string>
+    <string name="quote_comp_date">見積日時</string>
+    <string name="quote_comp_item_count">商品件数</string>
+    <string name="quote_comp_count_unit">件</string>
+    <string name="quote_comp_misumi_check_str">（内、ミスミ確認中商品%s件）</string>
+    <string name="quote_comp_total_price">合計金額（外税）</string>
+    <string name="quote_comp_total_price_tax">合計金額（内税）</string>
+    <string name="quote_comp_price_checking">※上記金額にミスミ確認中の商品は含まれておりません。</string>
+
+    <string name="common_footer_look_pc">検索結果が多いため、これ以上表示できません。\n条件を見直してください。</string>
+    <string name="common_footer_error_progress">読み込み中にエラーが発生しました。\nタップして再取得してください。</string>
+
+    <!--SPv1_07 シリーズ検索結果一覧-->
+    <string name="search_series_total">件</string>
+    <!--<string name="search_series_daytoship">通常出荷日</string>-->
+    <string name="search_series_count_str">商品数：</string>
+    <!--<string name="search_series_count_0">商品がありません。</string>-->
+    <string name="search_series_recommend">おすすめ</string>
+    <string name="search_series_grade">Economy</string>
+
+
+    <string name="search_series_empty_list_item">該当する商品が見つかりませんでした。</string>
+
+    <string name="search_category_empty_list_item">該当する商品が見つかりませんでした。</string>
+
+    <!--キーワード検索結果-->
+    <string name="search_keyword_total">件</string>
+    <string name="search_keyword_count_str">検索結果数：</string>
+    <string name="search_keyword_category_count">カテゴリ（%s件）</string>
+    <string name="search_keyword_empty_list_item">該当する商品が見つかりませんでした。</string>
+
+
+    <!-- SPv1_08 カート -->
+    <string name="cart_select_all">すべて選択</string>
+    <string name="cart_go_estimate">見積へ進む</string>
+    <string name="cart_go_order">注文へ進む</string>
+    <string name="cart_update">価格を確認</string>
+    <string name="cart_caution_title">ご注意事項</string>
+    <string name="cart_caution_str">・商品価格の改定や在庫状況により、カートに追加した時と価格や出荷日が異なることがあります。最新の価格、出荷日は「価格を確認」ボタンをタップしてご確認下さい。\n・本サービスを利用されるにあたり、お客様に消費税をご負担頂きます。</string>
+    <string name="cart_delete_cart">カートから削除</string>
+    <string name="cart_add_my">My部品表へ移動</string>
+    <string name="cart_empty_str">お客様のカートに保存された商品はありません。</string>
+    <string name="cart_unit_price">単　価：</string>
+    <string name="cart_quantity">数　量：</string>
+    <string name="cart_pack_quantity">（%s個入り）</string>
+    <string name="cart_register">カート更新日：</string>
+    <string name="cart_ship_date">出荷日：</string>
+    <string name="cart_item_campaign_1">キャンペーン値引きが終了したため、</string>
+    <string name="cart_item_campaign_2">をクリックして最新単価をご確認下さい。</string>
+    <string name="cart_app_campaign_1">%sつの商品について、単価変更がございます。</string>
+    <string name="cart_app_campaign_2">商品をご確認ください。</string>
+    <string name="cart_selected_item">選択中の商品：</string>
+    <string name="cart_selected_item_unit">件</string>
+    <string name="cart_total_price">合計金額：</string>
+    <string name="cart_total_price_unit">円(外税)</string>
+    <string name="cart_total_price_wtax">合計金額：</string>
+    <string name="cart_total_price_unit_wtax">元(内税)</string>
+    <string name="cart_total_price_unit_dollar">＄</string>
+    <string name="cart_total_price_unit_wtax_dollar">(内税)</string>
+    <string name="cart_subtotal_main">小計（外税）：</string>
+    <string name="cart_subtotal_unit_main">円</string>
+    <string name="cart_subtotal_main_wtax">小計（内税）：</string>
+    <string name="cart_subtotal_unit_main_wtax">円</string>
+
+    <string name="cart_dialog_delete_cart">カートから削除</string>
+    <string name="cart_dialog_delete_cart_msg">商品をカートから削除してもよろしいですか？</string>
+    <string name="cart_dialog_add_my">My部品表へ移動</string>
+
+    <!-- SPv1_17 注文内容確認 -->
+    <string name="order_check_emarg_main">緊急出荷サービス：</string>
+    <string name="confirm_total_price">合計金額（外税）</string>
+    <string name="confirm_total_price_wtax">合計金額（内税）</string>
+    <string name="confirm_item_count">商品件数</string>
+    <string name="confirm_item_count_unit">件</string>
+    <string name="confirm_delivery">送料</string>
+    <string name="confirm_delivery_discount">送料値引き</string>
+    <string name="confirm_subtotal_main">小計：</string>
+    <string name="confirm_subtotal_unit_main">（外税）</string>
+    <string name="confirm_subtotal_main_wtax">小計：</string>
+    <string name="confirm_subtotal_unit_main_wtax">（内税）</string>
+    <string name="confirm_cod_charge">うち代引き手数料（内税）</string>
+    <string name="confirm_unit_price">単　価：</string>
+    <string name="confirm_quantity">数　量：</string>
+    <string name="confirm_pack_quantity">（%s個入り）</string>
+    <string name="confirm_ship_date">出荷日：</string>
+    <string name="confirm_ship_date_quote">実働日：</string>
+    <string name="confirm_emarg_main">緊急出荷サービス：</string>
+
+    <string name="order_confirm_not_yet">ご注文はまだ完了しておりません。内容をご確認の上「注文の確定」ボタンをタップしてください。</string>
+    <string name="order_confirm_order_title">注文内容</string>
+
+    <string name="confirm_shipping_option_title">出荷オプション</string>
+    <string name="confirm_shipping_option_1">商品をまとめて出荷する（最遅の出荷日に合わせて、まとめて出荷します）</string>
+    <string name="confirm_shipping_option_2">準備ができた商品から順に出荷する（各出荷日単位で、順次出荷します）</string>
+
+    <string name="confirm_require_title">※必須入力項目</string>
+
+    <string name="confirm_user_info_title">発注者情報</string>
+    <string name="confirm_user_company_label">お客様会社名</string>
+    <string name="confirm_user_code_label">お客様コード</string>
+    <string name="confirm_user_dept_label">ご担当部課名</string>
+    <string name="confirm_user_name_label">ご担当者名</string>
+
+    <string name="confirm_destination_info_title">納入先情報</string>
+    <string name="confirm_destination_address_label">納入先住所</string>
+    <string name="confirm_destination_dept_label">納入部課名</string>
+    <string name="confirm_destination_name_label">納入ご担当者名</string>
+
+    <string name="confirm_destination_address_title">住所</string>
+    <string name="confirm_order_status">現在営業時間外の為、翌営業日のご注文として確定されます。営業時間は8:00～20:00となります。\nこのままご注文される場合は、必ずご注文履歴より出荷日、価格をご確認ください。</string>
+    <string name="confirm_annotation_title">ご注意事項</string>
+    <string name="confirm_annotation_text">・代引きでのお支払いの場合、代引き手数料を別途申し受けます。\n・「注文の確定」ボタンを押してご注文頂くことで、お客様は「商品のご変更・キャンセル等の取り扱い」および「MiSUMi-VONAサービスご利用規約」に同意の上、商品をご注文された事になります。</string>
+    <string name="confirm_annotation_text_quote">・代引きでのお支払いの場合、代引き手数料を別途申し受けます。\n・消費税率や条件等の変更により、お見積金額とご注文金額に差異が生じる場合がございます。あらかじめご了承ください。</string>
+
+    <string name="edit_hint_zenkaku_1">全角でご入力ください</string>
+    <string name="edit_hint_zenkaku_2">全角でご入力ください</string>
+    <string name="edit_hint_zenkaku_3">全角でご入力ください</string>
+    <string name="edit_hint_zenkaku_4">全角でご入力ください</string>
+
+    <string name="confirm_back_from_cart">カートへ戻る</string>
+    <string name="confirm_back_from_quote">見積履歴へ戻る</string>
+    <string name="confirm_oreder">注文の確定</string>
+
+    <string name="progress_order_from_cart">カート</string>
+    <string name="progress_order_from_quote">見積履歴</string>
+    <string name="progress_order_2">注文確認</string>
+    <string name="progress_order_3">注文完了</string>
+
+    <string name="confirm_change_destination">直送先変更</string>
+    <string name="confirm_change_stoke">変更</string>
+    <string name="confirm_change_stoke2">変更</string>
+    <string name="confirm_change_today_ship">お急ぎですか？</string>
+    <string name="confirm_change_today_ship_2">変更</string>
+    <string name="require_mark">※</string>
+
+    <string name="cart_change_quantity">価格を確認</string>
+
+    <!--在庫切れ確認ダイアログ-->
+    <string name="out_of_stock_dialog_titlle">こちらの商品は在庫切れのため、出荷日調整が必要です</string>
+    <string name="out_of_stock_dialog_info">ご注文商品ついて在庫切れのため、出荷日の調整が必要な商品がございます。\n下記出荷日をご確認の上、「送信する」ボタンを押してください。</string>
+    <string name="out_of_stock_dialog_list_title">確認対象商品：</string>
+    <string name="out_of_stock_dialog_list_title_unit">件</string>
+    <string name="out_of_stock_dialog_list_day_to_ship">最短出荷日：</string>
+    <string name="out_of_stock_dialog_yes">送信する</string>
+    <string name="out_of_stock_dialog_no">希望しない</string>
+
+    <!--アンフィット-->
+    <string name="unfit_type_dialog_titlle">こちらの商品は、ミスミにて出荷日や価格等の確認が必要な商品です。</string>
+    <string name="unfit_type_dialog_titlle_quote">こちらの商品は、ミスミにて出荷日や価格等の確認が必要な商品です。</string>
+    <string name="unfit_type_dialog_info_2">お見積商品について、ミスミにて確認が必要な商品がございます。\nこちらの商品について、お見積後に早急に確認し、ご連絡いたします。\nよろしければ「ミスミ確認を希望し見積を確定」ボタンを押してください。</string>
+    <string name="unfit_type_dialog_info_3">ご注文商品について、ミスミにて確認が必要な商品がございます。\nこちらの商品について、ご注文後に早急に確認し、ご連絡いたします。\nよろしければ「ミスミ確認を希望し注文を確定」ボタンを押してください。</string>
+    <string name="unfit_type_dialog_info_4"/>
+    <string name="unfit_type_dialog_list_title">確認対象商品：</string>
+    <string name="unfit_type_dialog_list_title_unit">件</string>
+    <string name="unfit_type_dialog_list_unit_price_main">単　価：</string>
+    <string name="unfit_type_dialog_list_quantity_main">数　量：</string>
+    <string name="unfit_type_dialog_list_shipdate_main">出荷日：</string>
+    <string name="unfit_type_dialog_list_shipdate_main_quote">実働日：</string>
+    <string name="unfit_type_dialog_list_emarg_main">緊急出荷サービス：</string>
+    <string name="unfit_type_dialog_list_main">小計：</string>
+    <string name="unfit_type_dialog_list_unit_main">（外税）</string>
+    <string name="unfit_type_dialog_list_wtax">小計：</string>
+    <string name="unfit_type_dialog_list_main_wtax">（内税）</string>
+    <string name="unfit_type_dialog_yes_quote">ミスミ確認を希望し見積を確定</string>
+    <string name="unfit_type_dialog_yes_order">ミスミ確認を希望し注文を確定</string>
+    <string name="unfit_type_dialog_no">商品の再設定をする</string>
+
+    <!--素通し不可、注文-->
+    <string name="orderable_type_dialog_titlle">注文商品について、\nご確認いただきたい内容がございます</string>
+    <string name="orderable_type_dialog_info">ミスミでの確認を希望する場合「ミスミ確認以外の注文を確定」を選択してください。\n全明細を見積として保存する場合「全明細を見積として保存」を選択してください。</string>
+    <string name="orderable_type_dialog_info_3"/>
+    <string name="orderable_type_dialog_list_title">確認対象商品：</string>
+    <string name="orderable_type_dialog_list_title_unit">件</string>
+    <string name="orderable_type_dialog_list_unit_price_main">単　価：</string>
+    <string name="orderable_type_dialog_list_quantity_main">数　量：</string>
+    <string name="orderable_type_dialog_list_ship_main">出荷日：</string>
+    <string name="orderable_type_dialog_list_main">小計：</string>
+    <string name="orderable_type_dialog_list_unit_main">（外税）</string>
+    <string name="orderable_type_dialog_list_wtax">小計：</string>
+    <string name="orderable_type_dialog_list_main_wtax">（内税）</string>
+    <string name="orderable_type_dialog_yes">確認対象商品以外を注文する</string>
+    <string name="orderable_type_dialog_no">商品の再設定をする</string>
+
+    <!--素通し不可、見積-->
+    <string name="orderable_type_dialog_titlle_quotation">見積商品について、\nご確認いただきたい内容がございます</string>
+    <string name="orderable_type_dialog_info_quotation_type2">「見積を続ける」ボタンを押してください。</string>
+    <string name="orderable_type_dialog_info_quotation_type3"/>
+    <string name="orderable_type_dialog_info_quotation_3">ミスミでの確認を希望する場合「ミスミ確認以外の注文を確定」を選択してください。\n全明細を見積として保存する場合「全明細を見積として保存」を選択してください。</string>
+    <string name="orderable_type_dialog_info_quotation_4">該当商品のお取扱状況について、ミスミまでお問い合わせ下さい。</string>
+    <string name="orderable_type_dialog_list_day_main">実働日：</string>
+    <string name="orderable_type_dialog_yes_quotation">確認対象商品以外を見積する</string>
+
+    <!--SOコンバート-->
+    <string name="so_dialog_titlle">お見積りの内容から、変更となっている商品が含まれます。</string>
+    <string name="so_dialog_info_1">・ミスミ確認以外の注文を確定超過しているため、ストークＴが指定されている商品の料金が変更となります。</string>
+    <string name="so_dialog_info_2">・18:00を超えたご注文でのストークTの指定は、翌日扱いとなります。</string>
+    <string name="so_dialog_info_3">・ストークAが指定されている商品を15:00までにご注文いただく際は割引が適用されます。</string>
+    <string name="so_dialog_info_4">・ストークA早割りの締め時刻（15:00）を超過しているため、ストークAが指定されている商品の料金が変更となります。</string>
+    <string name="so_dialog_info_5">・18:00を超えたご注文でのストークAの指定は、翌日扱いとなります。</string>
+    <string name="so_dialog_yes">注文を続ける</string>
+    <string name="so_dialog_no">商品の再設定をする</string>
+
+    <!-- SPv1_15 見積内容確認 -->
+    <string name="quote_shipping_option_title">翌日出荷(ストークA)情報</string>
+    <string name="quote_shipping_option_title2">ご注文いただく時間帯によって価格が変わる商品が含まれております。</string>
+    <string name="quote_shipping_option_1">ストークA早割（15時までのご注文）の適用価格で見積書を作成する。</string>
+    <string name="quote_shipping_option_2">通常のストークA料金で見積書を作成する。</string>
+
+    <string name="quote_confirm_not_yet">お見積りはまだ完了しておりません。\n内容をご確認の上「見積の確定」ボタンをタップしてください。</string>
+    <string name="quote_confirm_stoke_a">「翌日出荷(ストークA)」を設定しました。\n該当商品の単価、出荷日をご確認ください。</string>
+    <string name="confirm_quote">見積の確定</string>
+
+    <string name="progress_quote_2">見積確認</string>
+    <string name="progress_quote_3">見積完了</string>
+
+    <!-- SPv1_10 商品詳細 -->
+    <string name="item_detail_part_pc">恐れ入りますが、この商品についてはパソコンからご確認ください</string>
+    <string name="item_detail_part_select">「型番選択」から選択してください</string>
+    <string name="item_detail_no_part">こちらの商品は現在販売されていません。</string>
+    <string name="item_detail_icon_recommend">おすすめ</string>
+    <string name="item_detail_icon_grade">Economy</string>
+    <string name="item_detail_icon_cvalue">C&#8211;Value</string>
+    <string name="item_detail_icon_slide">数量スライド割引</string>
+    <string name="item_detail_change_quantity">価格を確認</string>
+    <string name="item_detail_add_my">My部品表に追加</string>
+    <string name="item_detail_add_card">カートへ追加</string>
+    <string name="item_detail_copy">型番と数量をコピー</string>
+    <string name="item_detail_copy_message">型番・数量をコピーしました。</string>
+    <string name="item_detail_part_number">型番選択</string>
+    <string name="item_detail_order_quantity">ご注文数</string>
+    <string name="item_detail_total_price">合計</string>
+    <string name="item_detail_total_price_wtax">"内税 "</string>
+    <string name="item_detail_ship">出荷日</string>
+    <string name="item_detail_unit_price">単価</string>
+    <string name="item_detail_pack_quantity">（%s個入り）</string>
+    <string name="item_detail_slide_label">数量スライド表</string>
+    <string name="item_detail_slide_head1">数量</string>
+    <string name="item_detail_slide_head2">通常単価</string>
+    <string name="item_detail_slide_head3">出荷日</string>
+    <string name="item_detail_express_label">緊急出荷サービス</string>
+    <string name="item_detail_express_head1">緊急出荷サービス</string>
+    <string name="item_detail_express_head2">料金</string>
+    <string name="item_detail_express_deadline">まで受付</string>
+    <string name="item_detail_stokez_label">早割30/早割25</string>
+    <string name="item_detail_stokez_head1">早割30/早割25</string>
+    <string name="item_detail_stokez_head2">割引</string>
+    <string name="item_detail_stokez_text">ストークＺ</string>
+    <string name="item_detail_selected_label">指定中の仕様・寸法情報</string>
+    <string name="item_detail_selected_warn">一部型番の仕様・寸法を掲載しきれていない場合がございますので、詳細はメーカーカタログをご覧ください。</string>
+    <string name="item_detail_spec_label">基本情報</string>
+    <string name="item_detail_dialog_added_cart">%s点の商品がカート内にあります。</string>
+    <string name="item_detail_dialog_added_my_parts">My部品表のメインフォルダに追加しました。</string>
+    <string name="item_detail_dialog_added_cart_title">商品をカートに追加しました</string>
+    <string name="item_detail_dialog_added_my_parts_title">My部品表へ追加</string>
+
+    <!--出荷日-->
+    <string name="daytoship_label_title">通常出荷日：</string>
+    <string name="daytoship_label_colon_day"/>
+    <string name="daytoship_label_day">当日出荷</string>
+    <string name="daytoship_label_estimate">都度お見積り</string>
+    <string name="daytoship_label_tilde">〜</string>
+    <string name="daytoship_label_days">日間</string>
+
+    <!--価格-->
+    <string name="unitprice_label_title">価格：</string>
+    <string name="unitprice_label_title_usd">価格：＄</string>
+    <string name="unitprice_label_period">円</string>
+    <string name="unitprice_label_period_tilde">円～</string>
+    <string name="unitprice_label_period_gen">元</string>
+    <string name="unitprice_label_period_gen_tilde">元～</string>
+    <string name="unitprice_label_period_usd_tilde">～</string>
+    <string name="unitprice_label_title_sale">特別価格</string>
+
+    <!--ステータス(見積履歴詳細など)-->
+    <string name="common_status_unknown">&#8211;</string>
+    <string name="common_status_1">処理中</string>
+    <string name="common_status_2">見積済</string>
+    <string name="common_status_3">注文済</string>
+    <string name="common_status_4">出荷済</string>
+    <string name="common_status_f">失敗</string>
+    <string name="common_status_z">ミスミ確認中</string>
+    <string name="common_status_c">有効期限切れ</string>
+    <string name="common_status_e">エラー</string>
+    <string name="common_status_w">入金待ち</string>
+    <string name="common_status_x">キャンセル済</string>
+    <string name="common_status_a1">承認待ち</string>
+    <string name="common_status_a2">否認</string>
+    <string name="common_status_a3">差戻し</string>
+
+    <!--デバイス情報-->
+    <string name="deviceinfo_label_title">端末情報</string>
+    <!--<string name="deviceinfo_label_info">端末情報が確認できます</string>-->
+    <string name="deviceinfo_label_os_ver">OSバージョン</string>
+    <string name="deviceinfo_label_device_name">機種名</string>
+    <string name="deviceinfo_label_app_ver">アプリバージョン</string>
+    <string name="deviceinfo_label_copy">端末情報をコピーする</string>
+    <string name="deviceinfo_format_copy">OSバージョン：%1$s\n機種名：%2$s\nアプリバージョン：%3$s</string>
+
+    <!-- AutoComplete -->
+    <string name="autocomplete_keyword_title">キーワード候補</string>
+    <string name="autocomplete_category_title">型番ショートカット（商品詳細）</string>
+
+    <!--ダミー用データ-->
+    <string name="dummy_string">dummy</string>
+    <string name="dummy_num">99</string>
+
+    <!--debug-->
+    <string name="debug_label_api_addr">API</string>
+    <string name="debug_label_nas_addr">NAS</string>
+    <string name="debug_label_session_id">SID</string>
+    <string name="debug_label_update_button">UP</string>
+    <string name="debug_label_category_clear">保持カテゴリを削除</string>
+    <string name="debug_message_category_deleted">保持カテゴリを削除しました</string>
+    <string name="debug_label_login_id">保持ログインIDを設定</string>
+    <string name="debug_message_set_login">保持ログインIDを開発サーバー用に変更しました</string>
+    <string name="debug_message_set_login2">保持ログインIDを変更しました</string>
+    <string name="debug_label_radio_group">現地コード変更</string>
+    <string name="debug_label_radio_japanese">日本モード</string>
+    <string name="debug_label_radio_chinese">中国モード</string>
+    <string name="debug_label_currency_group">通貨コード変更</string>
+    <string name="debug_label_radio_yen">円</string>
+    <string name="debug_label_radio_gen">元</string>
+    <string name="debug_label_radio_doller">ドル</string>
+
+    <!--型番選択-->
+    <string name="part_number_select_more">もっと見る</string>
+    <string name="part_number_select_minus">閉じる</string>
+    <string name="part_number_select_select">この型番を選択</string>
+    <string name="part_number_select_reset_value">値をリセット</string>
+    <string name="part_number_select_label">選択してください</string>
+    <string name="part_number_not_select_label">選択しない</string>
+    <string name="part_number_select_tab_condition">絞り込み条件</string>
+    <string name="part_number_select_tab_partlist_front">型番の候補（現在</string>
+    <string name="part_number_select_tab_partlist_period">件</string>
+    <string name="part_number_select_dialog_msg_confirm">選択型番：</string>
+    <string name="part_number_select_dialog_msg">この型番でよろしいですか？</string>
+    <string name="part_number_select_dialog_confirm">選択</string>
+    <string name="part_number_select_dialog_cancel">キャンセル</string>
+    <string name="part_number_select_notfount">選択された条件に一致する型番は存在しません。</string>
+
+    <string name="today_express_deadline">18:00</string>
+    <string name="picasso_load_key">.</string>
+
+
+    <string name="today_ship_dialog_label_1">出荷日を指定</string>
+    <string name="today_ship_dialog_label_2">当日出荷が指定可能な商品です。\nご希望の場合は「当日出荷」をご選択下さい。 </string>
+
+    <string name="today_ship_dialog_select_1">当日出荷</string>
+    <string name="today_ship_dialog_select_2">利用しない</string>
+
+    <string name="so430_dialog_titlle">確認の内容から、変更となった商品が含まれます。\n「商品の再設定をする」を選択して商品を選択しなおしてください。</string>
+    <string name="so430_dialog_button">閉じる</string>
+
+    <!-- SPv1_40_言語設定_画面定義書_v07 -->
+    <string name="language_setting_screen_label">言語設定</string>
+    <string name="select_your_language">使用する言語を選択してください。</string>
+    <string name="thailand_language">タイ語</string>
+    <string name="england_language">英語</string>
+    <string name="done">完了</string>
+
+    <!-- SPv1_41_SMS設定_v07 -->
+    <string name="sms_setting_description">SMS通知の設定メニューです。</string>
+    <string name="send_sms">配信する</string>
+    <string name="sms_phone_number">配信先電話番号</string>
+    <string name="sms_sending_time">配信タイミング</string>
+    <string name="sms_finish_order">注文完了時</string>
+    <string name="sms_finish_export">出荷完了時</string>
+    <string name="sms_finish_change">配送方式変更処理完了時</string>
+    <string name="sms_time_range">配信しない時間帯</string>
+    <string name="sms_no_setting_time_range">配信しない時間帯を設定しない</string>
+    <string name="sms_setting_time_range">配信しない時間帯を設定する</string>
+
+    <string-array name="send_sms_option">
+        <item>する</item>
+        <item>しない</item>
+    </string-array>
+</resources>

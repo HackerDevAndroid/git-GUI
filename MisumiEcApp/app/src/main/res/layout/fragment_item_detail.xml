@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background_FF">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+			<!--ヘッダ部分-->
+		    <LinearLayout
+		        android:id="@+id/viewVisible"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="@dimen/dp_15"
+		        android:orientation="vertical"
+				android:background="@color/color_background_EE"
+				>
+
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+					android:gravity="center_vertical"
+					>
+
+					<!-- 型番有る時 -->
+				    <TextView
+				        android:id="@+id/textPartNumber"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+
+		                android:textSize="@dimen/dp_15"
+					    android:textColor="@color/color_text_black_33"
+		                android:textStyle="bold"
+						android:scrollHorizontally="true"
+						/>
+
+				    <ImageView
+				        android:id="@+id/imageShare"
+				        android:layout_width="25dp"
+				        android:layout_height="25dp"
+						android:layout_marginLeft="@dimen/dp_15"
+
+				        android:adjustViewBounds="true"
+			            android:src="@drawable/icon_wechat"
+				        android:scaleType="fitCenter" />
+
+				</LinearLayout>
+
+			    <TextView
+			        android:id="@+id/textSeriesName"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+				    android:paddingTop="@dimen/dp_15"
+
+		            android:textSize="@dimen/dp_15"
+				    android:textColor="@color/color_text_black_33"
+		            android:textStyle="bold"
+					/>
+
+			    <TextView
+			        android:id="@+id/textBrandName"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+				    android:paddingTop="@dimen/dp_10"
+
+			        android:textSize="12dp"
+				    android:textColor="@color/color_text_black_33"
+					/>
+
+			</LinearLayout>
+
+
+			<!--商品画像部分-->
+		    <LinearLayout
+		        android:id="@+id/layoutPicture"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp_20"
+				android:layout_marginBottom="@dimen/dp_15"
+
+		        android:orientation="vertical"
+		        android:gravity="center"
+				>
+
+			    <android.support.v4.view.ViewPager
+			        android:id="@+id/viewPager"
+			        android:layout_width="187dp"
+			        android:layout_height="187dp"
+					/>
+
+			    <jp.co.misumi.misumiecapp.widget.IndicatorView
+			        android:id="@+id/indicator"
+			        android:layout_width="match_parent"
+			        android:layout_height="10dp"
+					android:layout_marginTop="@dimen/dp_10"
+					/>
+
+			</LinearLayout>
+
+
+
+			<!--アイコン部分-->
+		    <LinearLayout
+		        android:id="@+id/layoutIcon"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+			    android:paddingLeft="@dimen/padding_15dp"
+			    android:paddingRight="@dimen/padding_15dp"
+				android:layout_marginBottom="@dimen/dp_15"
+
+		        android:orientation="vertical"
+				/>
+
+
+		    <TextView
+		        android:id="@+id/textCatchCopy"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+			    android:paddingLeft="@dimen/padding_15dp"
+			    android:paddingRight="@dimen/padding_15dp"
+				android:layout_marginBottom="@dimen/dp_20"
+
+		        android:textSize="12dp"
+			    android:textColor="@color/color_text_black_33"
+		        android:textStyle="bold"
+				/>
+
+			<!-- 価格情報が有る時 -->
+		    <LinearLayout
+		        android:id="@+id/layoutUnitPrice"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+			    android:padding="@dimen/dp_15"
+
+		        android:orientation="vertical"
+				android:background="@color/color_background_EE"
+				>
+
+			    <TextView
+			        android:id="@+id/textFolderName"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/item_detail_order_quantity"
+		            android:textSize="@dimen/dp_12"
+				    android:textColor="@color/color_text_black_33"
+		            android:textStyle="bold"
+					/>
+
+
+				<LinearLayout
+				    android:orientation="horizontal"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+
+					android:paddingTop="10dp"
+					>
+
+				    <EditText
+				        android:layout_width="0dp"
+			            android:layout_height="@dimen/button_height_35dp"
+				        android:layout_weight="1"
+						android:gravity="center_vertical|right"
+
+				        android:hint="@string/text_quantity_hint"
+				        android:textSize="@dimen/font_body_12dp"
+						android:maxLines="1"
+						android:maxLength="5"
+						android:inputType="number"
+			            android:background="@drawable/input_text_quantity"
+				        android:id="@+id/editQuantity" />
+
+
+			        <ImageButton
+			            android:id="@+id/buttonMinus"
+			            android:layout_width="@dimen/button_incdec_width_35dp"
+			            android:layout_height="@dimen/button_height_35dp"
+				        android:layout_marginLeft="@dimen/margin_15dp"
+				        android:background="@drawable/countbtn2_selector"
+			            />
+
+			        <ImageButton
+			            android:id="@+id/buttonPlus"
+			            android:layout_width="@dimen/button_incdec_width_35dp"
+			            android:layout_height="@dimen/button_height_35dp"
+				        android:layout_marginLeft="@dimen/margin_15dp"
+				        android:background="@drawable/countbtn1_selector"
+			            />
+
+					<!-- 価格を確認ボタン -->
+					<LinearLayout
+				        android:id="@+id/imageReload"
+				        android:layout_width="@dimen/button_price_width_92dp"
+				        android:layout_height="@dimen/button_height_35dp"
+				        android:layout_marginLeft="@dimen/margin_15dp"
+
+						android:layout_gravity="center"
+						android:orientation="horizontal"
+						android:gravity="center"
+						android:background="@drawable/valuebtn_selector"
+						>
+						<ImageView
+							android:layout_width="12.5dp"
+							android:layout_height="13.5dp"
+							android:layout_marginRight="@dimen/dp_4"
+							android:background="@drawable/btn_icon_change"/>
+						<jp.co.misumi.misumiecapp.widget.AutoFitTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/item_detail_change_quantity"
+							android:textColor="@color/color_myparts_addcart_btn_font"
+							android:textSize="@dimen/dp_11"
+							android:textStyle="bold"
+							android:gravity="center"/>
+					</LinearLayout>
+
+				</LinearLayout>
+
+
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+				    android:paddingTop="@dimen/dp_10"
+			        android:orientation="vertical"
+					>
+
+					<include layout="@layout/include_item_detail_text_ff"
+						android:id="@+id/viewTotalPrice"/>
+
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="@dimen/dp_90"
+						android:textColor="@color/color_text_default"
+				        android:textSize="@dimen/dp_15"
+				        android:id="@+id/textTotalPriceTax" />
+
+					<include layout="@layout/include_item_detail_text_ff"
+						android:id="@+id/viewShipDate"/>
+
+					<include layout="@layout/include_item_detail_text_ee"
+						android:id="@+id/viewUnitPrice"/>
+
+				</LinearLayout>
+
+
+			    <TextView
+					android:id="@+id/textWarning"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dp_10"
+
+			        android:textSize="@dimen/font_error_10dp"
+			        android:textColor="@color/color_text_red_DD"
+					android:textStyle="bold"
+					android:background="@drawable/text_frame_red_2dp"
+					/>
+
+				<LinearLayout
+					android:id="@+id/buttonAddCart"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dp_45"
+					android:layout_marginTop="@dimen/dp_15"
+
+					android:layout_gravity="center"
+					android:orientation="horizontal"
+					android:gravity="center"
+					android:background="@drawable/button_orange_view_selector">
+					<ImageView
+						android:layout_width="@dimen/dp_18"
+						android:layout_height="@dimen/dp_15"
+						android:layout_marginRight="@dimen/dp_5"
+						android:background="@drawable/btn_icon_cart"/>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/item_detail_add_card"
+						android:textColor="@color/color_myparts_addcart_btn_font"
+						android:textSize="@dimen/dp_12"
+						android:textStyle="bold"
+						android:gravity="center"/>
+				</LinearLayout>
+
+				<!--ADD NT-LWL 17/05/19 Share FR-->
+				<LinearLayout
+					android:id="@+id/share_has_pcode"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dp_45"
+					android:layout_marginTop="@dimen/dp_15"
+					android:layout_gravity="center"
+					android:orientation="horizontal"
+					android:gravity="center"
+					android:visibility="gone"
+					android:background="@drawable/valuebtn_selector">
+					<ImageView
+						android:layout_width="@dimen/dp_18"
+						android:layout_height="@dimen/dp_15"
+						android:layout_marginRight="@dimen/dp_5"
+						android:background="@drawable/share_icon_selector"/>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="@dimen/dp_12"
+						android:textStyle="bold"
+						android:gravity="center"
+						android:textColor="@color/share_text_color_select"
+						android:text="@string/share_click_text"/>
+				</LinearLayout>
+				<!--ADD NT-LWL 17/05/19 Share TO-->
+
+				<LinearLayout
+				    android:orientation="horizontal"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dp_15"
+					>
+
+
+					<LinearLayout
+						android:id="@+id/buttonAddMy"
+			            android:layout_width="0dp"
+			            android:layout_height="@dimen/button_height_38dp"
+			            android:layout_weight="1"
+						android:orientation="horizontal"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:background="@drawable/btn_bg_white_selector">
+
+						<ImageView
+							android:layout_width="15dp"
+							android:layout_height="12dp"
+							android:layout_marginRight="@dimen/dp_5"
+							android:background="@drawable/btn_icon_myparts"/>
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:gravity="center"
+							android:text="@string/item_detail_add_my"
+				            android:textColor="@color/button_white_text_selector"
+					        android:textSize="@dimen/font_button_type2_12dp"
+							android:textStyle="bold"
+							/>
+					</LinearLayout>
+
+					<LinearLayout
+			            android:id="@+id/buttonCopy"
+			            android:layout_width="0dp"
+			            android:layout_height="@dimen/button_height_38dp"
+			            android:layout_weight="1"
+				        android:layout_marginLeft="@dimen/margin_15dp"
+						android:orientation="horizontal"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:background="@drawable/btn_bg_white_selector">
+
+						<ImageView
+							android:layout_width="13.5dp"
+							android:layout_height="15dp"
+							android:layout_marginRight="@dimen/dp_5"
+							android:background="@drawable/btn_icon_copy"/>
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:gravity="center"
+				            android:text="@string/item_detail_copy"
+				            android:textColor="@color/button_white_text_selector"
+					        android:textSize="@dimen/font_button_type2_12dp"
+							android:textStyle="bold"
+							/>
+					</LinearLayout>
+
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<!-- 区切り点線 -->
+			<View
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="@drawable/list_item_divider_dash_9c_1dp"
+				/>
+
+
+			<!-- 数量スライド -->
+			<include layout="@layout/list_item_item_detail_acc"
+				android:id="@+id/viewSlide"/>
+
+			<!-- 緊急出荷 -->
+			<include layout="@layout/list_item_item_detail_acc"
+				android:id="@+id/viewExpress"/>
+
+			<!-- 早割りZ -->
+			<include layout="@layout/list_item_item_detail_acc"
+				android:id="@+id/viewStokeZ"/>
+
+
+			<!-- 指定中の仕様 -->
+			<include layout="@layout/list_item_item_detail_acc"
+				android:id="@+id/viewSpec"/>
+
+			<!-- 基本情報 -->
+			<include layout="@layout/list_item_item_detail_acc"
+				android:id="@+id/viewInfo"/>
+
+
+			<!-- 型番選択 -->
+		    <LinearLayout
+		        android:id="@+id/layoutSelectParts"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+			    android:paddingLeft="@dimen/padding_15dp"
+			    android:paddingRight="@dimen/padding_15dp"
+		        android:orientation="horizontal"
+				android:gravity="center_vertical"
+
+		        android:background="@drawable/list_item_bg_selector_ee">
+
+		        <TextView
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+					android:paddingTop="15dp"
+					android:paddingBottom="15dp"
+
+		            android:text="@string/item_detail_part_number"
+		            android:textSize="@dimen/dp_15"
+		            android:textColor="@color/color_text_default"
+			        android:textStyle="bold"
+					/>
+
+		        <ImageView
+		            android:layout_width="@dimen/dp_11"
+		            android:layout_height="@dimen/dp_17"
+
+		            android:src="@drawable/accordion_move"
+		            android:adjustViewBounds="true" />
+
+		    </LinearLayout>
+
+			<!-- 区切り点線 -->
+			<View
+		        android:id="@+id/viewSelectPartsDiv"
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="@drawable/list_item_divider_dash_9c_1dp"
+				/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

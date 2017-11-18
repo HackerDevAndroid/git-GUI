@@ -1,0 +1,879 @@
+<resources>
+    <string name="app_name">MISUMI e-Catalog</string>
+
+    <string name="label_day_to_ship_0">Same Day Shipping</string>
+    <string name="label_day_to_ship_1ro98_1"></string>
+    <string name="label_day_to_ship_1ro98_2">days</string>
+    <string name="label_day_to_ship_1ro98_1_quote"></string>
+    <string name="label_day_to_ship_1ro98_2_quote">days</string>
+    <string name="label_day_to_ship_99">Quote for Each</string>
+    <string name="label_shiptype_1">Stock Products</string>
+    <string name="label_shiptype_2">Arrangements in progress for stock products</string>
+    <string name="label_shiptype_3">Except Saturdays and National Holidays</string>
+    <string name="label_shiptype_4">Except Saturdays</string>
+    <string name="label_shiptype_5">Except Holidays</string>
+
+    <string name="label_hyphen">&#8211;</string>
+    <string name="label_stoke_t">Express T</string>
+    <string name="label_stoke_a">Express A</string>
+    <string name="label_stoke_a_rapid">Express A (Early Order Discount)</string>
+    <string name="label_stoke_b">Express B</string>
+    <string name="label_stoke_c">Express C</string>
+    <string name="label_stoke_z">Express Z</string>
+    <string name="label_stoke_l">Express L</string>
+    <string name="label_stoke_v">Express V</string>
+    <string name="label_express_deadline">后截止受理</string>
+
+    <string name="text_quantity_hint"/>
+
+    <!--アクティビティ-->
+    <string name="main_label_input_keyword_hint">Enter Keyword, Part Number or Web Code (e.g. #SFJ)</string>
+
+    <!--ログイン-->
+    <string name="login_label_title">Log In</string>
+    <string name="login_label_login_id">User ID</string>
+    <string name="login_label_password">Password (case sensitive)</string>
+    <string name="login_label_hint_login_id">User ID</string>
+    <string name="login_label_hint_password">Password (case sensitive)</string>
+    <string name="login_label_password_forget">Forgotten your User ID or password?</string>
+    <string name="login_label_check_input_omit">Remember me</string>
+    <string name="login_label_mode_normal"></string>
+    <string name="login_label_mode_session">Session has ended. Please log in again.</string>
+    <string name="login_label_mode_require">Please log in to use this function.</string>
+    <string name="login_button_label_login">Log In</string>
+    <string name="login_button_label_close">Close</string>
+
+    <!--トップ-->
+    <string name="top_label_welcome">Welcome to MISUMI</string>
+    <string name="top_label_login">Log In</string>
+    <string name="top_label_logout">Log Out</string>
+    <string name="top_label_status_check">Reception Status</string>
+    <string name="top_label_customer_code">(Client Code: %s)</string>
+    <string name="top_label_status_title">Quote/Order Reception Status</string>
+    <string name="top_label_quotation_status_title">Quote</string>
+    <string name="top_label_order_status_title">Order</string>
+    <string name="top_label_status_accept">Received</string>
+    <string name="top_label_status_accept_next_day">Received (to be handled the following business day)</string>
+    <string name="top_label_status_maintenance">Currently under maintenance</string>
+    <string name="top_label_status_unset">&#8211;</string>
+    <string name="top_label_status_day_of_week_1">Sunday</string>
+    <string name="top_label_status_day_of_week_2">Monday</string>
+    <string name="top_label_status_day_of_week_3">Tuesday</string>
+    <string name="top_label_status_day_of_week_4">Wednesday</string>
+    <string name="top_label_status_day_of_week_5">Thursday</string>
+    <string name="top_label_status_day_of_week_6">Friday</string>
+    <string name="top_label_status_day_of_week_7">Saturday</string>
+    <string name="top_label_information">No information at this time.</string>
+    <string name="top_label_input_keyword_hint">Enter Keyword, Part Number or Web Code (e.g. #SFJ)</string>
+    <string name="top_label_calendar_01">top_cal_month_1.png</string>
+    <string name="top_label_calendar_02">top_cal_month_2.png</string>
+    <string name="top_label_calendar_03">top_cal_month_3.png</string>
+    <string name="top_label_calendar_04">top_cal_month_4.png</string>
+    <string name="top_label_calendar_05">top_cal_month_5.png</string>
+    <string name="top_label_calendar_06">top_cal_month_6.png</string>
+    <string name="top_label_calendar_07">top_cal_month_7.png</string>
+    <string name="top_label_calendar_08">top_cal_month_8.png</string>
+    <string name="top_label_calendar_09">top_cal_month_9.png</string>
+    <string name="top_label_calendar_10">top_cal_month_10.png</string>
+    <string name="top_label_calendar_11">top_cal_month_11.png</string>
+    <string name="top_label_calendar_12">top_cal_month_12.png</string>
+    <string name="top_label_category_list">Category List</string>
+    <string name="top_label_my_parts">My Components</string>
+    <string name="top_label_estimate_history">Quote History</string>
+    <string name="top_label_order_history">Order History</string>
+    <string name="top_label_guide">Usage Guide</string>
+
+    <!-- メニューボタン -->
+    <string name="menu_label_debug">Debug</string>
+    <string name="menu_label_top">TOP</string>
+    <string name="menu_label_login">Log In</string>
+    <string name="menu_label_logout">Log Out</string>
+    <string name="menu_label_category_list">Category List</string>
+    <string name="menu_label_cart">Cart</string>
+    <string name="menu_label_my_parts">My Components</string>
+    <string name="menu_label_estimate_history">Quote History</string>
+    <string name="menu_label_order_history">Order History</string>
+    <string name="menu_label_working_hour">Business Hours</string>
+    <string name="menu_label_guide">Usage Guide</string>
+    <string name="menu_label_agreements">Terms of Service</string>
+    <string name="menu_label_personal_info">Personal Information/Customer Information</string>
+    <string name="menu_label_register">Member Registration</string>
+    <string name="menu_label_contact">Inquiry</string>
+    <string name="menu_label_device_information">Check Device Information</string>
+    <string name="menu_label_language_setting">Language Setting</string>
+
+    <!-- メッセージ　-->
+    <string name="message_timeout_error">Device out of service range or network connection could not be established.\n Please check network status.</string>
+    <string name="message_network_error">Device out of service range or network connection could not be established.\n Please check network status.</string>
+    <string name="message_session_error">A timeout has occurred or the same account has been used to log in on another device. Please log in again.\n Log in?</string>
+    <string name="message_session_scheme_error">Session has been disabled.</string>
+    <string name="message_logout">Log out?</string>
+    <string name="message_logout_success">Logged out successfully.</string>
+    <string name="message_update_require">A newer version exists.\n Please update.</string>
+    <string name="message_update_exist">A newer version exists.\n Would you like to update now?</string>
+    <string name="message_request_copy">Device information has been copied</string>
+    <string name="message_apllication_finish">Exit the application?</string>
+    <string name="message_write_file_error">An unexpected error has occurred. \nPlease check the amount of space available.\n</string>
+    <string name="message_progress_transmitting">Communicating...</string>
+    <string name="message_unknown_error">An unexpected error has occurred. \nPlease reset your device and try again.\n If there is no improvement, please contact the MISUMI Support Center (0120&#8211;343&#8211;256).</string>
+    <string name="message_input_qty">Enter Quantity</string>
+
+
+    <!-- ダイアログ用ボタン -->
+    <string name="dialog_button_yes">Yes</string>
+    <string name="dialog_button_kettei">Confirm</string>
+    <string name="dialog_button_no">No</string>
+    <string name="dialog_button_retry">Try Again</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_button_close">Close</string>
+    <string name="dialog_button_add">Add</string>
+    <string name="dialog_button_delete">Delete</string>
+    <string name="dialog_button_go_cart">View Cart</string>
+    <string name="dialog_button_go_my_part">My Components</string>
+
+
+
+    <string name="message_and_over">\?</string>
+
+    <string name="money_format">%1$,3.0f</string>
+
+    <string name="label_currency_jpy">Yen</string>
+    <string name="label_currency_rmb">Yuan</string>
+    <string name="label_currency_usd">$</string>
+    <string name="label_currency_none"/>
+
+    <string name="format_currency_jpy">%sYen</string>
+    <string name="format_currency_rmb">%s Yuan</string>
+    <string name="format_currency_usd">＄%s</string>
+    <string name="format_currency_none">%s</string>
+
+
+    <!--前表記式-->
+    <string name="label_currency_jpy_pre">￥</string>
+    <string name="label_currency_rmb_pre">￥</string>
+    <string name="label_currency_usd_pre">＄</string>
+
+    <string name="format_currency_jpy_wtax">%s Yen (Tax included)</string>
+    <string name="format_currency_rmb_wtax">%s Yuan (Tax included)</string>
+    <string name="format_currency_usd_wtax">$%s (Tax included)</string>
+
+
+    <!-- SPv1_09 My部品表 -->
+    <string name="my_parts_title">My Components</string>
+    <string name="my_parts_folder_label">Folder List</string>
+    <string name="my_parts_add_card">Add to Cart</string>
+    <string name="my_parts_count_str">Items</string>
+    <string name="my_parts_item_count_1">Product</string>
+    <string name="my_parts_item_count_2">Items</string>
+    <string name="my_parts_item_colon">:</string>
+    <string name="my_parts_quantity_main">Quantity:</string>
+    <string name="my_parts_parts_number">Part Number:</string>
+    <string name="my_parts_product_name">Name:</string>
+    <string name="my_parts_unit_price">Unit Price:</string>
+    <string name="my_parts_quantity">No. of pc(s).:</string>
+    <string name="my_parts_quantity_unit">pc(s).</string>
+    <string name="my_parts_module_label">View structural components list</string>
+    <string name="my_parts_pack_quantity">(Including %s pcs.)</string>
+    <string name="my_parts_dialog_added_cart">One product item has been added to Shopping Cart.</string>
+    <string name="my_parts_dialog_added_cart_title">Add to Cart</string>
+    <string name="my_parts_dialog_added_my_parts">Added to Main Folder in My Components.</string>
+    <string name="my_parts_dialog_moved_my_parts">Moved to My Components (Main Folder).</string>
+
+
+    <!-- SPv1_11 見積履歴一覧 -->
+    <string name="quote_hist_title">Quote History</string>
+    <string name="quote_hist_count_str1"></string>
+    <string name="quote_hist_count_str2">Quote History for Item Exists</string>
+    <string name="quote_hist_slip_no">Quote Number</string>
+    <string name="quote_hist_date">Quote Date</string>
+    <string name="quote_hist_expire">Quote Expiration Date</string>
+    <string name="quote_hist_item_count">No. of Items</string>
+    <string name="quote_hist_count_unit">Items</string>
+    <string name="quote_hist_misumi_check_str">Among these, %s items are being checked by MISUMI</string>
+    <string name="quote_hist_total_price">Total Amount</string>
+    <string name="quote_hist_total_price_unit">(Tax Not Included)</string>
+    <string name="quote_hist_total_price_tax">Total Amount</string>
+    <string name="quote_hist_total_price_tax_unit">(Tax Included)</string>
+    <string name="quote_hist_empty_list_item">No quote history exists that can be displayed using the app.</string>
+
+    <string name="order_quote_hist_detail_tip">*The above amount is free of shipping.</string>
+
+    <!--SPv1_12 見積履歴詳細-->
+    <string name="quote_hist_detail_slip_no">Quote Number</string>
+    <string name="quote_hist_detail_date">Quote Date</string>
+    <string name="quote_hist_detail_expire">Quote Expiration Date</string>
+    <string name="quote_hist_detail_user_name">Staff Name</string>
+    <string name="quote_hist_detail_item_count">No. of Items</string>
+    <string name="quote_hist_detail_count_unit">Items</string>
+    <string name="quote_hist_detail_misumi_check_str">Among these, %s items are being checked by MISUMI</string>
+    <string name="quote_hist_detail_total_price">Total Amount (Tax Not Included)</string>
+    <string name="quote_hist_detail_total_price_tax">Total Amount (Tax Included)</string>
+    <string name="quote_hist_detail_total_price_checking">Note: The above amount does not include the amounts for products being checked by MISUMI.</string>
+    <string name="quote_hist_detail_add_my">Add to My Components</string>
+    <string name="quote_hist_detail_add_card">Add to Cart</string>
+    <string name="quote_hist_detail_price_checking">This product is being checked by MISUMI</string>
+    <string name="quote_hist_detail_unit_price_main">Unit Price:</string>
+    <string name="quote_hist_detail_unit_price_unit_main">(Tax Not Included)</string>
+    <string name="quote_hist_detail_unit_price_unit_main_CHN">(Tax Not Included)</string>
+    <string name="quote_hist_detail_quantity_main">Quantity:</string>
+    <string name="quote_hist_detail_shipdate_main">Working Days:</string>
+    <string name="quote_hist_detail_emarg_main">Express Delivery Service:</string>
+    <string name="quote_hist_detail_status_main">Status:</string>
+    <string name="quote_hist_detail_subtotal_main">Subtotal:</string>
+    <string name="quote_hist_detail_subtotal_unit_main">(Tax Not Included)</string>
+    <string name="quote_hist_detail_subtotal_unit_main_CHN">(Tax Not Included)</string>
+    <string name="quote_hist_detail_subtotal_unit_main_tax">(Tax Included)</string>
+    <string name="quote_hist_detail_pack_quantity">(Including %s pcs.)</string>
+    <string name="common_sale_format">Sale on until %s</string>
+    <string name="quote_hist_detail_dialog_added_cart">One product item has been added to Shopping Cart.</string>
+    <string name="quote_hist_detail_dialog_added_my_parts">Added to Main Folder in My Components.</string>
+
+    <string name="label_stoke_t0">Express T</string>
+    <string name="label_stoke_a0">Express A</string>
+    <string name="label_stoke_b0">Express B</string>
+    <string name="label_stoke_c0">Express C</string>
+    <string name="label_stoke_0z">Express Z</string>
+    <string name="label_stoke_0l">Express L</string>
+    <string name="label_stoke_0a">Express A (Early Order Discount)</string>
+    <string name="label_stoke_v0">Express V</string>
+    <string name="label_stoke_etc">Do Not Use</string>
+    <string name="label_stoke_etc2">&#8211;</string>
+
+    <!-- SPv1_13 注文履歴一覧 -->
+    <string name="order_hist_title">Order History</string>
+    <string name="order_hist_count_str1"></string>
+    <string name="order_hist_count_str2">Order History for Item Exists</string>
+    <string name="order_hist_status">Status</string>
+    <string name="order_hist_slip_no">Order No.</string>
+    <string name="order_hist_date">Order Date/Time</string>
+    <string name="order_hist_item_count">No. of Items</string>
+    <string name="order_hist_count_unit">Items</string>
+    <string name="order_hist_misumi_check_str">Among these, %s items are being checked by MISUMI</string>
+    <string name="order_hist_total_price">Total Amount</string>
+    <string name="order_hist_total_price_tax">Total Amount</string>
+    <string name="order_hist_empty_list_item">No order history exists that can be displayed using the app.</string>
+
+    <!--注文履歴詳細-->
+    <string name="order_detail_cod_charge">ー</string>
+
+    <string name="order_detail_add_my_parts">Add to My Components</string>
+    <string name="order_detail_slip_no">Order No.</string>
+    <string name="order_detail_date">Order Date/Time</string>
+    <string name="order_detail_expire">Quote Expiration Date</string>
+    <string name="order_detail_user_name">Staff Name/</string>
+    <string name="order_detail_user_method">Order Method</string>
+    <string name="order_detail_deliverycompanyname">Shipping Company Name</string>
+    <string name="order_detail_item_count">No. of Items</string>
+    <string name="order_detail_count_unit">Items</string>
+    <string name="order_detail_misumi_check_str">Among these, %s items are being checked by MISUMI</string>
+    <string name="order_detail_total_price_checking">Note: The above amount does not include the amounts for products being checked by MISUMI.</string>
+    <string name="order_detail_deadline_info1"></string>
+    <string name="order_detail_deadline_info2"></string>
+    <string name="order_detail_deadline_info3"></string>
+    <string name="order_detail_deadline_info4"></string>
+    <string name="order_detail_add_my">Add to My Components</string>
+    <string name="order_detail_add_card">Add to Cart</string>
+    <string name="order_detail_price_checking">This product is being checked by MISUMI</string>
+    <string name="order_detail_unit_price_main">Unit Price:</string>
+    <string name="order_detail_unit_price_unit_main">(Tax Not Included)</string>
+    <string name="order_detail_unit_price_unit_main_CHN">(Tax Not Included)</string>
+    <string name="order_detail_subtotal_unit_main_tax">(Tax Included)</string>
+    <string name="order_detail_quantity_main">Quantity:</string>
+    <string name="order_detail_shipdate_main">Shipping Time:</string>
+    <string name="order_detail_emarg_main">Express Delivery Service:</string>
+    <string name="order_detail_status_main">Status:</string>
+    <string name="order_detail_status_invoice">Delivery Status:</string>
+    <string name="order_detail_subtotal_main">Subtotal:</string>
+    <string name="order_detail_pack_quantity">(Including %s pcs.)</string>
+
+    <string name="order_detail_misumi_No">MISUMI Reception No.:</string>
+
+    <string name="order_detail_type_other">Other</string>
+    <string name="order_detail_type_default">&#8211;</string>
+    <string name="order_detail_type_srash">/</string>
+    <string name="order_detail_cancel_info">Check here for information regarding order changes, cancelations, and returns.</string>
+    <string name="order_detail_cancel_info_link">Here</string>
+
+    <!--注文完了-->
+    <string name="order_complete_title">Your order has been placed.\n An order confirmation mail will now be sent to your registered address.</string>
+    <string name="order_complete_confirm_info_title">Regarding products being checked by MISUMI</string>
+    <string name="order_complete_confirm_info_memo1">Although your order has been placed, it contains some products for which the shipping time and prices, etc., must be confirmed by MISUMI.\n MISUMI will confirm the products as quickly as possible and be in contact.</string>
+    <string name="order_complete_confirm_info_memo2">After MISUMI has quickly confirmed the contents, contact will be made via e-mail or via a message displayed on the computer.\n If a message is displayed, please check its contents before taking action.</string>
+    <string name="order_complete_confirm_info_memo3">Some of the products are being confirmed by MISUMI.</string>
+    <string name="order_complete_cancel_info_title">Regarding order changes, cancelations, and returns</string>
+    <string name="order_complete_cancel_info_memo">Click [Here] for information regarding product changes, cancelations, and returns.</string>
+    <string name="order_complete_cancel_info_memo_link">[Here]</string>
+    <string name="order_complete_info_title">Order Information</string>
+    <string name="order_complete_info_image_message">Example of a message from MISUMI (full site)</string>
+    <string name="order_complete_button_return_cart">Return to Cart</string>
+    <string name="order_complete_button_return_quote">Return to Quote</string>
+
+    <string name="order_complete_slip_no">Order No.</string>
+    <string name="order_complete_item_count">No. of Items</string>
+    <string name="order_complete_count_unit">Items</string>
+    <string name="order_complete_misumi_check_str">(Among these, %s items are products being checked by MISUMI)</string>
+    <string name="order_complete_total_price">Total Amount (Tax Not Included)</string>
+    <string name="order_complete_total_price_unit_yen">Yen</string>
+    <string name="order_complete_total_price_unit_gen">Yuan</string>
+    <string name="order_complete_total_price_unit_dollar">＄</string>
+    <string name="order_complete_total_price_tax">Total Amount (Tax Included)</string>
+    <string name="order_complete_price_checking">Note: The above amount does not include the amounts for products being checked by MISUMI.</string>
+    <string name="order_complete_date">Order Date/Time</string>
+
+
+    <!--注文確認 直送先の選択-->
+    <string name="order_confirm_directship_select_title">Selecting a Direct Delivery Address</string>
+    <string name="order_confirm_directship_select_info">Please select the desired direct delivery address from the following.</string>
+    <string name="order_confirm_directship_select_label">List of Registered Direct Delivery Addresses</string>
+    <string name="order_confirm_directship_select">Select</string>
+    <string name="confirm_directship_selected">Currently Selected</string>
+
+
+    <!--注文確認 ストークの選択-->
+    <string name="order_confirm_express_type_select_title">Select Express Service</string>
+    <string name="order_confirm_express_type_select_info">After confirming the shipping time, please select the desired Express Service type from the following.</string>
+    <string name="quote_confirm_express_type_select_info">Select the desired shipping time.</string>
+    <string name="order_confirm_express_type_label">Express shipping services that can be used</string>
+    <string name="order_confirm_express_type_select">Select</string>
+    <string name="confirm_express_type_express">Express Service Type:</string>
+    <string name="confirm_express_type_days">Shipping Time:</string>
+    <string name="confirm_express_type_days_quote">Working Days:</string>
+    <string name="confirm_express_type_dead">Deadline:</string>
+    <string name="confirm_express_type_charge">Additional Cost:</string>
+    <string name="confirm_express_type_charge_unit">Yen</string>
+    <string name="confirm_express_type_charge_unit_dollar">$</string>
+    <string name="confirm_express_type_selected">Currently Selected</string>
+    <string name="confirm_express_type_disable">Cannot be Selected</string>
+    <string name="confirm_express_type_limit">If the quantity is %s or more, Express Service cannot be used.</string>
+    <string name="confirm_express_type_caution_label">For Your Information</string>
+    <string name="confirm_express_type_caution">Depending upon the quantity, Express Service may not be available.</string>
+
+    <!-- SPv1_16 見積り完了 -->
+    <string name="quote_comp_title">Your quote has been completed.</string>
+    <string name="quote_comp_checking_str1">Although the quote is complete, it contains some products for which the shipping time and prices, etc., must be checked by MISUMI.\n MISUMI will confirm the products as quickly as possible and be in contact.</string>
+    <string name="quote_comp_info">Quote Information</string>
+    <string name="quote_comp_close">Return to Cart</string>
+    <string name="quote_comp_slip_no">Quote Number</string>
+    <string name="quote_comp_date">Quote Date</string>
+    <string name="quote_comp_item_count">No. of Items</string>
+    <string name="quote_comp_count_unit">Items</string>
+    <string name="quote_comp_misumi_check_str">(Among these, %s items are products being checked by MISUMI)</string>
+    <string name="quote_comp_total_price">Total Amount (Tax Not Included)</string>
+    <string name="quote_comp_total_price_tax">Total Amount (Tax Included)</string>
+    <string name="quote_comp_price_checking">Note: The above amount does not include the amounts for products being checked by MISUMI.</string>
+
+    <string name="common_footer_look_pc">Due to a large number of search results, no more can be displayed.\n Please review the conditions.</string>
+    <string name="common_footer_error_progress">An error occurred while loading.\n Please tap to obtain again.</string>
+
+    <!--SPv1_07 シリーズ検索結果一覧-->
+    <string name="search_series_total">Items</string>
+    <string name="search_series_count_str">No. of Products:</string>
+    <string name="search_series_recommend">Recommended</string>
+    <string name="search_series_grade">Economy</string>
+
+    <string name="search_series_empty_list_item">Product not found.</string>
+    <string name="search_category_empty_list_item">Product not found.</string>
+
+    <!--キーワード検索結果-->
+    <string name="search_keyword_total">Items</string>
+    <string name="search_keyword_count_str">No. of Search Results:</string>
+    <string name="search_keyword_category_count">Category (%s items)</string>
+    <string name="search_keyword_empty_list_item">Product not found.</string>
+
+    <!-- SPv1_08 カート -->
+    <string name="cart_select_all">Select All</string>
+    <string name="cart_go_estimate">Proceed to Quote</string>
+    <string name="cart_go_order">Proceed to Order</string>
+    <string name="cart_update">Check Price/Ship Date</string>
+    <string name="cart_caution_title">For Your Information</string>
+    <string name="cart_caution_str">· Depending upon revised product prices or availability, the prices and shipping times may differ from those shown at the time the item was added to your Cart. For the latest prices and shipping times, please tap the "Check Price" button.\n· The customer is responsible for sales tax when using this service.</string>
+    <string name="cart_delete_cart">Delete from Cart</string>
+    <string name="cart_add_my">Move to My Components</string>
+    <string name="cart_empty_str">There are no products saved to your Cart.</string>
+    <string name="cart_unit_price">Unit Price:</string>
+    <string name="cart_quantity">Quantity:</string>
+    <string name="cart_pack_quantity">(Including %s pcs.)</string>
+    <string name="cart_register">Date Cart Last Updated:</string>
+    <string name="cart_ship_date">Shipping Time:</string>
+    <string name="cart_item_campaign_1">The campaign discount has now ended.</string>
+    <string name="cart_item_campaign_2">Please click to check the latest unit price.</string>
+    <string name="cart_app_campaign_1">The unit price for %s products has changed.</string>
+    <string name="cart_app_campaign_2">Please check the product.</string>
+    <string name="cart_selected_item">Product Selected:</string>
+    <string name="cart_selected_item_unit">Items</string>
+    <string name="cart_total_price">Total Amount:</string>
+    <string name="cart_total_price_unit">Yen (Tax Not Included)</string>
+    <string name="cart_total_price_wtax">Total Amount:</string>
+    <string name="cart_total_price_unit_wtax">Yuan (Tax Included)</string>
+    <string name="cart_total_price_unit_dollar">＄</string>
+    <string name="cart_total_price_unit_wtax_dollar">(Tax Included)</string>
+    <string name="cart_subtotal_main">Subtotal (Tax Not Included):</string>
+    <string name="cart_subtotal_unit_main">Yen</string>
+    <string name="cart_subtotal_main_wtax">Subtotal (Tax Included):</string>
+    <string name="cart_subtotal_unit_main_wtax">Yen</string>
+
+    <string name="cart_dialog_delete_cart">Delete from Cart</string>
+    <string name="cart_dialog_delete_cart_msg">Delete this product from your Cart?</string>
+    <string name="cart_dialog_add_my">Move to My Components</string>
+
+    <!-- SPv1_17 注文内容確認 -->
+    <string name="order_check_emarg_main">Express Delivery Service:</string>
+    <string name="confirm_total_price">Total Amount (Tax Not Included)</string>
+    <string name="confirm_total_price_wtax">Total Amount (Tax Included)</string>
+    <string name="confirm_item_count">No. of Items</string>
+    <string name="confirm_item_count_unit">Items</string>
+    <string name="confirm_delivery">Postage</string>
+    <string name="confirm_delivery_discount">Postage Discount</string>
+    <string name="confirm_subtotal_main">Subtotal:</string>
+    <string name="confirm_subtotal_unit_main">(Tax Not Included)</string>
+    <string name="confirm_subtotal_main_wtax">Subtotal:</string>
+    <string name="confirm_subtotal_unit_main_wtax">(Tax Included)</string>
+    <string name="confirm_cod_charge">Payment-on-Delivery Charge (Tax Included)</string>
+    <string name="confirm_unit_price">Unit Price:</string>
+    <string name="confirm_quantity">Quantity:</string>
+    <string name="confirm_pack_quantity">(Including %s pcs.)</string>
+    <string name="confirm_ship_date">Shipping Time:</string>
+    <string name="confirm_ship_date_quote">Working Days:</string>
+    <string name="confirm_emarg_main">Express Delivery Service:</string>
+
+    <string name="order_confirm_not_yet">Your order has not been completed. Tap the [Finalize Order] button after confirming the details.</string>
+    <string name="order_confirm_order_title">Order Details</string>
+
+    <string name="confirm_shipping_option_title">Shipping Options</string>
+    <string name="confirm_shipping_option_1">Group products together for shipping (Products will be grouped together for shipping to take place on the latest shipping date)</string>
+    <string name="confirm_shipping_option_2">Ship products as soon as they are ready (Products will be shipped individually in the order of their shipping date)</string>
+
+    <string name="confirm_require_title">Note: An asterisk denotes required items</string>
+
+    <string name="confirm_user_info_title">Customer Information</string>
+    <string name="confirm_user_company_label">Company Name</string>
+    <string name="confirm_user_code_label">Customer Code</string>
+    <string name="confirm_user_dept_label">Department/Section Name</string>
+    <string name="confirm_user_name_label">Staff Name</string>
+
+    <string name="confirm_destination_info_title">Delivery Destination Information</string>
+    <string name="confirm_destination_address_label">Delivery Address</string>
+    <string name="confirm_destination_dept_label">Delivery Recipient Department/Section Name</string>
+    <string name="confirm_destination_name_label">Delivery Recipient</string>
+
+    <string name="confirm_creditcard_title">Credit Card Information</string>
+    <string name="confirm_creditcard_no_label">Card Number</string>
+    <string name="confirm_creditcard_change_label">Change</string>
+    <string name="confirm_creditcard_expiration_label">Expiration Date</string>
+    <string name="confirm_creditcard_payment_num_label">Number of Payments</string>
+    <string name="confirm_creditcard_annotation_label"> Note:</string>
+    <string name="confirm_creditcard_payment_1">One-Time Payment</string>
+    <string name="confirm_creditcard_payment_3">Three Payments</string>
+    <string name="confirm_creditcard_payment_5">Five Payments</string>
+    <string name="confirm_creditcard_payment_6">Six Payments</string>
+    <string name="confirm_creditcard_payment_10">Ten Payments</string>
+    <string name="confirm_creditcard_payment_12">Twelve Payments</string>
+    <string name="confirm_creditcard_no_card">No credit card information has been registered.</string>
+    <string name="confirm_creditcard_add_card">Register Credit Card Information</string>
+    <string name="confirm_destination_address_title">Address</string>
+
+    <string name="confirm_order_status">As business hours have ended, the order will be finalized on the following business day. Business hours are from 8 A.M. to 8 P.M.\n If the order is placed as-is, be sure to check the shipping date and price using the Order History.</string>
+    <string name="confirm_annotation_title">For Your Information</string>
+    <string name="confirm_annotation_text">· A cash-on-delivery fee will be incurred separately in the case of cash-on-delivery orders.\n· When placing an order by pressing the "Finalize Order" button, customers are agreeing to "Regarding Order Changes and Cancelations" and "Terms of MISUMI-VONA Services."</string>
+    <string name="confirm_annotation_text_quote">· A cash-on-delivery fee will be incurred separately in the case of cash-on-delivery orders.\n· Please be aware that the quote amount and order amount may differ depending on changes to sales tax rates, conditions, etc. Please check before proceeding.</string>
+    <string name="confirm_annotation_text_credit">· When placing an order by pressing the "Finalize Order" button, customers are agreeing to "Regarding Order Changes and Cancelations" and "Terms of MISUMI-VONA Services".</string>
+    <string name="confirm_annotation_text_quote_credit">· Please be aware that the quote amount and order amount may differ depending on changes to sales tax rates, conditions, etc. Please check before proceeding.</string>
+
+    <string name="edit_hint_zenkaku_1">Enter Using Full-Width Characters</string>
+    <string name="edit_hint_zenkaku_2">Enter Using Full-Width Characters</string>
+    <string name="edit_hint_zenkaku_3">Enter Using Full-Width Characters</string>
+    <string name="edit_hint_zenkaku_4">Enter Using Full-Width Characters</string>
+
+    <string name="confirm_back_from_cart">Return to Cart</string>
+    <string name="confirm_back_from_quote">Return to Quote History</string>
+    <string name="confirm_oreder">Finalize Order</string>
+
+    <string name="progress_order_from_cart">Cart</string>
+    <string name="progress_order_from_quote">Quote History</string>
+    <string name="progress_order_2">Check Order</string>
+    <string name="progress_order_3">Complete Order</string>
+
+    <string name="confirm_change_destination">Change Direct Delivery Address</string>
+    <string name="confirm_change_stoke">Change</string>
+    <string name="confirm_change_stoke2">Change</string>
+    <string name="confirm_change_today_ship">Need your items sooner?</string>
+    <string name="confirm_change_today_ship_2">Change</string>
+    <string name="require_mark">*</string>
+
+    <string name="cart_change_quantity">Check Price/Ship Date</string>
+
+    <string name="edit_creditcard_label_new_title">Register Credit Card Information</string>
+    <string name="edit_creditcard_label_edit_title">Register Credit Card Information</string>
+    <string name="edit_creditcard_label_new_info">Please be aware that the currently registered credit card information will be deleted.</string>
+    <string name="edit_creditcard_label_edit_info">Please be aware that the currently registered credit card information will be deleted.</string>
+    <string name="edit_creditcard_label_kind">Credit Card Type</string>
+    <string name="edit_creditcard_label_must">*Required Item</string>
+    <string name="edit_creditcard_label_name">Name on Card</string>
+    <string name="edit_creditcard_label_name_note">Credit cards must show the same name as the person making the order.</string>
+    <string name="edit_creditcard_label_name_info">Enter Using Half-Width Characters</string>
+    <string name="edit_creditcard_label_name_hint">John Doe</string>
+    <string name="edit_creditcard_label_no">Card Number</string>
+    <string name="edit_creditcard_label_no_info">Enter Using Half-Width Characters With No Hyphens</string>
+    <string name="edit_creditcard_label_no_hint">1234567890123456</string>
+    <string name="edit_creditcard_label_expiration">Expiration Date</string>
+    <string name="edit_creditcard_label_month">Monday</string>
+    <string name="edit_creditcard_label_year">Year</string>
+    <string name="edit_creditcard_label_securitycode">Security Code</string>
+    <string name="edit_creditcard_label_securitycode_hint">123</string>
+    <string name="edit_creditcard_label_securitycode_info">Please enter the last 3 or 4 digits of the code shown on the back (or front) of your credit card.</string>
+    <string name="edit_creditcard_label_pay_num">Number of Payments</string>
+    <string name="edit_creditcard_label_payment_1">One-Time Payment</string>
+    <string name="edit_creditcard_label_payment_3">Three Payments</string>
+    <string name="edit_creditcard_label_payment_5">Five Payments</string>
+    <string name="edit_creditcard_label_payment_6">Six Payments</string>
+    <string name="edit_creditcard_label_payment_10">Ten Payments</string>
+    <string name="edit_creditcard_label_payment_12">Twelve Payments</string>
+    <string name="edit_creditcard_label_button_new_save">Register</string>
+    <string name="edit_creditcard_label_button_edit_save">Register</string>
+    <string name="edit_creditcard_label_button_new_cancel">Return without Registering</string>
+    <string name="edit_creditcard_label_button_edit_cancel">Return without Registering</string>
+    <string name="edit_creditcard_label_annotation"> Note:</string>
+
+    <!--在庫切れ確認ダイアログ-->
+    <string name="out_of_stock_dialog_titlle">This product is out-of-stock and the shipping date must be adjusted.</string>
+    <string name="out_of_stock_dialog_info">Because an ordered product is out-of-stock, the shipping date for those products will need to be adjusted.\n After checking the following shipping dates, please press the "Send" button.</string>
+    <string name="out_of_stock_dialog_list_title">Products to be Checked:</string>
+    <string name="out_of_stock_dialog_list_title_unit">Items</string>
+    <string name="out_of_stock_dialog_list_day_to_ship">Shortest Shipping Time:</string>
+    <string name="out_of_stock_dialog_yes">Send</string>
+    <string name="out_of_stock_dialog_no">No</string>
+
+    <!--アンフィット-->
+    <string name="unfit_type_dialog_titlle">Shipping times and prices, etc., for this product must be confirmed by MISUMI.</string>
+    <string name="unfit_type_dialog_titlle_quote">Shipping times and prices, etc., for this product must be confirmed by MISUMI.</string>
+    <string name="unfit_type_dialog_info_2">Some of the products in the quote require confirmation by MISUMI. \nAfter the quote has been finalized, these products will be confirmed as quickly as possible and you will be contacted by MISUMI.\n If acceptable, please press the "Request Confirmation by MISUMI and Finalize Quote" button.</string>
+    <string name="unfit_type_dialog_info_3">Some of the products in the order require confirmation by MISUMI. \nAfter the order, these products will be confirmed as quickly as possible and you will be contacted by MISUMI.\n If acceptable, please press the "Request Confirmation by MISUMI and Finalize Order" button.</string>
+    <string name="unfit_type_dialog_info_4"></string>
+    <string name="unfit_type_dialog_list_title">Products to be Checked:</string>
+    <string name="unfit_type_dialog_list_title_unit">Items</string>
+    <string name="unfit_type_dialog_list_unit_price_main">Unit Price:</string>
+    <string name="unfit_type_dialog_list_quantity_main">Quantity:</string>
+    <string name="unfit_type_dialog_list_shipdate_main">Shipping Time:</string>
+    <string name="unfit_type_dialog_list_shipdate_main_quote">Working Days:</string>
+    <string name="unfit_type_dialog_list_emarg_main">Express Delivery Service:</string>
+    <string name="unfit_type_dialog_list_main">Subtotal:</string>
+    <string name="unfit_type_dialog_list_unit_main">(Tax Not Included)</string>
+    <string name="unfit_type_dialog_list_wtax">Subtotal:</string>
+    <string name="unfit_type_dialog_list_main_wtax">(Tax Included)</string>
+    <string name="unfit_type_dialog_yes_quote">Request Confirmation by MISUMI and Finalize Quote</string>
+    <string name="unfit_type_dialog_yes_order">Request Confirmation by MISUMI and Finalize Order</string>
+    <string name="unfit_type_dialog_no">Perform Product Settings Again</string>
+
+    <!--素通し不可、注文-->
+    <string name="orderable_type_dialog_titlle">There are contents in the\norder that I would like to confirm.</string>
+    <string name="orderable_type_dialog_info">Please select "Finalize Order For Products Except Those to be Confirmed by MISUMI" if you would like confirmation performed by MISUMI.\n Please select "Save All Details as a Quote" to save all details as a quote.</string>
+    <string name="orderable_type_dialog_info_3"></string>
+    <string name="orderable_type_dialog_list_title">Products to be Checked:</string>
+    <string name="orderable_type_dialog_list_title_unit">Items</string>
+    <string name="orderable_type_dialog_list_unit_price_main">Unit Price:</string>
+    <string name="orderable_type_dialog_list_quantity_main">Quantity:</string>
+    <string name="orderable_type_dialog_list_ship_main">Shipping Time:</string>
+    <string name="orderable_type_dialog_list_main">Subtotal:</string>
+    <string name="orderable_type_dialog_list_unit_main">(Tax Not Included)</string>
+    <string name="orderable_type_dialog_list_wtax">Subtotal:</string>
+    <string name="orderable_type_dialog_list_main_wtax">(Tax Included)</string>
+    <string name="orderable_type_dialog_yes">Order Products Except Those to be Confirmed</string>
+    <string name="orderable_type_dialog_no">Perform Product Settings Again</string>
+
+    <!--素通し不可、見積-->
+    <string name="orderable_type_dialog_titlle_quotation">There are products in the\nquote that I would like to confirm.</string>
+    <string name="orderable_type_dialog_info_quotation_type2">Press the "Continue with Quote" button.</string>
+    <string name="orderable_type_dialog_info_quotation_type3"></string>
+    <string name="orderable_type_dialog_info_quotation_3">Please select "Finalize Order For Products Except Those to be Confirmed by MISUMI" if you would like confirmation performed by MISUMI.\n Please select "Save All Details as a Quote" to save all details as a quote.</string>
+    <string name="orderable_type_dialog_info_quotation_4">Please inquire to MISUMI regarding the status of the item in question.</string>
+    <string name="orderable_type_dialog_list_day_main">Working Days:</string>
+    <string name="orderable_type_dialog_yes_quotation">Request a Quote for Products Except Those to be Confirmed</string>
+
+    <!--SOコンバート-->
+    <string name="so_dialog_titlle">The contents of the quote contain a product which was changed.</string>
+    <string name="so_dialog_info_1">· Because the deadline for finalization of the order for products other than those being confirmed by MISUMI has passed, the prices of products for which Express T was selected have changed.</string>
+    <string name="so_dialog_info_2">· Orders placed after 6 P.M. in which Express T was selected will be handled the following day.</string>
+    <string name="so_dialog_info_3">· The discount will be applied when orders for products in which Express A was selected are made by 3 P.M.</string>
+    <string name="so_dialog_info_4">· Because the deadline (3 P.M.) for the Express A early order discount has passed, the prices of products for which Express A was selected have changed.</string>
+    <string name="so_dialog_info_5">· Orders placed after 6 P.M. in which Express A was selected will be handled the following day.</string>
+    <string name="so_dialog_info_6"/>
+    <string name="so_dialog_yes">Continue With Order</string>
+    <string name="so_dialog_no">Perform Product Settings Again</string>
+
+    <!-- SPv1_15 見積内容確認 -->
+    <string name="quote_shipping_option_title">Next-day Shipping (Express A) Information</string>
+    <string name="quote_shipping_option_title2">Products are included whose price will change depending on the time in which the order is placed.</string>
+    <string name="quote_shipping_option_1">Create a quote using prices in which the Express A early order discount (orders placed before 3 P.M.) are applied.</string>
+    <string name="quote_shipping_option_2">Create a quote using standard Express A prices.</string>
+    <string name="quote_confirm_not_yet">Quote has not been completed.\n Tap the [Finalize Quote] button after confirming the details.</string>
+    <string name="quote_confirm_stoke_a">"Next-day Shipping (Express A)" has been selected.\n Please check the unit price and shipping times for the product(s) in question.</string>
+    <string name="confirm_quote">Finalize Quote</string>
+    <string name="progress_quote_2">Confirm Quote</string>
+    <string name="progress_quote_3">Quote Complete</string>
+
+    <!-- SPv1_10 商品詳細 -->
+    <string name="item_detail_part_pc">We\'re sorry, please check this product using a computer</string>
+    <string name="item_detail_part_select">Please Select Using "Select Part Number"</string>
+    <string name="item_detail_no_part">This product is currently unavailable.</string>
+    <string name="item_detail_icon_recommend">Recommended</string>
+    <string name="item_detail_icon_grade">Economy</string>
+    <string name="item_detail_icon_cvalue">C&#8211;Value</string>
+    <string name="item_detail_icon_slide">Volume Discount</string>
+    <string name="item_detail_change_quantity">Check Price/Ship Date</string>
+    <string name="item_detail_add_my">Add to My Components</string>
+    <string name="item_detail_add_card">Add to Cart</string>
+    <string name="item_detail_copy">Copy Part Number and Quantity</string>
+    <string name="item_detail_copy_message">Part number and quantity copied.</string>
+    <string name="item_detail_part_number">Select Part Number</string>
+    <string name="item_detail_order_quantity">Order Qty.</string>
+    <string name="item_detail_total_price">Total</string>
+    <string name="item_detail_total_price_wtax">"Tax Included"</string>
+    <string name="item_detail_ship">Shipping Time</string>
+    <string name="item_detail_unit_price">Unit Price</string>
+    <string name="item_detail_pack_quantity">(Including %s pcs.)</string>
+    <string name="item_detail_slide_label">Volume Discount Rate Table</string>
+    <string name="item_detail_slide_head1">Quantity</string>
+    <string name="item_detail_slide_head2">Standard Unit Price</string>
+    <string name="item_detail_slide_head3">Shipping Time</string>
+    <string name="item_detail_express_label">Express Delivery Service</string>
+    <string name="item_detail_express_head1">Express Delivery Service</string>
+    <string name="item_detail_express_head2">Charge</string>
+    <string name="item_detail_express_deadline">Order Deadline</string>
+    <string name="item_detail_stokez_label">Early Order Discount 30 / Early Order Discount 25</string>
+    <string name="item_detail_stokez_head1">Early Order Discount 30 / Early Order Discount 25</string>
+    <string name="item_detail_stokez_head2">Discount</string>
+    <string name="item_detail_stokez_text">Express Z</string>
+    <string name="item_detail_selected_label">Configured Specifications</string>
+    <string name="item_detail_selected_warn">The specifications and dimensions of some parts may not be fully covered. For exact details, refer to manufacturer catalogs.</string>
+    <string name="item_detail_spec_label">Basic Information</string>
+    <string name="item_detail_dialog_added_cart">%s product items are contained Shopping Cart now.</string>
+    <string name="item_detail_dialog_added_my_parts">Added to Main Folder in My Components.</string>
+    <string name="item_detail_dialog_added_cart_title">One product item has been added to Shopping Cart.</string>
+    <string name="item_detail_dialog_added_my_parts_title">Add to My Components</string>
+
+    <!--出荷日-->
+    <string name="daytoship_label_title">Standard Shipping Time:</string>
+    <string name="daytoship_label_colon_day"></string>
+    <string name="daytoship_label_day">Same Day Shipping</string>
+    <string name="daytoship_label_estimate">Quote for Each</string>
+    <string name="daytoship_label_tilde">Sunday</string>
+    <string name="daytoship_label_days">days</string>
+
+    <!--価格-->
+    <string name="unitprice_label_title">Price:</string>
+    <string name="unitprice_label_title_usd">Price:$</string>
+    <string name="unitprice_label_period">Yen</string>
+    <string name="unitprice_label_period_tilde">Yen~</string>
+    <string name="unitprice_label_period_gen">Yuan</string>
+    <string name="unitprice_label_period_gen_tilde">Yuan～</string>
+    <string name="unitprice_label_period_usd_tilde">～</string>
+    <string name="unitprice_label_title_sale">Special Price</string>
+
+    <!--ステータス(見積履歴詳細など)-->
+    <string name="common_status_unknown">&#8211;</string>
+    <string name="common_status_1">Processing</string>
+    <string name="common_status_2">Completed Quotes</string>
+    <string name="common_status_3">Completed Orders</string>
+    <string name="common_status_4">Shipped</string>
+    <string name="common_status_f">Failed</string>
+    <string name="common_status_z">Items Being Checked by MISUMI</string>
+    <string name="common_status_c">Passed Expiration Date</string>
+    <string name="common_status_e">Error</string>
+    <string name="common_status_w">Waiting for Payment</string>
+    <string name="common_status_x">Canceled</string>
+    <string name="common_status_a1">Waiting for Approval</string>
+    <string name="common_status_a2">Not Approved</string>
+    <string name="common_status_a3">Returns</string>
+
+    <!--デバイス情報-->
+    <string name="deviceinfo_label_title">Device Information</string>
+    <string name="deviceinfo_label_os_ver">OS Version</string>
+    <string name="deviceinfo_label_device_name">Model Name</string>
+    <string name="deviceinfo_label_app_ver">App Version</string>
+    <string name="deviceinfo_label_copy">Copy Device Information</string>
+    <string name="deviceinfo_format_copy">OS Version: %1$s\nModel Name: %2$s\nApp Version: %3$s</string>
+
+    <!-- AutoComplete -->
+    <string name="autocomplete_keyword_title">Suggested Keywords</string>
+    <string name="autocomplete_category_title">Part Number Shortcut (Product Details)</string>
+
+    <!--ダミー用データ-->
+    <string name="dummy_string">dummy</string>
+    <string name="dummy_num">99</string>
+
+    <!--debug-->
+    <string name="debug_label_api_addr">API</string>
+    <string name="debug_label_nas_addr">NAS</string>
+    <string name="debug_label_session_id">SID</string>
+    <string name="debug_label_update_button">UP</string>
+    <string name="debug_label_category_clear">Delete Saved Category</string>
+    <string name="debug_message_category_deleted">Saved Category Deleted</string>
+    <string name="debug_label_login_id">Setup Saved User ID</string>
+    <string name="debug_message_set_login">User ID changed to that for development server use</string>
+    <string name="debug_message_set_login2">Saved User ID Changed</string>
+    <string name="debug_label_radio_group">Change Region Code</string>
+    <string name="debug_label_radio_japanese">Japan Mode</string>
+    <string name="debug_label_radio_chinese">China Mode</string>
+    <string name="debug_label_currency_group">Change Currency Code</string>
+    <string name="debug_label_radio_yen">Yen</string>
+    <string name="debug_label_radio_gen">Yuan</string>
+    <string name="debug_label_radio_doller">Dollar</string>
+
+    <!--型番選択-->
+    <string name="part_number_select_more">See More</string>
+    <string name="part_number_select_minus">Close</string>
+    <string name="part_number_select_select">Select This Part Number</string>
+    <string name="part_number_select_reset_value">Reset Values</string>
+    <string name="part_number_select_label">Please Select</string>
+    <string name="part_number_not_select_label">Do Not Select</string>
+    <string name="part_number_select_tab_condition">Configure</string>
+    <string name="part_number_select_tab_partlist_front">Possible Part Numbers (Currently</string>
+    <string name="part_number_select_tab_partlist_period">Items</string>
+    <string name="part_number_select_dialog_msg_confirm">Selected Part Number:</string>
+    <string name="part_number_select_dialog_msg">Is this part number correct?</string>
+    <string name="part_number_select_dialog_confirm">Select</string>
+    <string name="part_number_select_dialog_cancel">Cancel</string>
+    <string name="part_number_select_notfount">There are no part numbers that match the selected conditions.</string>
+
+    <string name="today_express_deadline">18:00</string>
+    <string name="today_ship_dialog_label_1">Specify Shipping Time</string>
+    <string name="today_ship_dialog_label_2">Same day shipping is available for this product.\n Please select "Same Day Shipping" if desired. </string>
+    <string name="today_ship_dialog_select_1">Same Day Shipping</string>
+    <string name="today_ship_dialog_select_2">Do Not Use</string>
+
+    <string name="so430_dialog_titlle">The contents being confirmed contain a product that has been changed.\n Select "Perform Product Settings Again" to reselect the products.</string>
+    <string name="so430_dialog_button">Close</string>
+
+    <!--ADD NT-SLJ 16/11/11 Live800 FR-->
+    <string name="consulting_problems_tile">Online service</string>
+    <string name="consulting_problems_header">Please select the type of question you want to ask</string>
+    <string name="tell_description">Inquiry / order / after - sales consultation</string>
+    <string name="work_time">Reception time：8:00-18:00　Monday to Saturday, excluding South Korean legal holidays</string>
+    <string name="open_permission">MISUMI e-Catalog no phone call out permission, set up immediately?</string>
+    <string name="open_error_tip">Please set the screen settings!</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel_call">Cancel dialing</string>
+    <string name="call">Dial</string>
+    <string name="set">Set up now</string>
+    <string name="cancel_set">Cancel the settings</string>
+    <string name="click_live800">Click on Live800</string>
+    <!--ADD NT-SLJ 16/11/11 Live800 TO-->
+
+    <!--ADD NT-SLJ 16/11/11 AliPay Payment FR-->
+    <string name="order_list_go_to_pay">Payment</string>
+    <string name="order_list_payment_type">Payment method</string>
+    <string name="order_list_payment_deadline">Payment term</string>
+    <string name="order_list_online_pay">Online Payment</string>
+    <string name="order_pay_choose_type">Select Payment Method</string>
+    <string name="order_pay_go_to_pay">Pay now</string>
+    <string name="show_order_status">The current status of the order is% s and can not be paid</string>
+    <string name="order_out_time">The order is not within the payment period and can not be paid</string>
+    <string name="order_payment_username">Receiver</string>
+    <string name="order_payment_address">Address</string>
+    <string name="order_payment_tel">Phone</string>
+    <string name="order_payment_money">Amounts payable</string>
+    <string name="login_info_fail">Login information is invalid, now return to the main page, please re-login.</string>
+    <string name="login_info_unknown_fail">An unexpected error occurred and now returns to the main page.</string>
+    <string name="login_info_time_out_fail">The request timed out and now returns to the main page.</string>
+    <string name="login_info_statue_error">Order payment status is abnormal, please contact Misi Mi customer</string>
+    <string name="pay_dialog_8000">In progress, please check the payment status of the order in the order list</string>
+    <string name="pay_dialog_6001">The user canceled the payment</string>
+    <string name="pay_dialog_5000">Duplicate payment request</string>
+    <string name="pay_dialog_error">Order payment failed</string>
+    <!--ADD NT-SLJ 16/11/11 AliPay Payment TO-->
+
+    <!--ADD NT-LWL 17/05/18 QR scan FR-->
+    <string name="QR_tip">Please Item QR code into the box</string>
+    <string name="share_title">Share to</string>
+    <string name="share_to_qq">QQ</string>
+    <string name="share_to_weixin">Wechat</string>
+    <string name="share_to_email">Mail</string>
+    <string name="share_click_text">To purchase</string>
+    <string name="QR_error">Can not recognize two-dimensional code</string>
+    <string name="email_detail_title">From &lt;%1$s&gt; to share in the flash shopping mall</string>
+    <string name="email_itemdetail_text_format">
+        Hello there!\n I found the following items in the flash shopping mall, please confirm.\n
+         ---------------------------------------------\n
+         [Model]:%1$s\n
+         [Trade name]:%2$s\n
+         [Brand]:%3$s\n
+         [Quantity]:%4$s\n
+         [Total]:%5$s\n
+         [Delivery Date]:%6$s\n
+         [Price]:%7$s\n
+         [Go to webpage view]:%8$s\n
+         ----------------------------------------------\n
+         Note:\n
+         ※ Prices and shipping date information may change, please confirm again before purchase.\n
+         http://th.misumi-ec.com/\n
+    </string>
+    <string name="email_cart_item_text_format">
+         [Model]:%1$s\n
+         [Trade name]:%2$s\n
+         [Brand]:%3$s\n
+         [Quantity]:%4$s\n
+         [Delivery Date]:%5$s\n
+         [Total]:%6$s (tax included:%7$s)\n
+         Go to web page view:%8$s\n</string>"
+    <string name="share_cart_title_text_format">This cart is shared by &lt;%1$s&gt;</string>
+    <string name="email_cart_title_text_format">Share from the shopping cart of &lt;%1$s&gt;.</string>
+    <string name="email_cart_header">Hello there!\n this is my shopping list in the flash shopping mall, please confirm.\n</string>
+    <string name="email_cart_line1">----------------------------------------------\n</string>
+    <string name="email_cart_line2">============================\n</string>
+    <string name="email_cart_line3">\n=============================\n</string>
+    <string name="email_cart_end">Note:\n
+         ※ Prices and shipping date information may change, please confirm again before purchase.\n
+         http://th.misumi-ec.com/
+    </string>
+    <string name="email_qt_item_text_format">
+         [Model]:%1$s\n
+         [Trade name]:%2$s\n
+         [Brand]:%3$s\n
+         [Quantity]:%4$s\n
+         [Delivery Date]:%5$s\n
+         [Subtotal]:%6$s (tax included:%7$s)\n
+    </string>
+    <string name="email_qt_title_text_format">Of quotes from &lt;%1$s&gt;\n</string>
+    <string name="email_qt_header">
+         ============================\n
+         [Quote number]:%1$s\n
+         [Quote Date]:%2$s\n
+         [Quote valid]:%3$s\n
+         [Subscriber]:%4$s\n
+         [Number of goods]:%5$s\n
+         [Total amount (excluding tax)]:%6$s yuan\n
+         [Total amount (tax included)]:%7$s yuan\n
+         ----------------------------------------------\n
+         ↓ ↓ quotation included goods ↓ ↓\n
+         ----------------------------------------------\n
+    </string>
+    <string name="email_qt_line1">----------------------------------------------\n</string>
+    <string name="email_qt_line2">\n=============================\n</string>
+    <string name="email_qt_end">
+         Note:\n
+         ※ Prices and shipping date information may change, please confirm again before purchase.\n
+         http://th.misumi-ec.com/
+    </string>
+    <string name="text_empty">-</string>
+    <string name="share_fail">Share failed!</string>
+    <string name="share_number_tip">The number has changed, please confirm the price and then share again. (If you will continue to use the number before the change)</string>
+    <string name="share_continue">carry on</string>
+    <string name="total_price_format">%1$s (tax included:%2$s)</string>
+    <string name="unconfirmed">(unconfirmed)</string>
+    <string name="misumi_name">Misi users</string>
+    <string name="share_cart_content">This is my shopping list in the flash shopping mall, please confirm</string>
+    <string name="share_detail_title">This item is shared by &lt;%1$s&gt;</string>
+    <string name="address_attention_tip">The following delivery addresses are beyond the scope of service.</string>
+    <string name="start_app_text">Experience immediately</string>
+    <string name="branc_search_title">Filter by brand (%1$s)</string>
+    <string name="brand_selected_tip">* You can filter up to 6 brands</string>
+    <string name="clear">Emptied</string>
+    <string name="selected_brands">Selected brand (%1$s selected):</string>
+
+    <!-- SPv1_40_言語設定_画面定義書_v07 -->
+    <string name="language_setting_screen_label">Language Setting</string>
+    <string name="select_your_language">Please select your language</string>
+    <string name="thailand_language">Thailand</string>
+    <string name="england_language">English</string>
+    <string name="done">Submit</string>
+</resources>

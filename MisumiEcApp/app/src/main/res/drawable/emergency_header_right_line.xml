@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="-1dp">
+		<shape>
+			<stroke android:width="@dimen/dp_1" android:color="@color/color_emergency_line" />
+			<solid android:color="@color/color_emergency_header_background" />
+		</shape>
+    </item>
+</layer-list>

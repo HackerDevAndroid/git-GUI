@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+	android:background="#FFF"
+	>
+
+
+	<!-- お知らせ表示エリア -->
+    <LinearLayout
+        android:id="@+id/layoutError"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="@dimen/padding_10dp"
+		android:paddingLeft="@dimen/padding_15dp"
+		android:paddingRight="@dimen/padding_15dp"
+		>
+
+
+		<!-- お知らせを追加する -->
+		<LinearLayout
+			android:id="@+id/layoutSubItemList"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+			/>
+
+	</LinearLayout>
+
+
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/padding_15dp"
+		android:paddingRight="@dimen/padding_15dp"
+	    android:orientation="horizontal"
+		>
+
+
+
+		    <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+				android:paddingTop="@dimen/padding_15dp"
+				android:paddingBottom="@dimen/padding_15dp"
+		        android:orientation="vertical"
+				>
+
+			<!-- タップ感知エリア -->
+		    <LinearLayout
+			    android:id="@+id/layoutTapItem"
+				android:background="@color/color_background_FF"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+				>
+
+				<!-- 上半分エリア -->
+				<LinearLayout
+				    android:orientation="horizontal"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+					>
+
+
+					<!-- 商品画像エリア -->
+		            <FrameLayout
+				        android:layout_width="@dimen/image_quote_detail_92dp"
+				        android:layout_height="@dimen/image_quote_detail_92dp"
+		                android:background="#FFF">
+
+
+						<!-- 画像本体 -->
+					    <ImageView
+					        android:id="@+id/imageView"
+					        android:layout_width="match_parent"
+					        android:layout_height="match_parent"
+					        android:adjustViewBounds="true"
+			                android:layout_gravity="center"
+					        android:scaleType="fitCenter" />
+
+						<!-- 読み込み中 -->
+				        <ProgressBar
+				            android:id="@+id/progressView"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+			                android:layout_gravity="center"
+							/>
+
+						<!-- 枠線 -->
+					    <View
+					        android:layout_width="match_parent"
+					        android:layout_height="match_parent"
+			                android:layout_gravity="center"
+							android:background="@drawable/text_frame_image_view_1dp_9c"/>
+
+		            </FrameLayout>
+
+
+
+					<LinearLayout
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+			            android:paddingLeft="@dimen/padding_15dp"
+					    android:orientation="vertical"
+						>
+
+		                <TextView
+		                    android:id="@+id/textPartNumber"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:textSize="@dimen/font_parts_15dp"
+		                    android:textColor="@color/color_text_black_00"
+							/>
+
+
+		                <TextView
+		                    android:id="@+id/textProductName"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:textSize="@dimen/font_name_15dp"
+		                    android:textStyle="bold"
+		                    android:textColor="@color/color_text_black_00" />
+
+
+		                <TextView
+		                    android:id="@+id/textMakerName"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:textSize="@dimen/font_brand_12dp"
+						    android:textColor="@color/color_text_black_00"
+							/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+
+				<!-- 下半分エリア -->
+				<View
+				    android:layout_width="0dp"
+				    android:layout_height="@dimen/padding_15dp"
+					/>
+
+					<!-- SALEアイコン -->
+	                <TextView
+	                    android:id="@+id/textSale"
+	                    android:layout_width="@dimen/dp_96"
+	                    android:layout_height="@dimen/dp_20"
+	                    android:layout_marginBottom="@dimen/dp_5"
+	                    android:textSize="@dimen/dp_10"
+			            android:padding="0dp"
+	                    android:background="@drawable/text_frame_red_fill"
+	                    android:gravity="center"
+	                    android:textColor="@color/color_text_white" />
+
+					<include layout="@layout/include_item_text_sub_confirm"
+						android:id="@+id/unitPrice" />
+
+					<include layout="@layout/include_item_text_sub_confirm"
+						android:id="@+id/quantity" />
+
+					<!--お急ぎですか？-->
+					<!--<include layout="@layout/include_item_text_sub_confirm"-->
+						<!--android:id="@+id/daysToShip" />-->
+					<include layout="@layout/include_item_text_sub_confirm_today_ship"
+						android:id="@+id/daysToShip" />
+
+					<!-- ストーク変更エリア -->
+					<include layout="@layout/include_item_text_sub_confirm_wb"
+						android:id="@+id/expressType" />
+
+			</LinearLayout>
+
+
+			</LinearLayout>
+
+
+			<!-- 画面遷移＞マーク 無し -->
+
+
+	</LinearLayout>
+
+	<!-- 区切り点線 -->
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:background="@drawable/list_item_divider_dash_9c"
+		/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/padding_15dp"
+		android:paddingRight="@dimen/padding_15dp"
+	    android:paddingBottom="@dimen/padding_15dp"
+		>
+
+				<LinearLayout
+				    android:orientation="horizontal"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+					android:paddingTop="@dimen/padding_15dp"
+	                android:gravity="right">
+
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/confirm_subtotal_main"
+				        android:textSize="@dimen/font_title_15dp"
+					    android:textColor="@color/color_text_black_00"
+						/>
+
+		            <TextView
+		                android:id="@+id/textSubtotal"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=""
+				        android:textSize="@dimen/font_title_15dp"
+					    android:textColor="@color/color_text_black_00"
+						/>
+
+				</LinearLayout>
+
+
+				<LinearLayout
+	                android:id="@+id/layoutSubtotalWithTax"
+				    android:orientation="horizontal"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+	                android:gravity="right"
+					>
+
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/confirm_subtotal_main_wtax"
+				        android:textSize="@dimen/font_title_15dp"
+					    android:textColor="@color/color_text_black_00"
+						/>
+
+		            <TextView
+		                android:id="@+id/textSubtotalWithTax"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=""
+				        android:textSize="@dimen/font_title_15dp"
+					    android:textColor="@color/color_text_black_00"
+						/>
+
+				</LinearLayout>
+
+
+	</LinearLayout>
+
+
+</LinearLayout>

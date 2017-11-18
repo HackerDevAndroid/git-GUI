@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF">
+
+
+        <!-- 選択状態用 -->
+        <View
+            android:id="@+id/viewSelectBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/list_item_bg_selector" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- お知らせ表示エリア -->
+            <LinearLayout
+                android:id="@+id/layoutError"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="@dimen/padding_15dp"
+                android:paddingLeft="@dimen/padding_15dp"
+                android:paddingRight="@dimen/padding_15dp">
+
+                <!-- ここは不要
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/padding_10dp"
+                                    android:paddingRight="@dimen/padding_10dp"
+                                    android:paddingTop="@dimen/padding_10dp"
+                                    android:paddingBottom="@dimen/padding_10dp"
+                                    android:layout_marginTop="@dimen/margin_15dp"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@color/color_background_annotation"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/imageIcon"
+                                        android:layout_width="@dimen/image_error_icon_14dp"
+                                        android:layout_height="@dimen/image_error_icon_14dp"
+                                        android:background="@drawable/icon_b_attention"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/dp_2"
+
+                                        android:text="@string/cart_price_checking"
+                                        android:textSize="@dimen/font_error_10dp"
+                                        android:textColor="@color/color_text_red_DD"
+                                        android:textStyle="bold"
+                                        android:id="@+id/textView1" />
+
+                                </LinearLayout>
+                -->
+
+                <!-- お知らせを追加する -->
+                <LinearLayout
+                    android:id="@+id/layoutSubItemList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_8dp"
+                    android:paddingBottom="@dimen/padding_8dp"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:orientation="vertical"
+                    android:background="@color/color_background_caution" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding_15dp"
+                android:orientation="horizontal">
+
+                <jp.co.misumi.misumiecapp.widget.CheckBoxEx
+                    android:id="@+id/checkBox"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="@dimen/padding_15dp"
+                    android:layout_gravity="center" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/padding_15dp"
+                    android:paddingBottom="@dimen/padding_15dp"
+                    android:orientation="vertical">
+
+                    <!-- タップ感知エリア -->
+                    <LinearLayout
+                        android:id="@+id/layoutTapItem"
+                        android:background="@drawable/list_item_bg_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- 上半分エリア -->
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <!-- 商品画像エリア -->
+                            <FrameLayout
+                                android:layout_width="@dimen/image_quote_detail_92dp"
+                                android:layout_height="@dimen/image_quote_detail_92dp"
+                                android:background="#FFF">
+
+
+                                <!-- 画像本体 -->
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitCenter" />
+
+                                <!-- 読み込み中 -->
+                                <ProgressBar
+                                    android:id="@+id/progressView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center" />
+
+                                <!-- 枠線 -->
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/text_frame_image_view_1dp_9c" />
+
+                            </FrameLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/padding_15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textPartNumber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font_parts_15dp"
+                                    android:textColor="@color/color_text_default" />
+
+
+                                <TextView
+                                    android:id="@+id/textProductName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font_name_15dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/color_text_default" />
+
+
+                                <TextView
+                                    android:id="@+id/textMakerName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font_brand_12dp"
+                                    android:textColor="@color/color_text_default"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:scrollHorizontally="true" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <!-- 下半分エリア -->
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/padding_15dp" />
+
+
+                        <TextView
+                            android:id="@+id/textSale"
+                            android:layout_width="@dimen/dp_96"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:textSize="@dimen/dp_10"
+                            android:padding="0dp"
+                            android:background="@drawable/text_frame_red_fill"
+                            android:gravity="center"
+                            android:textColor="@color/color_text_white" />
+
+
+                        <include
+                            layout="@layout/include_item_text_sub_cart"
+                            android:id="@+id/unitPrice" />
+
+                        <include
+                            layout="@layout/include_item_text_sub_cart"
+                            android:id="@+id/daysToShip" />
+
+                        <include
+                            layout="@layout/include_item_text_sub_cart"
+                            android:id="@+id/quantity" />
+
+                    </LinearLayout>
+
+
+                    <!-- 数量変更エリア -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <!--
+                                            <EditText
+                                                android:layout_width="0dp"
+                                                android:layout_height="@dimen/button_height_35dp"
+                                                android:layout_weight="1"
+                                                android:gravity="center_vertical|right"
+                                                android:text=""
+                                                android:hint="@string/text_quantity_hint"
+                                                android:textSize="@dimen/font_body_12dp"
+                                                android:maxLines="1"
+                                                android:maxLength="5"
+                                                android:inputType="number"
+                                                android:background="@drawable/input_text_quantity"
+                                                android:id="@+id/editQuantity" />
+                        -->
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/button_height_35dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:longClickable="false"
+
+                            android:text=""
+                            android:hint="@string/text_quantity_hint"
+                            android:textSize="@dimen/font_body_12dp"
+                            android:textColor="#000"
+                            android:maxLines="1"
+                            android:maxLength="5"
+
+                            android:background="@drawable/input_text_quantity"
+                            android:id="@+id/editQuantityT" />
+
+                        <ImageButton
+                            android:id="@+id/buttonMinus"
+                            android:layout_width="@dimen/button_incdec_width_35dp"
+                            android:layout_height="@dimen/button_height_35dp"
+                            android:layout_marginLeft="@dimen/margin_15dp"
+                            android:padding="8dp"
+                            android:src="@null"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/countbtn2_selector" />
+
+                        <ImageButton
+                            android:id="@+id/buttonPlus"
+                            android:layout_width="@dimen/button_incdec_width_35dp"
+                            android:layout_height="@dimen/button_height_35dp"
+                            android:layout_marginLeft="@dimen/margin_15dp"
+                            android:padding="8dp"
+                            android:src="@null"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/countbtn1_selector" />
+
+                        <!-- 価格を確認ボタン -->
+                        <LinearLayout
+                            android:id="@+id/imageReload"
+                            android:layout_width="@dimen/button_price_width_92dp"
+                            android:layout_height="@dimen/button_height_35dp"
+                            android:layout_marginLeft="@dimen/margin_15dp"
+
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:background="@drawable/valuebtn_selector">
+
+                            <ImageView
+                                android:layout_width="12.5dp"
+                                android:layout_height="13.5dp"
+                                android:layout_marginRight="@dimen/dp_4"
+                                android:background="@drawable/btn_icon_change" />
+
+                            <jp.co.misumi.misumiecapp.widget.AutoFitTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cart_change_quantity"
+                                android:textColor="@color/color_myparts_addcart_btn_font"
+                                android:textSize="@dimen/dp_11"
+                                android:textStyle="bold"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <include
+                        layout="@layout/include_item_text_sub_cart"
+                        android:id="@+id/perPack" />
+
+                </LinearLayout>
+
+
+                <!-- 画面遷移＞マーク 無し -->
+
+
+            </LinearLayout>
+
+            <!-- 区切り点線 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:background="@drawable/list_item_divider_dash_9c" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_15dp"
+                android:paddingRight="@dimen/padding_15dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_15dp"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cart_subtotal_main"
+                        android:textSize="@dimen/font_title_15dp"
+                        android:textColor="@color/color_text_default" />
+
+                    <TextView
+                        android:id="@+id/textSubtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/font_title_15dp"
+                        android:textColor="@color/color_text_black_00" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutSubtotalWithTax"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cart_subtotal_main_wtax"
+                        android:textSize="@dimen/font_title_15dp"
+                        android:textColor="@color/color_text_default" />
+
+                    <TextView
+                        android:id="@+id/textSubtotalWithTax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/font_title_15dp"
+                        android:textColor="@color/color_text_black_00" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cart_register"
+                        android:textSize="@dimen/font_body_11dp"
+                        android:textColor="@color/color_text_default" />
+
+                    <TextView
+                        android:id="@+id/textUpdateDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_body_11dp"
+                        android:textColor="@color/color_text_black_00" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!-- 誤タップ避けエリア -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:paddingRight="@dimen/padding_15dp"
+                android:paddingTop="@dimen/padding_15dp"
+                android:paddingBottom="@dimen/padding_15dp"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+
+                <LinearLayout
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height_38dp"
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/btn_bg_gray_selector">
+
+                    <ImageView
+                        android:layout_width="11dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/btn_icon_delete" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/cart_delete_cart"
+                        android:textColor="@color/button_orange_text_selector"
+                        android:textSize="@dimen/font_button_type2_12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/buttonAddMy"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height_38dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/btn_bg_white_selector">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="12dp"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/btn_icon_myparts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/cart_add_my"
+                        android:textColor="@color/button_white_text_selector"
+                        android:textSize="@dimen/font_button_type2_12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- モジュラ無し -->
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

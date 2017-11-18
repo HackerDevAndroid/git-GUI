@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/list_item_frame_1dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/padding_15dp"
+        android:paddingBottom="@dimen/padding_15dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:text=""
+        android:textSize="@dimen/font_body_12dp"
+        android:textColor="@color/color_text_default"
+        android:background="@color/color_background_D2"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical" />
+
+    <View
+        android:id="@+id/viewDiv"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_list_frame_gray_A7" />
+
+    <LinearLayout
+        android:id="@+id/viewRight"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_15dp"
+            android:paddingRight="@dimen/padding_15dp"
+            android:paddingTop="@dimen/padding_15dp"
+            android:paddingBottom="@dimen/padding_15dp"
+            android:text=""
+            android:textSize="@dimen/font_body_12dp"
+            android:textColor="@color/color_text_default"
+            android:id="@+id/textView2"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/font_body_12dp"
+            android:textColor="@color/color_text_default"
+            android:id="@+id/textView3" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_caution_title"
+        android:textSize="@dimen/font_error_10dp"
+        android:textColor="@color/color_text_red_DD"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_caution_str"
+        android:textSize="@dimen/font_error_10dp"
+        android:textColor="@color/color_text_red_DD"
+        android:background="@drawable/text_frame_red_1dp" />
+
+</LinearLayout>

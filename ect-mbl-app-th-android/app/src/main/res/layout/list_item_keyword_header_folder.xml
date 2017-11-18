@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:id="@+id/layoutSlideTrigger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/list_item_folder_selector">
+
+        <TextView
+            android:id="@+id/textSlideSwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/padding_15dp"
+            android:paddingBottom="@dimen/padding_15dp"
+            android:paddingRight="@dimen/padding_15dp"
+            android:text=""
+            android:textSize="@dimen/dp_12"
+            android:textColor="@color/color_text_default" />
+
+        <ImageView
+            android:id="@+id/imageSlideSwitch"
+            android:layout_width="@dimen/dp_17"
+            android:layout_height="@dimen/dp_11"
+            android:src="@drawable/slide_switch_image_selector"
+            android:adjustViewBounds="false" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_list_divider_9C" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/layoutSlideContents" />
+
+</LinearLayout>

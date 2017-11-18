@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="vn.edu.topica.hocimagebutton.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="121dp" >
+
+        <RadioButton
+            android:id="@+id/radHouse"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="House" />
+
+        <RadioButton
+            android:id="@+id/radHuman"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:text="Human" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgPic"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@android:color/background_light" />
+
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+</LinearLayout>

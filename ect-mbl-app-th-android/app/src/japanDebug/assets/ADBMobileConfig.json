@@ -1,0 +1,23 @@
+{
+  "lastModified": "2015-08-13T05:07:02.507Z",
+  "acquisition": {
+    "server": "c00.adobe.com",
+    "appid": "fb29feefe9f9d0237a62aa1e29000556ab0fab060bb106d5e4b09f97cd5c0b6b"
+  },
+  "analytics": {
+    "rsids": "msmappmisumijp",
+    "server": "misumi.sc.omtrdc.net",
+    "ssl": false,
+    "offlineEnabled": true,
+    "charset": "UTF-8",
+    "lifecycleTimeout": 300,
+    "privacyDefault": "optedin",
+    "batchLimit": 0,
+    "timezone": "JST",
+    "timezoneOffset": 540,
+    "referrerTimeout": 5
+  },
+  "remotes": {
+    "messages": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-55c979236535372db0000b91.json"
+  }
+}

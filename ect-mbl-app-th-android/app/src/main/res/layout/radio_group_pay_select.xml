@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!--ADD NT-LWL 16/11/14 Alipay payment FR-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_10dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingTop="@dimen/padding_15dp"
+        android:text="@string/order_list_payment_type"
+        android:textColor="@color/color_text_black_00"
+        android:textSize="@dimen/font_title_15dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_list_divider_9C" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="vertical"></RadioGroup>
+</LinearLayout><!--ADD NT-LWL 16/11/14 Alipay payment TO-->

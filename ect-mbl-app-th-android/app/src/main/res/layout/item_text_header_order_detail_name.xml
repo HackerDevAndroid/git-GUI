@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/list_item_frame_1dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/color_background_D2">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/padding_15dp"
+
+            android:textSize="@dimen/font_body_12dp"
+            android:textColor="@color/color_text_default"
+            android:background="@color/color_background_D2"
+            android:minLines="2"
+            android:maxLines="2"
+            android:paddingBottom="@dimen/padding_15dp"
+            android:paddingTop="@dimen/padding_15dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_list_frame_gray_A7" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_15dp"
+            android:paddingRight="@dimen/padding_15dp"
+            android:textSize="@dimen/font_body_12dp"
+            android:textColor="@color/color_text_default"
+            android:id="@+id/textView2"
+            android:gravity="center_vertical"
+            android:minLines="2"
+            android:paddingTop="@dimen/padding_15dp"
+            android:paddingBottom="@dimen/padding_15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

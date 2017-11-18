@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false">
+        <color android:color="@color/color_background_disabled" />
+    </item>
+
+
+    <item android:state_pressed="true">
+        <color android:color="@color/color_background_folder_pressed" />
+    </item>
+
+
+    <item android:state_selected="true">
+        <color android:color="@color/color_background_selected" />
+    </item>
+
+
+    <!-- 通常状態 -->
+    <item>
+        <color android:color="#0000" />
+    </item>
+
+</selector>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_changeorder_button_background">#ffffa74b</color>
+    <color name="color_changeorder_button_text">#ffffffff</color>
+
+
+    <color name="color_logout_button_background">#fff2f2f2</color>
+    <color name="color_logout_button_text">#ff3172ff</color>
+    <color name="color_screen_title_background">#ffdcdcdc</color>
+    <color name="color_screen_title_text">#000000</color>
+
+    <color name="color_transparency">#00ffffff</color>
+
+    <!-- common -->
+    <color name="color_fragment_background">#FFF2F2F2</color>
+    <color name="color_header_background">#FFF2F2F2</color>
+    <color name="color_text_default">#515151</color>
+    <color name="color_text_link">#007575</color>
+    <color name="color_list_selected">#7F000000</color>
+    <color name="color_text_white">#ffffffff</color>
+
+    <!-- splash -->
+    <color name="color_splash_background">#ffffffff</color>
+
+    <!-- top -->
+    <color name="color_top_button_confirm_text">#ffffffff</color>
+    <!--<color name="color_top_button_confirm_background">#ffff730a</color>-->
+    <color name="color_top_text">#000000</color>
+
+    <!-- login -->
+    <color name="color_login_title_text">#333333</color>
+    <color name="color_login_title_background">#eeeeee</color>
+    <color name="color_login_button_text">#ffffffff</color>
+    <color name="color_login_button_background">#ff0169c6</color>
+    <color name="color_login_label_err_background">#fff2f2</color>
+
+    <!-- parts detail -->
+    <color name="color_detail_index_text">#ffffff</color>
+    <color name="color_detail_index_text2">#ff575757</color>
+    <color name="color_detail_text">#000000</color>
+    <color name="color_detail_info">#ff575757</color>
+    <color name="color_detail_index_background1">#ff858585</color>
+    <color name="color_detail_index_background2">#ffffffff</color>
+    <color name="color_detail_index_background3">#fff2f2f2</color>
+    <color name="color_detail_total">#ffdd0000</color>
+    <color name="color_detail_sendday">#ffdd0000</color>
+    <color name="color_detail_backgroundcolor">#ffffff</color>
+    <color name="color_detail_line">#ff888888</color>
+    <color name="color_detail_logout">#ff0169c6</color>
+    <color name="color_detail_logoutselected">#ff749dcf</color>
+    <color name="color_detail_header">#ffdcdcdc</color>
+    <color name="color_detail_header_text">#ff000000</color>
+    <color name="color_detail_error_info">#ffdd0000</color>
+    <color name="color_detail_days_to_ship">#ff0000</color>
+    <color name="color_detail_days_to_ship_addstring">#ff000000</color>
+    <color name="color_detail_total_price_including_tax">#ff000000</color>
+    <color name="color_detail_product_name">#ff000000</color>
+    <color name="color_detail_quantity">#ff000000</color>
+    <color name="color_detail_unit_price">#ff000000</color>
+    <color name="color_detail_part_number">#ff000000</color>
+
+    <!--emergency-->
+    <color name="color_emergency_header_background">#ff888888</color>
+    <color name="color_emergency_header_text">#ffffff</color>
+    <color name="color_emergency_row_background">#ffffff</color>
+    <color name="color_emergency_row_text">#ff000000</color>
+    <color name="color_emergency_line">#ff575757</color>
+
+    <!--series-->
+    <color name="color_search_series_background">#ffffff</color>
+    <color name="color_search_series_icon_recommend">#dd0000</color>
+    <color name="color_search_series_price_font">#dd0000</color>
+
+
+    <!-- ViewPagerのインジケータ -->
+    <color name="pager_marker_current">#333333</color>
+    <color name="pager_marker_other">#BFBFBF</color>
+
+
+    <!-- 00黒 -> 51黒 -->
+    <color name="color_text_black_00">#515151</color>
+    <color name="color_text_black_33">#515151</color>
+    <color name="color_text_gray_88">#888888</color>
+    <color name="color_text_gray_A7">#A7A7A7</color>
+    <color name="color_text_red_DD">#DD0000</color>
+    <color name="color_text_white_FF">#FFFFFF</color>
+
+    <color name="color_background_CC">#CCCCCC</color>
+    <color name="color_background_D2">#D2D2D2</color>
+    <color name="color_background_D3">#D3D3D3</color>
+    <color name="color_background_EE">#EEEEEE</color>
+    <color name="color_background_F1">#F1F1F1</color>
+    <color name="color_background_FF">#FFFFFF</color>
+    <color name="color_background_caution">#FFF2F2</color>
+    <color name="color_background_annotation">#FFF2BF</color>
+    <color name="color_background_annotation_r">#FFF2F2</color>
+    <color name="color_background_error">#FFD9D9</color>
+    <color name="color_background_pressed">#80000000</color>
+    <color name="color_background_disabled">#A0000000</color>
+    <color name="color_background_selected">#FFF2F2</color>
+    <color name="color_background_folder_pressed">#EEEEEE</color>
+
+
+    <color name="color_error_frame_red_DD">#DD0000</color>
+    <color name="color_image_frame_gray_BD">#BDBDBD</color>
+    <color name="color_list_frame_gray_C4">#C6C4C4</color>
+    <color name="color_list_frame_gray_A7">#A7A7A7</color>
+
+    <color name="color_list_divider_33">#333333</color>
+    <color name="color_list_divider_89">#898989</color>
+    <color name="color_list_divider_9C">#9C9C9C</color>
+    <color name="color_list_divider_9F">#9FA0A0</color>
+    <color name="color_list_divider_BD">#BDBDBD</color>
+    <color name="color_list_divider_D2">#D2D2D2</color>
+
+
+    <!--トップ画面-->
+    <color name="color_top_search_background">#eeeeee</color>
+    <color name="color_top_info_background">#ffffff</color>
+    <color name="color_top_customer_background">#eeeeee</color>
+    <color name="color_top_status_background">#eeeeee</color>
+    <color name="color_top_menu_background_pressed_true">#f6f6f6</color>
+    <color name="color_top_menu_background_pressed_false">#ffffff</color>
+    <color name="color_top_label_loginout">#0169c6</color>
+    <color name="color_top_label_customer_name">#535353</color>
+    <color name="color_top_label_user_name">#333333</color>
+    <color name="color_top_label_customer_code">#535353</color>
+    <color name="color_top_label_status_title">#535353</color>
+    <color name="color_top_label_status_data">#333333</color>
+    <color name="color_top_label_information">#333333</color>
+    <color name="color_top_label_menu">#0169c6</color>
+    <color name="color_top_label_menu_2">#0169c7</color>
+
+    <!--メニュー画面-->
+    <color name="color_menu_label">#ffffff</color>
+    <color name="color_menu_background">#64313131</color>
+    <color name="color_menu_label_background">#00000000</color>
+    <color name="color_menu_button_pressed_true">#f2164b7b</color>
+    <color name="color_menu_button_pressed_false">#64313131</color>
+
+
+    <!--カテゴリ検索-->
+    <color name="color_category_label_name">#eeeeee</color>
+    <color name="color_category_label_color">#000000</color>
+    <color name="color_category_background">#ffffff</color>
+
+    <!--My部品表-->
+    <color name="color_myparts_font_black">#333333</color>
+    <color name="color_myparts_count_font_red">#dd0001</color>
+    <color name="color_myparts_count_title">#eeeeee</color>
+    <color name="color_myparts_count_background">#d2d2d2</color>
+    <color name="color_myparts_category_background">#ffffff</color>
+    <color name="color_myparts_addcart_btn_font">#ffffff</color>
+
+    <color name="color_suggest_category">#FF004BB1</color>
+
+    <color name="color_forget_password_text">#ea0000</color>
+    <color name="color_start_app">#0D70C8</color>
+</resources>

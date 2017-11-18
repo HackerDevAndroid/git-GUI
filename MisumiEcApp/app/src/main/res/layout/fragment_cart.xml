@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fragment_background"
+    android:orientation="vertical">
+
+    <!--件数が0のとき-->
+    <include layout="@layout/include_empty_list_item"
+        android:id="@+id/emptyList"/>
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingTop="@dimen/padding_10dp"
+        android:paddingBottom="@dimen/padding_10dp"
+		>
+
+        <jp.co.misumi.misumiecapp.widget.AutoFitTextView
+            android:id="@+id/textSelectCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="@dimen/dp_12"
+		    android:textColor="@color/color_text_default"
+	        android:maxLines="1"
+			android:ellipsize="none"
+			android:scrollHorizontally="true"
+			/>
+
+        <TextView
+            android:id="@+id/textTotalPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+	        android:gravity="right"
+            android:text=""
+            android:textSize="@dimen/dp_12"
+		    android:textColor="@color/color_text_default"
+	        android:maxLines="1"
+			/>
+
+    </LinearLayout>
+
+
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+		android:background="@color/color_list_divider_9C"
+		/>
+
+
+	<ListView
+		android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+		android:clipToPadding="false"
+
+        android:dividerHeight="1dp"
+		android:divider="@color/color_list_divider_9C"
+
+		android:headerDividersEnabled="false"
+		android:footerDividersEnabled="false"
+		/>
+
+
+</LinearLayout>
+

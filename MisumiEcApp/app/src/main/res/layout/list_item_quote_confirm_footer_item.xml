@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layoutEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+		>
+
+		<TextView
+	        android:id="@+id/textListCount"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="#F00"
+			android:textSize="40sp"
+			android:background="#8CC"
+			/>
+
+	</LinearLayout>
+
+
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+		android:background="@color/color_list_divider_9C"
+		/>
+
+    <LinearLayout
+		android:id="@+id/layoutShipping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+		>
+
+		<!-- ストークA情報 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/padding_15dp"
+	        android:paddingTop="@dimen/padding_15dp"
+	        android:paddingBottom="@dimen/padding_10dp"
+
+            android:text="@string/quote_shipping_option_title"
+            android:textSize="@dimen/font_title_15dp"
+            android:textColor="@color/color_text_black_00"
+            android:textStyle="bold"
+    		/>
+
+
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+
+	        android:layout_marginBottom="@dimen/dp_10"
+			android:layout_marginLeft="@dimen/dp_15"
+			android:layout_marginRight="@dimen/dp_15"
+	        android:padding="@dimen/padding_10dp"
+
+	        android:text="@string/quote_shipping_option_title2"
+	        android:textSize="@dimen/font_body_12dp"
+	        android:textColor="@color/color_text_black_00"
+			android:background="@color/color_background_caution"
+			/>
+
+
+		<View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+			android:background="@color/color_list_divider_9C"
+			/>
+
+	    <RadioGroup android:id="@+id/radioGroup1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+
+		    android:orientation="vertical"
+			android:background="#FFF"
+			>
+
+	        <RadioButton android:id="@+id/radio_ship_c"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/padding_15dp"
+			    android:paddingRight="@dimen/dp_15"
+		        android:paddingTop="@dimen/padding_15dp"
+		        android:paddingBottom="@dimen/padding_15dp"
+
+		        android:textSize="@dimen/dp_12"
+	            android:text="@string/quote_shipping_option_1" />
+
+			<View
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+				android:background="@color/color_list_divider_9C"
+				/>
+
+	        <RadioButton android:id="@+id/radio_ship_p"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/padding_15dp"
+			    android:paddingRight="@dimen/dp_15"
+		        android:paddingTop="@dimen/padding_15dp"
+		        android:paddingBottom="@dimen/padding_15dp"
+
+		        android:textSize="@dimen/dp_12"
+	            android:text="@string/quote_shipping_option_2" />
+	    </RadioGroup>
+
+		<View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+			android:background="@color/color_list_divider_9C"
+			/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/padding_15dp"
+		android:paddingRight="@dimen/padding_15dp"
+		>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:paddingTop="@dimen/dp_20"
+
+            android:text="@string/confirm_require_title"
+            android:textSize="@dimen/font_body_12dp"
+            android:textColor="@color/color_text_red_DD"
+    		/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:paddingTop="@dimen/padding_10dp"
+
+            android:text="@string/confirm_user_info_title"
+            android:textSize="@dimen/font_title_15dp"
+            android:textColor="@color/color_text_black_00"
+            android:textStyle="bold"
+    		/>
+
+
+		<!-- お知らせ表示エリア -->
+	    <LinearLayout
+	        android:id="@+id/layoutError"
+	        android:orientation="vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+
+	        android:paddingTop="@dimen/padding_5dp"
+			>
+
+			<!-- お知らせを追加する -->
+			<LinearLayout
+				android:id="@+id/layoutSubItemList"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+				/>
+
+		</LinearLayout>
+
+
+		<View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+			android:layout_marginTop="@dimen/dp_10"
+
+			android:background="@color/color_list_divider_9C"
+			/>
+
+		<include layout="@layout/include_item_text_14_19"
+			android:id="@+id/userComp"/>
+
+		<include layout="@layout/include_item_text_14_19"
+			android:id="@+id/userCode"/>
+
+		<include layout="@layout/include_item_edit"
+			android:id="@+id/userDept"/>
+
+		<include layout="@layout/include_item_edit"
+			android:id="@+id/userName"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

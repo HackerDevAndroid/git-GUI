@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Top"
+    android:background="@color/color_fragment_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=""
+        android:id="@+id/textViewLabel"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_text_default"
+        android:textSize="@dimen/dp_10" />
+
+    <jp.co.misumi.misumiecapp.widget.AutoFitTextView
+        android:id="@+id/autoFitTextPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	        android:maxLines="1"
+			android:ellipsize="none"
+			android:scrollHorizontally="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/color_search_series_price_font"
+        android:textSize="@dimen/dp_12"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/textViewTilde"
+        android:textColor="@color/color_text_default"
+        android:textSize="@dimen/dp_8" />
+
+</LinearLayout>

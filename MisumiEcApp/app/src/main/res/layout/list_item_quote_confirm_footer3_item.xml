@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingBottom="@dimen/padding_10dp"
+	android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/padding_15dp"
+		android:paddingRight="@dimen/padding_15dp"
+		android:id="@+id/infomationEstimate">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dp_20"
+
+            android:text="@string/confirm_annotation_title"
+	        android:textSize="@dimen/font_error_10dp"
+	        android:textColor="@color/color_text_red_DD"
+			android:textStyle="bold"
+    		/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:padding="@dimen/padding_10dp"
+
+            android:text="@string/confirm_annotation_text_quote"
+	        android:textSize="@dimen/font_error_10dp"
+	        android:textColor="@color/color_text_red_DD"
+			android:background="@drawable/text_frame_red_1dp"
+    		/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/padding_15dp"
+		android:paddingRight="@dimen/padding_15dp"
+		android:layout_marginTop="@dimen/dp_30"
+		>
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_45dp"
+			android:paddingRight="@dimen/dp_27"
+			android:paddingLeft="@dimen/padding_15dp"
+
+			android:text="@string/confirm_back_from_cart"
+            android:textSize="@dimen/font_button_type3_15dp"
+            android:textColor="@color/button_white_text_selector"
+			android:textStyle="bold"
+			android:drawableLeft="@drawable/btn_icon_rbtn_g"
+	        android:background="@drawable/btn_bg_white_selector"
+			/>
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_45dp"
+			android:paddingRight="@dimen/padding_15dp"
+			android:paddingLeft="@dimen/dp_27"
+			android:layout_marginTop="@dimen/dp_20"
+
+            android:text="@string/confirm_quote"
+            android:textSize="@dimen/font_button_type3_15dp"
+			android:textColor="@color/button_orange_text_selector"
+			android:textStyle="bold"
+			android:drawableRight="@drawable/btn_icon_lbtn_w"
+	        android:background="@drawable/btn_bg_orange_selector"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

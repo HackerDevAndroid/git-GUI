@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_20"
+
+            android:text="@string/confirm_destination_info_title"
+            android:textSize="@dimen/font_title_15dp"
+            android:textColor="@color/color_text_black_00"
+            android:textStyle="bold" />
+
+
+        <!-- お知らせ表示エリア -->
+        <LinearLayout
+            android:id="@+id/layoutError"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="@dimen/padding_5dp">
+
+            <!-- お知らせを追加する -->
+            <LinearLayout
+                android:id="@+id/layoutSubItemList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dp_10"
+
+            android:background="@color/color_list_divider_9C" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_frame_1dp"
+            android:weightSum="33">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding_15dp"
+                android:layout_weight="14"
+                android:gravity="center_vertical"
+
+                android:text="@string/confirm_destination_address_title"
+                android:textSize="@dimen/font_body_12dp"
+                android:textColor="@color/color_text_black_00"
+
+                android:background="@color/color_background_D2" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_list_divider_9C" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_15dp"
+                android:paddingBottom="@dimen/padding_15dp"
+                android:paddingLeft="@dimen/padding_10dp"
+                android:paddingRight="@dimen/padding_10dp"
+                android:layout_weight="19"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/address_attention"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp_12"
+                    android:textColor="@color/color_text_red_DD"
+                    android:drawableLeft="@drawable/icon_attention"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:text="@string/address_attention_tip" />
+
+                <TextView
+                    android:id="@+id/receiver2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_text_black_00"
+                    android:textSize="@dimen/dp_12" />
+
+                <TextView
+                    android:id="@+id/receiver3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_text_black_00"
+                    android:textSize="@dimen/dp_12" />
+
+                <TextView
+                    android:id="@+id/receiver4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_text_black_00"
+                    android:textSize="@dimen/dp_12" />
+
+                <Button
+                    android:id="@+id/textChangeDirectShip"
+                    android:layout_width="100dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_gravity="right"
+
+                    android:text="@string/confirm_change_destination"
+                    android:textSize="@dimen/font_button_type4_11dp"
+                    android:textColor="@color/button_white_text_selector"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_bg_white_selector" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 納入部課名 -->
+        <include
+            layout="@layout/include_item_edit"
+            android:id="@+id/deliDept" />
+
+        <!-- 納入ご担当 -->
+        <include
+            layout="@layout/include_item_edit"
+            android:id="@+id/deliName" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

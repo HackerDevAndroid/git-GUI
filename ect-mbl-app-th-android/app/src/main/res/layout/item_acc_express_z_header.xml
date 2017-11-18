@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_70"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:weightSum="33">
+
+        <jp.co.misumi.misumiecapp.widget.AutoFitTextView
+            android:id="@+id/textExpressServiceTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:text="@string/item_detail_stokez_head1"
+            android:textColor="@color/color_emergency_header_text"
+            android:textSize="@dimen/dp_12"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:background="@drawable/emergency_header_left_line_red" />
+
+        <jp.co.misumi.misumiecapp.widget.AutoFitTextView
+            android:id="@+id/textChargeTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:text="@string/item_detail_stokez_head2"
+            android:textColor="@color/color_emergency_header_text"
+            android:textSize="@dimen/dp_12"
+            android:gravity="center"
+            android:layout_weight="8"
+            android:background="@drawable/emergency_header_right_line_red" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:weightSum="33">
+
+        <jp.co.misumi.misumiecapp.widget.AutoFitTextView
+            android:id="@+id/textExpressType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:text="@string/item_detail_stokez_text"
+            android:textColor="@color/color_emergency_row_text"
+            android:textSize="@dimen/dp_13"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:background="@drawable/emergency_row_left_line" />
+
+        <jp.co.misumi.misumiecapp.widget.AutoFitTextView
+            android:id="@+id/textCharge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:textColor="@color/color_text_red_DD"
+            android:textSize="@dimen/dp_13"
+            android:gravity="center"
+            android:layout_weight="8"
+            android:background="@drawable/emergency_row_right_line" />
+
+    </LinearLayout>
+
+</LinearLayout>

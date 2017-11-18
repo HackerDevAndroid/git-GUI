@@ -1,0 +1,873 @@
+<resources>
+    <string name="app_name">미스미 e 카탈로그</string>
+
+    <string name="label_day_to_ship_0">당일 출하</string>
+    <string name="label_day_to_ship_1ro98_1"/>
+    <string name="label_day_to_ship_1ro98_2">일간</string>
+    <string name="label_day_to_ship_1ro98_1_quote"/>
+    <string name="label_day_to_ship_1ro98_2_quote">일간</string>
+    <string name="label_day_to_ship_99">상시 견적</string>
+    <string name="label_shiptype_1">재고품</string>
+    <string name="label_shiptype_2">재고 준비 중</string>
+    <string name="label_shiptype_3">토/공휴일 제외</string>
+    <string name="label_shiptype_4">토요일 제외</string>
+    <string name="label_shiptype_5">공휴일 제외</string>
+
+    <string name="label_hyphen">&#8211;</string>
+    <string name="label_stoke_t">당일 출하(익스프레스 T)</string>
+    <string name="label_stoke_a">익일 출하(익스프레스 A)</string>
+    <string name="label_stoke_a_rapid">익일 출하(익스프레스 A 조기 할인)</string>
+    <string name="label_stoke_b">3일째 출하(익스프레스 B)</string>
+    <string name="label_stoke_c">5일째 출하(익스프레스 C)</string>
+    <string name="label_stoke_z">익스프레스 Z</string>
+    <string name="label_stoke_l">익스프레스 L</string>
+    <string name="label_stoke_v">익스프레스 V</string>
+    <string name="label_express_deadline">后截止受理</string>
+
+    <string name="text_quantity_hint"/>
+
+    <!--アクティビティ-->
+    <string name="main_label_input_keyword_hint">키워드 또는 형번을 입력하십시오.</string>
+
+    <!--ログイン-->
+    <string name="login_label_title">로그인</string>
+    <string name="login_label_login_id">로그인 아이디</string>
+    <string name="login_label_password">비밀번호</string>
+    <string name="login_label_hint_login_id">로그인 아이디</string>
+    <string name="login_label_hint_password">비밀번호</string>
+    <string name="login_label_password_forget">비밀번호 찾기 ></string>
+    <string name="login_label_check_input_omit">아이디 저장</string>
+    <string name="login_label_mode_normal"/>
+    <string name="login_label_mode_session">세션이 중단되었으므로 다시 로그인하십시오.</string>
+    <string name="login_label_mode_require">이 기능을 이용하기 위해서는 로그인이 필요합니다.</string>
+    <string name="login_button_label_login">로그인</string>
+    <string name="login_button_label_close">닫기</string>
+
+    <!--トップ-->
+    <string name="top_label_welcome">방문을 환영합니다.</string>
+    <string name="top_label_login">로그인</string>
+    <string name="top_label_logout">로그아웃</string>
+    <string name="top_label_status_check">접수 상황</string>
+    <string name="top_label_customer_code">(고객 코드: %s)</string>
+    <string name="top_label_status_title">견적 주문 접수 상황</string>
+    <string name="top_label_quotation_status_title">견적</string>
+    <string name="top_label_order_status_title">주문</string>
+    <string name="top_label_status_accept">접수 중</string>
+    <string name="top_label_status_accept_next_day">접수 중(다음 영업일에 처리)</string>
+    <string name="top_label_status_maintenance">점검 중</string>
+    <string name="top_label_status_unset">&#8211;</string>
+    <string name="top_label_status_day_of_week_1">일요일</string>
+    <string name="top_label_status_day_of_week_2">월요일</string>
+    <string name="top_label_status_day_of_week_3">화요일</string>
+    <string name="top_label_status_day_of_week_4">수요일</string>
+    <string name="top_label_status_day_of_week_5">목요일</string>
+    <string name="top_label_status_day_of_week_6">금요일</string>
+    <string name="top_label_status_day_of_week_7">토요일</string>
+    <string name="top_label_information">현재 공지 사항이 없습니다.</string>
+    <string name="top_label_input_keyword_hint">키워드 또는 형번을 입력하십시오.</string>
+    <string name="top_label_calendar_01">top_cal_month_1.png</string>
+    <string name="top_label_calendar_02">top_cal_month_2.png</string>
+    <string name="top_label_calendar_03">top_cal_month_3.png</string>
+    <string name="top_label_calendar_04">top_cal_month_4.png</string>
+    <string name="top_label_calendar_05">top_cal_month_5.png</string>
+    <string name="top_label_calendar_06">top_cal_month_6.png</string>
+    <string name="top_label_calendar_07">top_cal_month_7.png</string>
+    <string name="top_label_calendar_08">top_cal_month_8.png</string>
+    <string name="top_label_calendar_09">top_cal_month_9.png</string>
+    <string name="top_label_calendar_10">top_cal_month_10.png</string>
+    <string name="top_label_calendar_11">top_cal_month_11.png</string>
+    <string name="top_label_calendar_12">top_cal_month_12.png</string>
+    <string name="top_label_category_list">카테고리 목록</string>
+    <string name="top_label_my_parts">MY부품표</string>
+    <string name="top_label_estimate_history">견적 이력</string>
+    <string name="top_label_order_history">주문 이력</string>
+    <string name="top_label_guide">이용 가이드</string>
+
+    <!-- メニューボタン -->
+    <string name="menu_label_debug">디버그</string>
+    <string name="menu_label_top">TOP</string>
+    <string name="menu_label_login">로그인</string>
+    <string name="menu_label_logout">로그아웃</string>
+    <string name="menu_label_category_list">카테고리 목록</string>
+    <string name="menu_label_cart">장바구니</string>
+    <string name="menu_label_my_parts">MY부품표</string>
+    <string name="menu_label_estimate_history">견적 이력</string>
+    <string name="menu_label_order_history">주문 이력</string>
+    <string name="menu_label_working_hour">영업일 및 영업 시간</string>
+    <string name="menu_label_guide">이용 가이드</string>
+    <string name="menu_label_agreements">이용약관</string>
+    <string name="menu_label_personal_info">개인 정보 및 고객 정보</string>
+    <string name="menu_label_register">회원 등록</string>
+    <string name="menu_label_contact">문의</string>
+    <string name="menu_label_device_information">단말기 정보 확인</string>
+
+    <!-- メッセージ　-->
+    <string name="message_timeout_error">서비스 지역이 아니거나 네트워크에 연결할 수 없습니다.\n 네트워크 상태를 확인하시기 바랍니다.</string>
+    <string name="message_network_error">서비스 지역이 아니거나 네트워크에 연결할 수 없습니다.\n 네트워크 상태를 확인하시기 바랍니다.</string>
+    <string name="message_session_error">일정 시간이 경과했거나 다른 단말기에서 로그인하여 다시 로그인해야 합니다.\n 로그인하시겠습니까?</string>
+    <string name="message_session_scheme_error">세션이 무효입니다.</string>
+    <string name="message_logout">로그아웃하시겠습니까?</string>
+    <string name="message_logout_success">로그아웃되었습니다.</string>
+    <string name="message_update_require">새 버전이 있습니다.\n 업데이트하시기 바랍니다.</string>
+    <string name="message_update_exist">새 버전이 있습니다.\n 지금 업데이트하시겠습니까?</string>
+    <string name="message_request_copy">단말기 정보를 복사했습니다</string>
+    <string name="message_apllication_finish">어플리케이션을 종료하시겠습니까?</string>
+    <string name="message_write_file_error">예상치 못한 에러가 발생했습니다. \n여유 용량을 확인하십시오.\n</string>
+    <string name="message_progress_transmitting">통신 중…</string>
+    <string name="message_unknown_error">예상치 못한 에러가 발생했습니다. \n전화기를 껐다 켠 후 다시 실행하십시오.\n 개선되지 않는 경우는 미스미 서포트 센터(0120&#8211;343&#8211;256)로 문의하십시오.</string>
+    <string name="message_input_qty">수량을 입력하십시오.</string>
+
+
+    <!-- ダイアログ用ボタン -->
+    <string name="dialog_button_yes">예</string>
+    <string name="dialog_button_kettei">결정</string>
+    <string name="dialog_button_no">아니오</string>
+    <string name="dialog_button_retry">다시 실행</string>
+    <string name="dialog_button_cancel">취소</string>
+    <string name="dialog_button_close">닫기</string>
+    <string name="dialog_button_add">추가</string>
+    <string name="dialog_button_delete">삭제</string>
+    <string name="dialog_button_go_cart">장바구니 보기</string>
+    <string name="dialog_button_go_my_part">MY부품표 열기</string>
+
+
+
+    <string name="message_and_over">일요일</string>
+
+
+    <string name="money_format">%1$,3.0f</string>
+
+    <string name="label_currency_jpy">엔</string>
+    <string name="label_currency_rmb">위안</string>
+    <string name="label_currency_usd">＄</string>
+    <string name="label_currency_none"/>
+
+    <string name="format_currency_jpy">%s엔</string>
+    <string name="format_currency_rmb">%s위안</string>
+    <string name="format_currency_usd">＄%s</string>
+    <string name="format_currency_none">%s</string>
+
+
+    <!--前表記式-->
+    <string name="label_currency_jpy_pre">￥</string>
+    <string name="label_currency_rmb_pre">￥</string>
+    <string name="label_currency_usd_pre">＄</string>
+
+    <string name="format_currency_jpy_wtax">%s엔(소비세 포함)</string>
+    <string name="format_currency_rmb_wtax">%s위안(소비세 포함)</string>
+    <string name="format_currency_usd_wtax">＄%s(소비세 포함)</string>
+
+
+    <!-- SPv1_09 My部品表 -->
+    <string name="my_parts_title">MY부품표</string>
+    <string name="my_parts_folder_label">폴더 리스트</string>
+    <string name="my_parts_add_card">장바구니에 추가</string>
+    <string name="my_parts_count_str">건</string>
+    <string name="my_parts_item_count_1">제품</string>
+    <string name="my_parts_item_count_2">건</string>
+    <string name="my_parts_item_colon">：</string>
+    <string name="my_parts_quantity_main">수량:</string>
+    <string name="my_parts_parts_number">형번:</string>
+    <string name="my_parts_product_name">이름:</string>
+    <string name="my_parts_unit_price">단가:</string>
+    <string name="my_parts_quantity">개수:</string>
+    <string name="my_parts_quantity_unit">개</string>
+    <string name="my_parts_module_label">구성 부품 목록 보기</string>
+    <string name="my_parts_pack_quantity">(%s개입)</string>
+    <string name="my_parts_dialog_added_cart">제품을 장바구니에 추가했습니다.</string>
+    <string name="my_parts_dialog_added_cart_title">장바구니에 추가</string>
+    <string name="my_parts_dialog_added_my_parts">MY부품표의 메인 폴더에 추가했습니다.</string>
+    <string name="my_parts_dialog_moved_my_parts">MY부품표(메인 폴더)로 이동했습니다.</string>
+
+
+    <!-- SPv1_11 見積履歴一覧 -->
+    <string name="quote_hist_title">견적 이력</string>
+    <string name="quote_hist_count_str1">有</string>★
+    <string name="quote_hist_count_str2">건의 견적 이력이 있습니다.</string>
+    <string name="quote_hist_slip_no">견적서 번호</string>
+    <string name="quote_hist_date">견적 일시</string>
+    <string name="quote_hist_expire">견적 유효 기한</string>
+    <string name="quote_hist_item_count">제품 건수</string>
+    <string name="quote_hist_count_unit">건</string>
+    <string name="quote_hist_misumi_check_str">그 중 미스미 확인 중 %s건</string>
+    <string name="quote_hist_total_price">합계 금액</string>
+    <string name="quote_hist_total_price_unit">(소비세 별도)</string>
+    <string name="quote_hist_total_price_tax">합계 금액</string>
+    <string name="quote_hist_total_price_tax_unit">(소비세 포함)</string>
+    <string name="quote_hist_empty_list_item">앱에서 표시할 수 있는 견적 이력이 없습니다.</string>
+
+    <!--ADD NT-LWL 17/09/29 ExcludeFreight FR -->
+    <string name="order_quote_hist_detail_tip">※以上金额不含运费。</string>★
+    <!--ADD NT-LWL 17/09/29 ExcludeFreight TO -->
+
+    <!--SPv1_12 見積履歴詳細-->
+    <string name="quote_hist_detail_slip_no">견적서 번호</string>
+    <string name="quote_hist_detail_date">견적 일시</string>
+    <string name="quote_hist_detail_expire">견적 유효 기한</string>
+    <string name="quote_hist_detail_user_name">담당자명</string>
+    <string name="quote_hist_detail_item_count">제품 건수</string>
+    <string name="quote_hist_detail_count_unit">건</string>
+    <string name="quote_hist_detail_misumi_check_str">그 중 미스미 확인 중 %s건</string>
+    <string name="quote_hist_detail_total_price">합계 금액(소비세 별도)</string>
+    <string name="quote_hist_detail_total_price_tax">합계 금액(소비세 포함)</string>
+    <string name="quote_hist_detail_total_price_checking">※위 금액에 미스미에서 확인 중인 제품은 포함되지 않았습니다.</string>
+    <string name="quote_hist_detail_add_my">MY부품표에 추가</string>
+    <string name="quote_hist_detail_add_card">장바구니에 추가</string>
+    <string name="quote_hist_detail_price_checking">이 제품은 미스미에서 확인 중입니다.</string>
+    <string name="quote_hist_detail_unit_price_main">단가:</string>
+    <string name="quote_hist_detail_unit_price_unit_main">(소비세 별도)</string>
+    <string name="quote_hist_detail_unit_price_unit_main_CHN">(소비세 별도)</string>
+    <string name="quote_hist_detail_quantity_main">수량:</string>
+    <string name="quote_hist_detail_shipdate_main">영업일:</string>
+    <string name="quote_hist_detail_emarg_main">긴급 출하 서비스:</string>
+    <string name="quote_hist_detail_status_main">상태:</string>
+    <string name="quote_hist_detail_subtotal_main">소계:</string>
+    <string name="quote_hist_detail_subtotal_unit_main">(소비세 별도)</string>
+    <string name="quote_hist_detail_subtotal_unit_main_CHN">(소비세 별도)</string>
+    <string name="quote_hist_detail_subtotal_unit_main_tax">(소비세 포함)</string>
+    <string name="quote_hist_detail_pack_quantity">(%s개입)</string>
+    <string name="common_sale_format">SALE %s까지</string>
+    <string name="quote_hist_detail_dialog_added_cart">제품을 장바구니에 추가했습니다.</string>
+    <string name="quote_hist_detail_dialog_added_my_parts">MY부품표의 메인 폴더에 추가했습니다.</string>
+
+
+
+
+
+    <string name="label_stoke_t0">당일 출하(익스프레스 T)</string>
+    <string name="label_stoke_a0">익일 출하(익스프레스 A)</string>
+    <string name="label_stoke_b0">3일째 출하(익스프레스 B)</string>
+    <string name="label_stoke_c0">5일째 출하(익스프레스 C)</string>
+    <string name="label_stoke_0z">익스프레스 Z</string>
+    <string name="label_stoke_0l">익스프레스 L</string>
+    <string name="label_stoke_0a">익일 출하(익스프레스 A 조기 할인)</string>
+    <string name="label_stoke_v0">익스프레스 V</string>
+    <string name="label_stoke_etc">사용하지 않음</string>
+    <string name="label_stoke_etc2">&#8211;</string>
+
+    <!-- SPv1_13 注文履歴一覧 -->
+    <string name="order_hist_title">주문 이력</string>
+    <string name="order_hist_count_str1"></string>
+    <string name="order_hist_count_str2">건의 주문 이력이 있습니다.</string>
+    <string name="order_hist_status">상태</string>
+    <string name="order_hist_slip_no">주문서 번호</string>
+    <string name="order_hist_date">주문 일시</string>
+    <string name="order_hist_item_count">제품 건수</string>
+    <string name="order_hist_count_unit">건</string>
+    <string name="order_hist_misumi_check_str">그 중 미스미 확인 중 %s건</string>
+    <string name="order_hist_total_price">합계 금액</string>
+    <string name="order_hist_total_price_tax">합계 금액</string>
+    <string name="order_hist_empty_list_item">앱에서 표시할 수 있는 주문 이력이 없습니다.</string>
+
+    <!--注文履歴詳細-->
+    <string name="order_detail_cod_charge">그 중 대금 상환 수수료(소비세 포함)</string>
+
+    <string name="order_detail_add_my_parts">MY부품표에 추가</string>
+    <string name="order_detail_slip_no">주문서 번호</string>
+    <string name="order_detail_date">주문 일시</string>
+    <string name="order_detail_expire">견적 유효 기한</string>
+    <string name="order_detail_user_name">담당자명/</string>
+    <string name="order_detail_user_method">주문 방법</string>
+    <string name="order_detail_deliverycompanyname">배송 회사명</string>
+    <string name="order_detail_item_count">제품 건수</string>
+    <string name="order_detail_count_unit">건</string>
+    <string name="order_detail_misumi_check_str">그 중 미스미 확인 중 %s건</string>
+    <string name="order_detail_total_price_checking">※위 금액에 미스미에서 확인 중인 제품은 포함되지 않았습니다.</string>
+    <string name="order_detail_deadline_info1">尊敬的客户您好，因为贵公司是预付款客户，因此请您选择以下方式向我司付款。\n1、付款专用账号客户付款信息：\n请您参考【米思米账号变更通知函】付款或致电以下号码咨询：021–67108701转5\n</string>
+    <string name="order_detail_deadline_info2">2、普通客户付款信息：\n银行名称：中国工商银行上海虹桥开发区支行\n银行账号：1001–2427–1930–0333–218\n</string>
+    <string name="order_detail_deadline_info3">注意事项：汇款完成后请将汇款凭证发送至我司。（传真号：021–6710–8687；E-mail: cs@misumi.sh.cn）</string>
+    <string name="order_detail_deadline_info4">此订单有效期为【%s】，过期后此单将自动取消，请在此日期之前支付。</string>
+    <string name="order_detail_add_my">MY부품표에 추가</string>
+    <string name="order_detail_add_card">장바구니에 추가</string>
+    <string name="order_detail_price_checking">이 제품은 미스미에서 확인 중입니다.</string>
+    <string name="order_detail_unit_price_main">단가:</string>
+    <string name="order_detail_unit_price_unit_main">(소비세 별도)</string>
+    <string name="order_detail_unit_price_unit_main_CHN">(소비세 별도)</string>
+    <string name="order_detail_subtotal_unit_main_tax">(소비세 포함)</string>
+    <string name="order_detail_quantity_main">수량:</string>
+    <string name="order_detail_shipdate_main">출하일:</string>
+    <string name="order_detail_emarg_main">긴급 출하 서비스:</string>
+    <string name="order_detail_status_main">상태:</string>
+    <string name="order_detail_status_invoice">배송 상황:</string>
+    <string name="order_detail_subtotal_main">소계:</string>
+    <string name="order_detail_pack_quantity">(%s개입)</string>
+    <string name="order_detail_misumi_No">미스미 접수 번호:</string>
+    <string name="order_detail_type_other">기타 형식</string>
+    <string name="order_detail_type_default">&#8211;</string>
+    <string name="order_detail_type_srash">/</string>
+    <string name="order_detail_cancel_info">주문 변경, 취소 및 반품은 여기를 확인하십시오.</string>
+    <string name="order_detail_cancel_info_link">여기</string>
+
+    <!--注文完了-->
+    <string name="order_complete_title">주문이 완료되었습니다.\n 등록된 메일 주소로 주문 확인 메일을 보내드립니다.</string>
+    <string name="order_complete_confirm_info_title">미스미에서 확인 중인 제품에 대해</string>
+    <string name="order_complete_confirm_info_memo1">주문은 완료되었으나 미스미에서 출하일이나 가격 등을 확인해야 하는 제품이 포함되어 있습니다.\n 미스미에서 확인해야 하는 제품에 대해서는 미스미에서 신속하게 확인 후 연락 드립니다.</string>
+    <string name="order_complete_confirm_info_memo2">미스미에서 내용을 빠르게 확인한 후, 메일로 통보 및 PC에 메시지를 표시합니다.\n 메시지가 표시된 경우는 내용을 확인한 후, 처리하시기 바랍니다.</string>
+    <string name="order_complete_confirm_info_memo3">미스미에서 확인 중인 제품이 일부 있습니다.</string>
+    <string name="order_complete_cancel_info_title">주문 변경, 취소, 반품</string>
+    <string name="order_complete_cancel_info_memo">제품 변경, 취소, 반품은 [여기]를 확인하십시오.</string>
+    <string name="order_complete_cancel_info_memo_link">[여기]</string>
+    <string name="order_complete_info_title">주문 정보</string>
+    <string name="order_complete_info_image_message">미스미의 메시지 표시 이미지(PC 사이트)</string>
+    <string name="order_complete_button_return_cart">장바구니로 돌아가기</string>
+    <string name="order_complete_button_return_quote">견적으로 돌아가기</string>
+
+    <string name="order_complete_slip_no">주문서 번호</string>
+    <string name="order_complete_item_count">제품 건수</string>
+    <string name="order_complete_count_unit">건</string>
+    <string name="order_complete_misumi_check_str">(그 중 미스미에서 확인 중인 제품 %s건)</string>
+    <string name="order_complete_total_price">합계 금액(소비세 별도)</string>
+    <string name="order_complete_total_price_unit_yen">엔</string>
+    <string name="order_complete_total_price_unit_gen">위안</string>
+    <string name="order_complete_total_price_unit_dollar">＄</string>
+    <string name="order_complete_total_price_tax">합계 금액(소비세 포함)</string>
+    <string name="order_complete_price_checking">※위 금액에 미스미에서 확인 중인 제품은 포함되지 않았습니다.</string>
+    <string name="order_complete_date">주문 일시</string>
+
+
+    <!--注文確認 直送先の選択-->
+    <string name="order_confirm_directship_select_title">직송처 선택</string>
+    <string name="order_confirm_directship_select_info">다음 중에서 원하는 직송처를 선택하십시오.</string>
+    <string name="order_confirm_directship_select_label">등록된 직송처 목록</string>
+    <string name="order_confirm_directship_select">선택</string>
+    <string name="confirm_directship_selected">선택 중</string>
+
+
+    <!--注文確認 ストークの選択-->
+    <string name="order_confirm_express_type_select_title">익스프레스를 선택하십시오.</string>
+    <string name="order_confirm_express_type_select_info">출하일을 확인한 후, 다음 중에서 원하는 익스프레스 종류를 선택하십시오.</string>
+    <string name="quote_confirm_express_type_select_info">원하는 출하일을 선택하십시오.</string>
+    <string name="order_confirm_express_type_label">이용 가능한 긴급 출하 서비스(익스프레스)</string>
+    <string name="order_confirm_express_type_select">선택</string>
+    <string name="confirm_express_type_express">익스프레스 종류:</string>
+    <string name="confirm_express_type_days">출하일:</string>
+    <string name="confirm_express_type_days_quote">영업일:</string>
+    <string name="confirm_express_type_dead">마감 시각:</string>
+    <string name="confirm_express_type_charge">추가 요금:</string>
+    <string name="confirm_express_type_charge_unit">엔</string>
+    <string name="confirm_express_type_charge_unit_dollar">$</string>
+    <string name="confirm_express_type_selected">선택 중</string>
+    <string name="confirm_express_type_disable">선택 불가</string>
+    <string name="confirm_express_type_limit">수량이 %s 이상일 경우에는 익스프레스를 이용할 수 없습니다.</string>
+    <string name="confirm_express_type_caution_label">주의 사항</string>
+    <string name="confirm_express_type_caution">수량에 따라서는 익스프레스를 이용할 수 없는 경우가 있습니다.</string>
+
+
+
+    <!-- SPv1_16 見積り完了 -->
+    <string name="quote_comp_title">견적이 완료되었습니다.</string>
+    <string name="quote_comp_checking_str1">견적은 완료되었으나 미스미에서 출하일이나 가격 등을 확인해야 하는 제품이 포함되어 있습니다.\n 미스미에서 확인해야 하는 제품에 대해서는 미스미에서 신속하게 확인 후 연락 드립니다.</string>
+    <string name="quote_comp_info">견적 정보</string>
+    <string name="quote_comp_close">장바구니로 돌아가기</string>
+    <string name="quote_comp_slip_no">견적서 번호</string>
+    <string name="quote_comp_date">견적 일시</string>
+    <string name="quote_comp_item_count">제품 건수</string>
+    <string name="quote_comp_count_unit">건</string>
+    <string name="quote_comp_misumi_check_str">(그 중 미스미에서 확인 중인 제품 %s건)</string>
+    <string name="quote_comp_total_price">합계 금액(소비세 별도)</string>
+    <string name="quote_comp_total_price_tax">합계 금액(소비세 포함)</string>
+    <string name="quote_comp_price_checking">※위 금액에 미스미에서 확인 중인 제품은 포함되지 않았습니다.</string>
+
+    <string name="common_footer_look_pc">검색 결과가 많아서 이 이상 표시할 수 없습니다.\n 조건을 다시 확인하시기 바랍니다.</string>
+    <string name="common_footer_error_progress">로딩 중 에러가 발생했습니다.\n 탭하여 새로 고침하십시오.</string>
+
+    <!--SPv1_07 シリーズ検索結果一覧-->
+    <string name="search_series_total">건</string>
+    <string name="search_series_count_str">제품 수:</string>
+    <string name="search_series_recommend">추천</string>
+    <string name="search_series_grade">Economy</string>
+    <string name="search_series_empty_list_item">해당하는 제품을 찾을 수 없습니다.</string>
+    <string name="search_category_empty_list_item">해당하는 제품을 찾을 수 없습니다.</string>
+
+    <!--キーワード検索結果-->
+    <string name="search_keyword_total">건</string>
+    <string name="search_keyword_count_str">검색 결과 수:</string>
+    <string name="search_keyword_category_count">카테고리(%s건)</string>
+    <string name="search_keyword_empty_list_item">해당하는 제품을 찾을 수 없습니다.</string>
+
+    <!-- SPv1_08 カート -->
+    <string name="cart_select_all">모두 선택</string>
+    <string name="cart_go_estimate">견적 진행</string>
+    <string name="cart_go_order">주문 진행</string>
+    <string name="cart_update">가격 확인</string>
+    <string name="cart_caution_title">주의 사항</string>
+    <string name="cart_caution_str">・제품 가격 변경이나 재고 상황에 따라 장바구니에 추가한 시점과 가격 또는 출하일이 다를 수 있습니다. 최신 가격, 출하일은 \'가격 확인\' 버튼을 탭하여 확인하십시오.\n・ 이 서비스를 이용할 경우, 소비세는 고객 부담입니다.</string>
+    <string name="cart_delete_cart">장바구니에서 삭제</string>
+    <string name="cart_add_my">MY부품표로 이동</string>
+    <string name="cart_empty_str">고객님의 장바구니에 저장된 제품이 없습니다.</string>
+    <string name="cart_unit_price">단가:</string>
+    <string name="cart_quantity">수량:</string>
+    <string name="cart_pack_quantity">(%s개입)</string>
+    <string name="cart_register">장바구니 갱신일:</string>
+    <string name="cart_ship_date">출하일:</string>
+    <string name="cart_item_campaign_1">할인 이벤트가 종료되었으므로</string>
+    <string name="cart_item_campaign_2">을(를) 클릭해서 최신 단가를 확인하십시오.</string>
+    <string name="cart_app_campaign_1">%s개 제품의 단가가 변경되었습니다.</string>
+    <string name="cart_app_campaign_2">제품을 확인하십시오.</string>
+    <string name="cart_selected_item">선택 중인 제품:</string>
+    <string name="cart_selected_item_unit">건</string>
+    <string name="cart_total_price">합계 금액:</string>
+    <string name="cart_total_price_unit">엔(소비세 별도)</string>
+    <string name="cart_total_price_wtax">합계 금액:</string>
+    <string name="cart_total_price_unit_wtax">위안(소비세 포함)</string>
+    <string name="cart_total_price_unit_dollar"></string>
+    <string name="cart_total_price_unit_wtax_dollar">(소비세 포함)</string>
+    <string name="cart_subtotal_main">소계(소비세 별도):</string>
+    <string name="cart_subtotal_unit_main">엔</string>
+    <string name="cart_subtotal_main_wtax">소계(소비세 포함):</string>
+    <string name="cart_subtotal_unit_main_wtax">엔</string>
+    <string name="cart_dialog_delete_cart">장바구니에서 삭제</string>
+    <string name="cart_dialog_delete_cart_msg">제품을 장바구니에서 삭제하시겠습니까?</string>
+    <string name="cart_dialog_add_my">MY부품표로 이동</string>
+
+    <!-- SPv1_17 注文内容確認 -->
+    <string name="order_check_emarg_main">긴급 출하 서비스:</string>
+    <string name="confirm_total_price">합계 금액(소비세 별도)</string>
+    <string name="confirm_total_price_wtax">합계 금액(소비세 포함)</string>
+    <string name="confirm_item_count">제품 건수</string>
+    <string name="confirm_item_count_unit">건</string>
+    <string name="confirm_delivery">배송료</string>
+    <string name="confirm_delivery_discount">배송료 할인</string>
+    <string name="confirm_subtotal_main">소계:</string>
+    <string name="confirm_subtotal_unit_main">(소비세 별도)</string>
+    <string name="confirm_subtotal_main_wtax">소계:</string>
+    <string name="confirm_subtotal_unit_main_wtax">(소비세 포함)</string>
+    <string name="confirm_cod_charge">그 중 대금 상환 수수료(소비세 포함)</string>
+    <string name="confirm_unit_price">단가:</string>
+    <string name="confirm_quantity">수량:</string>
+    <string name="confirm_pack_quantity">(%s개입)</string>
+    <string name="confirm_ship_date">출하일:</string>
+    <string name="confirm_ship_date_quote">영업일:</string>
+    <string name="confirm_emarg_main">긴급 출하 서비스:</string>
+
+    <string name="order_confirm_not_yet">주문이 아직 완료되지 않았습니다. 내용을 확인한 후 \'주문 확정\' 버튼을 탭하십시오.</string>
+    <string name="order_confirm_order_title">주문 내용</string>
+
+    <string name="confirm_shipping_option_title">출하 옵션</string>
+    <string name="confirm_shipping_option_1">제품 일괄 출하(가장 늦은 출하일에 맞춰 일괄 출하됩니다)</string>
+    <string name="confirm_shipping_option_2">준비된 제품부터 순서대로 출하(각 출하일 단위로 순차적으로 출하됩니다)</string>
+    <string name="confirm_require_title">※필수 입력 항목</string>
+    <string name="confirm_user_info_title">발주자 정보</string>
+    <string name="confirm_user_company_label">고객 회사명</string>
+    <string name="confirm_user_code_label">고객 코드</string>
+    <string name="confirm_user_dept_label">담당 부서명</string>
+    <string name="confirm_user_name_label">담당자명</string>
+    <string name="confirm_destination_info_title">납품처 정보</string>
+    <string name="confirm_destination_address_label">납품처 주소</string>
+    <string name="confirm_destination_dept_label">납품 부서명</string>
+    <string name="confirm_destination_name_label">납품 담당자명</string>
+    <string name="confirm_creditcard_title">신용카드 정보</string>
+    <string name="confirm_creditcard_no_label">카드 번호</string>
+    <string name="confirm_creditcard_change_label">변경</string>
+    <string name="confirm_creditcard_expiration_label">유효 기한</string>
+    <string name="confirm_creditcard_payment_num_label">결제 횟수</string>
+    <string name="confirm_creditcard_annotation_label"> ※</string>
+    <string name="confirm_creditcard_payment_1">일시불</string>
+    <string name="confirm_creditcard_payment_3">3회 분할 납부</string>
+    <string name="confirm_creditcard_payment_5">5회 분할 납부</string>
+    <string name="confirm_creditcard_payment_6">6회 분할 납부</string>
+    <string name="confirm_creditcard_payment_10">10회 분할 납부</string>
+    <string name="confirm_creditcard_payment_12">12회 분할 납부</string>
+    <string name="confirm_creditcard_no_card">신용카드 정보가 등록되어 있지 않습니다.</string>
+    <string name="confirm_creditcard_add_card">신용카드 정보 등록</string>
+    <string name="confirm_destination_address_title">주소</string>
+    <string name="confirm_order_status">현재 영업 시간이 아니므로 다음 영업일의 주문으로 확정됩니다. 영업 시간은 8:00~20:00입니다.\n 이대로 주문할 경우 반드시 주문 이력에서 출하일 및 가격을 확인하십시오.</string>
+    <string name="confirm_annotation_title">주의 사항</string>
+    <string name="confirm_annotation_text">・대금 상환으로 지불하는 경우, 대금 상환 수수료를 별도로 청구합니다.\n・ \'주문 확정\' 버튼을 눌러서 주문하시면 고객님은 \'제품 변경 및 취소 등의 취급\' 및 \'MiSUMi-VONA 서비스 이용 규약\'에 동의하고 제품을 주문한 것으로 간주됩니다.</string>
+    <string name="confirm_annotation_text_quote">・대금 상환으로 지불하는 경우, 대금 상환 수수료를 별도로 청구합니다.\n・ 소비세율 또는 조건 등의 변경으로 인해 견적 금액과 주문 금액에 차이가 발생할 수 있습니다. 미리 양해 부탁 드립니다.</string>
+    <string name="confirm_annotation_text_credit">・\'주문 확정\' 버튼을 눌러서 주문하시면 고객님은 \'제품 변경 및 취소 등의 취급\' 및 \'MiSUMi-VONA 서비스 이용 규약\'에 동의하고 제품을 주문한 것으로 간주됩니다.</string>
+    <string name="confirm_annotation_text_quote_credit">・소비세율 또는 조건 등의 변경으로 인해 견적 금액과 주문 금액에 차이가 발생할 수 있습니다. 미리 양해 부탁 드립니다.</string>
+
+    <string name="edit_hint_zenkaku_1">전각 문자로 입력하십시오.</string>
+    <string name="edit_hint_zenkaku_2">전각 문자로 입력하십시오.</string>
+    <string name="edit_hint_zenkaku_3">전각 문자로 입력하십시오.</string>
+    <string name="edit_hint_zenkaku_4">전각 문자로 입력하십시오.</string>
+
+    <string name="confirm_back_from_cart">장바구니로 돌아가기</string>
+    <string name="confirm_back_from_quote">견적 이력으로 돌아가기</string>
+    <string name="confirm_oreder">주문 확정</string>
+
+    <string name="progress_order_from_cart">장바구니</string>
+    <string name="progress_order_from_quote">견적 이력</string>
+    <string name="progress_order_2">주문 확인</string>
+    <string name="progress_order_3">주문 완료</string>
+
+    <string name="confirm_change_destination">직송처 변경</string>
+    <string name="confirm_change_stoke">변경</string>
+    <string name="confirm_change_stoke2">변경</string>
+    <string name="confirm_change_today_ship">빠른 배송을 원하십니까?</string>
+    <string name="confirm_change_today_ship_2">변경</string>
+    <string name="require_mark">※</string>
+
+    <string name="cart_change_quantity">가격 확인</string>
+
+    <string name="edit_creditcard_label_new_title">신용카드 정보 등록</string>
+    <string name="edit_creditcard_label_edit_title">신용카드 정보 등록</string>
+    <string name="edit_creditcard_label_new_info">현재 등록되어 있는 신용카드 정보는 폐기되므로 주의하십시오.</string>
+    <string name="edit_creditcard_label_edit_info">현재 등록되어 있는 신용카드 정보는 폐기되므로 주의하십시오.</string>
+    <string name="edit_creditcard_label_kind">신용카드 종류</string>
+    <string name="edit_creditcard_label_must">※ 필수 입력 항목</string>
+    <string name="edit_creditcard_label_name">카드 명의</string>
+    <string name="edit_creditcard_label_name_note">본인 명의의 신용카드만 사용할 수 있습니다.</string>
+    <string name="edit_creditcard_label_name_info">반각 영문 대문자로 입력하십시오</string>
+    <string name="edit_creditcard_label_name_hint">HONG GIL DONG</string>
+    <string name="edit_creditcard_label_no">카드 번호</string>
+    <string name="edit_creditcard_label_no_info">하이픈(-)을 생략하고 반각 숫자로 입력하십시오.</string>
+    <string name="edit_creditcard_label_no_hint"></string>
+    <string name="edit_creditcard_label_expiration">유효 기한</string>
+    <string name="edit_creditcard_label_month">월요일</string>
+    <string name="edit_creditcard_label_year">년</string>
+    <string name="edit_creditcard_label_securitycode">보안 코드(CVC 번호)</string>
+    <string name="edit_creditcard_label_securitycode_hint"></string>
+    <string name="edit_creditcard_label_securitycode_info">신용카드 뒷면 서명란(또는 앞면)에 새겨진 3자리 또는 4자리 숫자를 입력하십시오.</string>
+    <string name="edit_creditcard_label_pay_num">결제 횟수</string>
+    <string name="edit_creditcard_label_payment_1">일시불</string>
+    <string name="edit_creditcard_label_payment_3">3회 분할 납부</string>
+    <string name="edit_creditcard_label_payment_5">5회 분할 납부</string>
+    <string name="edit_creditcard_label_payment_6">6회 분할 납부</string>
+    <string name="edit_creditcard_label_payment_10">10회 분할 납부</string>
+    <string name="edit_creditcard_label_payment_12">12회 분할 납부</string>
+    <string name="edit_creditcard_label_button_new_save">등록</string>
+    <string name="edit_creditcard_label_button_edit_save">등록</string>
+    <string name="edit_creditcard_label_button_new_cancel">등록하지 않고 돌아가기</string>
+    <string name="edit_creditcard_label_button_edit_cancel">등록하지 않고 돌아가기</string>
+    <string name="edit_creditcard_label_annotation"> ※</string>
+
+
+    <!--在庫切れ確認ダイアログ-->
+    <string name="out_of_stock_dialog_titlle">이 제품은 재고가 부족하여 출하일 조정이 필요합니다.</string>
+    <string name="out_of_stock_dialog_info">주문하신 제품 중 재고가 부족하여 출하일 조정이 필요한 제품이 있습니다.\n 다음 출하일을 확인한 후 \'송신\' 버튼을 누르십시오.</string>
+    <string name="out_of_stock_dialog_list_title">확인 대상 제품:</string>
+    <string name="out_of_stock_dialog_list_title_unit">건</string>
+    <string name="out_of_stock_dialog_list_day_to_ship">최단 출하일:</string>
+    <string name="out_of_stock_dialog_yes">송신</string>
+    <string name="out_of_stock_dialog_no">희망하지 않음</string>
+
+    <!--アンフィット-->
+    <string name="unfit_type_dialog_titlle">이 제품은 미스미에서 출하일 또는 가격 등을 확인해야 하는 제품입니다.</string>
+    <string name="unfit_type_dialog_titlle_quote">이 제품은 미스미에서 출하일 또는 가격 등을 확인해야 하는 제품입니다.</string>
+    <string name="unfit_type_dialog_info_2">견적 제품 중에 미스미의 확인이 필요한 제품이 있습니다. \n이 제품에 대해 견적 후 신속하게 확인하여 연락 드리겠습니다.\n 동의하시면 \'미스미 확인을 희망하며 견적 확정\' 버튼을 누르십시오.</string>
+    <string name="unfit_type_dialog_info_3">주문 제품 중에 미스미의 확인이 필요한 제품이 있습니다. \n이 제품에 대해 주문 후 신속하게 확인하여 연락 드리겠습니다.\n 동의하시면 \'미스미 확인을 희망하며 주문 확정\' 버튼을 누르십시오.</string>
+    <string name="unfit_type_dialog_info_4"></string>
+    <string name="unfit_type_dialog_list_title">확인 대상 제품:</string>
+    <string name="unfit_type_dialog_list_title_unit">건</string>
+    <string name="unfit_type_dialog_list_unit_price_main">단가:</string>
+    <string name="unfit_type_dialog_list_quantity_main">수량:</string>
+    <string name="unfit_type_dialog_list_shipdate_main">출하일:</string>
+    <string name="unfit_type_dialog_list_shipdate_main_quote">영업일:</string>
+    <string name="unfit_type_dialog_list_emarg_main">긴급 출하 서비스:</string>
+    <string name="unfit_type_dialog_list_main">소계:</string>
+    <string name="unfit_type_dialog_list_unit_main">(소비세 별도)</string>
+    <string name="unfit_type_dialog_list_wtax">소계:</string>
+    <string name="unfit_type_dialog_list_main_wtax">(소비세 포함)</string>
+    <string name="unfit_type_dialog_yes_quote">미스미 확인을 희망하며 견적 확정</string>
+    <string name="unfit_type_dialog_yes_order">미스미 확인을 희망하며 주문 확정</string>
+    <string name="unfit_type_dialog_no">제품 다시 설정</string>
+
+    <!--素通し不可、注文-->
+    <string name="orderable_type_dialog_titlle">주문하신 제품 중에 \n확인이 필요한 내용이 있습니다.</string>
+    <string name="orderable_type_dialog_info">미스미의 확인을 희망하는 경우 \'미스미 확인 이외의 주문 확정\'을 선택하십시오.\n 명세서 전체를 견적으로 저장하는 경우 \'명세서 전체를 견적으로 저장\'을 선택하십시오.</string>
+    <string name="orderable_type_dialog_info_3"></string>
+    <string name="orderable_type_dialog_list_title">확인 대상 제품:</string>
+    <string name="orderable_type_dialog_list_title_unit">건</string>
+    <string name="orderable_type_dialog_list_unit_price_main">단가:</string>
+    <string name="orderable_type_dialog_list_quantity_main">수량:</string>
+    <string name="orderable_type_dialog_list_ship_main">출하일:</string>
+    <string name="orderable_type_dialog_list_main">소계:</string>
+    <string name="orderable_type_dialog_list_unit_main">(소비세 별도)</string>
+    <string name="orderable_type_dialog_list_wtax">소계:</string>
+    <string name="orderable_type_dialog_list_main_wtax">(소비세 포함)</string>
+    <string name="orderable_type_dialog_yes">확인 대상 제품 이외를 주문</string>
+    <string name="orderable_type_dialog_no">제품 다시 설정</string>
+
+    <!--素通し不可、見積-->
+    <string name="orderable_type_dialog_titlle_quotation">견적 제품 중에 \n확인이 필요한 내용이 있습니다.</string>
+    <string name="orderable_type_dialog_info_quotation_type2">\'견적 계속\' 버튼을 누르십시오.</string>
+    <string name="orderable_type_dialog_info_quotation_type3"/>
+    <string name="orderable_type_dialog_info_quotation_3">미스미의 확인을 희망하는 경우 \'미스미 확인 이외의 주문 확정\'을 선택하십시오.\n 명세서 전체를 견적으로 저장하는 경우 \'명세서 전체를 견적으로 저장\'을 선택하십시오.</string>
+    <string name="orderable_type_dialog_info_quotation_4">해당 제품의 처리 상황에 대해서는 미스미로 문의해 주십시오.</string>
+    <string name="orderable_type_dialog_list_day_main">영업일:</string>
+    <string name="orderable_type_dialog_yes_quotation">확인 대상 제품 이외를 견적</string>
+
+    <!--SOコンバート-->
+    <string name="so_dialog_titlle">견적 내용에서 변경된 제품이 포함되었습니다.</string>
+    <string name="so_dialog_info_1">・미스미 확인 이외의 주문을 확정 초과하였으므로 익스프레스Ｔ가 지정된 제품의 요금이 변경됩니다.</string>
+    <string name="so_dialog_info_2">・18:00 이후 주문한 익스프레스 T 지정은 다음날 처리됩니다.</string>
+    <string name="so_dialog_info_3">・익스프레스 A가 지정된 제품을 15:00까지 주문하면 할인이 적용됩니다.</string>
+    <string name="so_dialog_info_4">・익스프레스 A 조기 할인 마감 시각(15:00)을 초과하였으므로 익스프레스 A가 지정된 제품의 요금이 변경됩니다.</string>
+    <string name="so_dialog_info_5">・18:00 이후 주문의 익스프레스 A 지정은 다음날 처리됩니다.</string>
+    <string name="so_dialog_info_6"/>
+    <string name="so_dialog_yes">견적 계속</string>
+    <string name="so_dialog_no">제품 다시 설정</string>
+
+    <!-- SPv1_15 見積内容確認 -->
+    <string name="quote_shipping_option_title">익일 출하(익스프레스 A) 정보</string>
+    <string name="quote_shipping_option_title2">주문 시간대에 따라 가격이 변경되는 제품이 포함되어 있습니다.</string>
+    <string name="quote_shipping_option_1">익스프레스 A 조기 할인(15시까지 주문) 적용 가격으로 견적서 작성</string>
+    <string name="quote_shipping_option_2">일반 익스프레스 A 요금으로 견적서 작성</string>
+    <string name="quote_confirm_not_yet">견적이 아직 완료되지 않았습니다.\n 내용을 확인한 후 \'견적 확정\' 버튼을 탭하십시오.</string>
+    <string name="quote_confirm_stoke_a">익일 출하(익스프레스 A)\'로 설정했습니다.\n 해당 제품의 단가 및 출하일을 확인하십시오.</string>
+    <string name="confirm_quote">견적 확정</string>
+
+    <string name="progress_quote_2">견적 확인</string>
+    <string name="progress_quote_3">견적 완료</string>
+
+    <!-- SPv1_10 商品詳細 -->
+    <string name="item_detail_part_pc">죄송합니다만, 이 제품은 PC에서 확인하십시오.</string>
+    <string name="item_detail_part_select">\'형번 선택\'에서 선택하십시오.</string>
+    <string name="item_detail_no_part">이 제품은 현재 판매되지 않습니다.</string>
+    <string name="item_detail_icon_recommend">추천</string>
+    <string name="item_detail_icon_grade">Economy</string>
+    <string name="item_detail_icon_cvalue">C&#8211;Value</string>
+    <string name="item_detail_icon_slide">수량별 차등 가격 할인</string>
+    <string name="item_detail_change_quantity">가격 확인</string>
+    <string name="item_detail_add_my">MY부품표에 추가</string>
+    <string name="item_detail_add_card">장바구니에 추가</string>
+    <string name="item_detail_copy">형번과 수량 복사</string>
+    <string name="item_detail_copy_message">형번과 수량을 복사했습니다</string>
+    <string name="item_detail_part_number">형번 선택</string>
+    <string name="item_detail_order_quantity">주문 수량</string>
+    <string name="item_detail_total_price">합계</string>
+    <string name="item_detail_total_price_wtax"></string>★
+    <string name="item_detail_ship">출하일</string>
+    <string name="item_detail_unit_price">단가</string>
+    <string name="item_detail_pack_quantity">(%s개입)</string>
+    <string name="item_detail_slide_label">수량별 차등 가격표</string>
+    <string name="item_detail_slide_head1">수량</string>
+    <string name="item_detail_slide_head2">표준 단가</string>
+    <string name="item_detail_slide_head3">출하일</string>
+    <string name="item_detail_express_label">긴급 출하 서비스</string>
+    <string name="item_detail_express_head1">긴급 출하 서비스</string>
+    <string name="item_detail_express_head2">요금</string>
+    <string name="item_detail_express_deadline">까지 접수</string>
+    <string name="item_detail_stokez_label">조기 할인 30/조기 할인 25</string>
+    <string name="item_detail_stokez_head1">조기 할인 30/조기 할인 25</string>
+    <string name="item_detail_stokez_head2">할인</string>
+    <string name="item_detail_stokez_text">익스프레스 Z</string>
+    <string name="item_detail_selected_label">지정한 사양/치수 정보</string>
+    <string name="item_detail_selected_warn">일부 제품의 사양, 치수는 e카탈로그에서 확인되지 않는 경우가 있으므로 카탈로그 책자를 참고하십시오.</string>
+    <string name="item_detail_spec_label">기본 정보</string>
+    <string name="item_detail_dialog_added_cart">%s개의 제품이 장바구니에 있습니다.</string>
+    <string name="item_detail_dialog_added_my_parts">MY부품표의 메인 폴더에 추가했습니다.</string>
+    <string name="item_detail_dialog_added_cart_title">제품을 장바구니에 추가했습니다.</string>
+    <string name="item_detail_dialog_added_my_parts_title">MY부품표에 추가</string>
+
+    <!--出荷日-->
+    <string name="daytoship_label_title">일반 출하일:</string>
+    <string name="daytoship_label_colon_day"></string>
+    <string name="daytoship_label_day">당일 출하</string>
+    <string name="daytoship_label_estimate">상시 견적</string>
+    <string name="daytoship_label_tilde">일요일</string>
+    <string name="daytoship_label_days">일간</string>
+
+    <!--価格-->
+    <string name="unitprice_label_title">가격:</string>
+    <string name="unitprice_label_title_usd">가격:＄</string>
+    <string name="unitprice_label_period">엔</string>
+    <string name="unitprice_label_period_tilde">엔～</string>
+    <string name="unitprice_label_period_gen">위안</string>
+    <string name="unitprice_label_period_gen_tilde">위안～</string>
+    <string name="unitprice_label_period_usd_tilde">～</string>
+    <string name="unitprice_label_title_sale">특별 가격</string>
+
+    <!--ステータス(見積履歴詳細など)-->
+    <string name="common_status_unknown">&#8211;</string>
+    <string name="common_status_1">처리 중</string>
+    <string name="common_status_2">견적 완료</string>
+    <string name="common_status_3">주문 완료</string>
+    <string name="common_status_4">출하 완료</string>
+    <string name="common_status_f">실패</string>
+    <string name="common_status_z">미스미 확인 중</string>
+    <string name="common_status_c">유효 기한 만료</string>
+    <string name="common_status_e">에러</string>
+    <string name="common_status_w">입금 대기</string>
+    <string name="common_status_x">취소 완료</string>
+    <string name="common_status_a1">승인 대기</string>
+    <string name="common_status_a2">거부</string>
+    <string name="common_status_a3">반려</string>
+
+    <!--デバイス情報-->
+    <string name="deviceinfo_label_title">단말기 정보</string>
+    <string name="deviceinfo_label_os_ver">OS 버전</string>
+    <string name="deviceinfo_label_device_name">기종명</string>
+    <string name="deviceinfo_label_app_ver">앱 버전</string>
+    <string name="deviceinfo_label_copy">단말기 정보 복사</string>
+    <string name="deviceinfo_format_copy">OS 버전: %1$s\n기종명: %2$s\n앱 버전: %3$s</string>
+
+    <!-- AutoComplete -->
+    <string name="autocomplete_keyword_title">키워드 후보</string>
+    <string name="autocomplete_category_title">형번 단축키(제품 상세)</string>
+
+    <!--ダミー用データ-->
+    <string name="dummy_string">dummy</string>
+    <string name="dummy_num">99</string>
+
+    <!--debug-->
+    <string name="debug_label_api_addr">API</string>
+    <string name="debug_label_nas_addr">NAS</string>
+    <string name="debug_label_session_id">SID</string>
+    <string name="debug_label_update_button">UP</string>
+    <string name="debug_label_category_clear">유지 카테고리 삭제</string>
+    <string name="debug_message_category_deleted">유지 카테고리를 삭제했습니다.</string>
+    <string name="debug_label_login_id">유지 로그인 ID 설정</string>
+    <string name="debug_message_set_login">유지 로그인 ID를 개발 서버용으로 변경했습니다.</string>
+    <string name="debug_message_set_login2">유지 로그인 ID를 변경했습니다.</string>
+    <string name="debug_label_radio_group">현지 코드 변경</string>
+    <string name="debug_label_radio_japanese">일본 모드</string>
+    <string name="debug_label_radio_chinese">중국 모드</string>
+    <string name="debug_label_currency_group">통화 코드 변경</string>
+    <string name="debug_label_radio_yen">엔</string>
+    <string name="debug_label_radio_gen">위안</string>
+    <string name="debug_label_radio_doller">달러</string>
+
+    <!--型番選択-->
+    <string name="part_number_select_more">더 보기</string>
+    <string name="part_number_select_minus">닫기</string>
+    <string name="part_number_select_select">이 형번 선택</string>
+    <string name="part_number_select_reset_value">값 리셋</string>
+    <string name="part_number_select_label">선택하십시오.</string>
+    <string name="part_number_not_select_label">선택하지 않음</string>
+    <string name="part_number_select_tab_condition">검색 조건</string>
+    <string name="part_number_select_tab_partlist_front">형번 후보(현재</string>
+    <string name="part_number_select_tab_partlist_period">건</string>
+    <string name="part_number_select_dialog_msg_confirm">선택 형번:</string>
+    <string name="part_number_select_dialog_msg">이 형번으로 하시겠습니까?</string>
+    <string name="part_number_select_dialog_confirm">선택</string>
+    <string name="part_number_select_dialog_cancel">취소</string>
+    <string name="part_number_select_notfount">선택된 조건과 일치하는 형번이 존재하지 않습니다.</string>
+
+    <string name="today_express_deadline">18:00</string>
+
+
+    <string name="today_ship_dialog_label_1">출하일 지정</string>
+    <string name="today_ship_dialog_label_2">당일 출하로 지정할 수 있는 제품입니다.\n 희망하실 경우 \'당일 출하\'를 선택하십시오. </string>
+
+    <string name="today_ship_dialog_select_1">당일 출하</string>
+    <string name="today_ship_dialog_select_2">사용하지 않음</string>
+
+    <string name="so430_dialog_titlle">확인 내용에서 변경된 제품이 포함되었습니다.\n \'제품 다시 설정\'을 선택하고 제품을 다시 선택하십시오.</string>
+    <string name="so430_dialog_button">닫기</string>
+
+    <string name="consulting_problems_tile">온라인 고객 서비스</string>
+    <string name="consulting_problems_header">질문 할 질문 유형을 선택하십시오.</string>
+    <string name="tell_description">문의 / 주문 / 애프터 세일즈 상담</string>
+    <string name="work_time">접수 시간：8:00-18:00（월요일부터 토요일까지, 남한의 법적 공휴일 제외）</string>
+    <string name="open_permission">미스미 e 카탈로그 전화가 허락되지 않아 즉시 설치 되니?</string>
+    <string name="open_error_tip">화면 설정을하십시오!</string>
+    <string name="cancel">취소됨</string>
+    <string name="cancel_call">전화 걸기 취소</string>
+    <string name="call">다이얼</string>
+    <string name="set">즉시 설치</string>
+    <string name="cancel_set">설정 취소</string>
+    <string name="click_live800">Live800을 클릭하십시오.</string>
+
+    <string name="order_list_go_to_pay">지불</string>
+    <string name="order_list_payment_type">지불 방법</string>
+    <string name="order_list_payment_deadline">지불 기간</string>
+    <string name="order_list_online_pay">온라인 지불</string>
+    <string name="order_pay_choose_type">지불 방법 선택</string>
+    <string name="order_pay_go_to_pay">즉시 지불</string>
+    <string name="show_order_status">주문의 현재 상태가 %s이며 지불 할 수 없습니다.</string>
+    <string name="order_out_time">주문이 지불 기간 내에 있지 않고 지불 할 수 없습니다.</string>
+    <string name="order_payment_username">수취인</string>
+    <string name="order_payment_address">주소</string>
+    <string name="order_payment_tel">전화</string>
+    <string name="order_payment_money">미지급금</string>
+    <string name="login_info_fail">로그인 정보가 유효하지 않습니다. 이제 기본 페이지로 돌아가십시오. 다시 로그인하십시오.</string>
+    <string name="login_info_unknown_fail">예기치 않은 오류가 발생하여 이제 기본 페이지로 돌아갑니다.</string>
+    <string name="login_info_time_out_fail">요청 시간이 초과되어 이제 기본 페이지로 돌아갑니다.</string>
+    <string name="login_info_statue_error">주문 결제 상태가 비정상 인 경우 Misi Mi 고객에게 문의하십시오.</string>
+    <string name="pay_dialog_8000">진행중인 주문 목록에서 주문의 지불 상태를 확인하십시오.</string>
+    <string name="pay_dialog_6001">사용자가 결제를 취소했습니다.</string>
+    <string name="pay_dialog_5000">중복 된 지불 요청</string>
+    <string name="pay_dialog_error">주문 결제가 실패했습니다.</string>
+
+    <string name="QR_tip">2 차원 코드를 상자에 넣으십시오.</string>
+    <string name="share_title">공유 대상</string>
+    <string name="share_to_qq">QQ 친구들</string>
+    <string name="share_to_weixin">마이크로 편지 친구</string>
+    <string name="share_to_email">메일</string>
+    <string name="share_click_text">구매하기</string>
+    <string name="QR_error">2 차원 코드를 인식 할 수 없습니다.</string>
+    <string name="email_detail_title">&lt;%1$s&gt;에서 플래시 쇼핑몰 공유</string>
+    <string name="email_itemdetail_text_format">
+        안녕! \ n 다음 항목을 플래시 쇼핑몰에서 찾았습니다. 확인하십시오. \ n
+         --------------------------------------------- \ n
+         【모델】     :%1$s\n
+         【상품 이름】:%2$s\n
+         【브랜드】   :%3$s\n
+         【수량】     :%4$s\n
+         【Total】    :%5$s\n
+         【배달 날짜】:%6$s\n
+         【가격】     :%7$s\n
+         【웹 페이지보기로 이동】:%8$s\n
+         ---------------------------------------------- \n
+         참고 : \n
+         ※ 가격과 배송 날짜 정보가 변경 될 수 있으므로 구입 전에 다시 확인하십시오. \n
+         http://kr.misumi-ec.com/\n
+    </string>
+    <string name="email_cart_item_text_format">
+        【모델】      :%1$s\n
+        【상품 이름】 :%2$s\n
+        【브랜드】    :%3$s\n
+        【수량】      :%4$s\n
+        【배송일】    :%5$s\n
+        【Total】     :%6$s(세금 포함 :%7$s) \n
+        【웹 페이지보기로 이동】 :%8$s\n
+    </string>
+    <string name="share_cart_title_text_format">장바구니가&lt;%1$s&gt;에 의해 공유되었습니다.</string>
+    <string name="email_cart_title_text_format">&lt;%1$s&gt;의 장바구니에서 공유하십시오.</string>
+    <string name="email_cart_header">안녕! \n 플래시 쇼핑몰 내 쇼핑 목록입니다. 확인하십시오. \n</string>
+    <string name="email_cart_line1">----------------------------------------------\n</string>
+    <string name="email_cart_line2">============================\n</string>
+    <string name="email_cart_line3">\n=============================\n</string>
+    <string name="email_cart_end">
+         참고:\n
+         ※ 가격과 배송 날짜 정보가 변경 될 수 있으므로 구입 전에 다시 확인하십시오. \n
+         http://kr.misumi-ec.com/
+    </string>
+    <string name="email_qt_item_text_format">
+        【Model】    :%1$s\n
+        【상품 이름】:%2$s\n
+        【브랜드】   :%3$s\n
+        【수량】     :%4$s\n
+        【배송일】   :%5$s\n
+        【소계】     :%6$s (세금 포함 : %7$s) \n
+    </string>
+    <string name="email_qt_title_text_format">%&lt;%1$s&gt;의 인용 부호 중\n</string>
+    <string name="email_qt_header">
+        ================\n
+         【견적 번호】 :%1$s\n
+         【견적 날짜】 :%2$s\n
+         【견적 유효】 :%3$s\n
+         【구독자】    :%4$s\n
+         【상품 수】   :%5$s\n
+         【총 금액 (세금 제외)】 :%6$s위안\n
+         【총 금액 (세금 포함)】 :%7$s위안
+        ----------------------------------------------\n
+        ↓↓견적 포함 상품↓↓\n
+        ----------------------------------------------\n
+    </string>
+    <string name="email_qt_line1">----------------------------------------------\n</string>
+    <string name="email_qt_line2">\n=============================\n</string>
+    <string name="email_qt_end">
+         참고 :\n
+         ※ 가격과 배송 날짜 정보가 변경 될 수 있으므로 구입 전에 다시 확인하십시오.\n
+         http://kr.misumi-ec.com/
+    </string>
+    <string name="text_empty">-</string>
+    <string name="share_fail">공유에 실패했습니다!</string>
+    <string name="share_number_tip">번호가 변경되었습니다. 가격을 확인한 다음 다시 공유하십시오. (변경하기 전에 번호를 계속 사용하는 경우)</string>
+    <string name="share_continue">계속하기</string>
+    <string name="total_price_format">%1$s (세금 포함 :%2$s)</string>
+    <string name="unconfirmed">(확인되지 않음)</string>
+    <string name="misumi_name">미시 사용자</string>
+    <string name="share_cart_content">이것은 플래시 쇼핑몰 내 쇼핑 목록입니다. 확인해주십시오.</string>
+    <string name="share_detail_title">이 항목은 &lt;%1$s&gt;에 의해 공유됩니다.</string>
+    <string name="address_attention_tip">다음 배달 주소는 서비스 범위를 벗어납니다.</string>
+    <string name="start_app_text">즉시 경험</string>
+    <string name="branc_search_title">브랜드 별 필터링 (%1$s)</string>
+    <string name="brand_selected_tip">* 최대 6 개의 브랜드를 필터링 할 수 있습니다.</string>
+    <string name="clear">비워진</string>
+    <string name="selected_brands">선택한 브랜드 (%1$s선택됨) :</string>
+</resources>

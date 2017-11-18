@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--ADD NT-SLJ 16/11/11 Live800 FR-->
+    <string name="consulting_problems_tile">在线客服</string>
+    <string name="consulting_problems_header">请选择您要咨询的问题种类</string>
+    <string name="tell_description">询价/订购/售后咨询电话</string>
+    <string name="work_time">受理时间：8:00-18:00（周一~周六，不包括中国法定节假日）</string>
+    <string name="open_permission">米思米没有电话呼出权限，立即设置吗？</string>
+    <string name="open_error_tip">请去设置画面设置！</string>
+    <string name="cancel">取消</string>
+    <string name="cancel_call">取消拨号</string>
+    <string name="call">拨号</string>
+    <string name="set">立即设置</string>
+    <string name="cancel_set">取消设置</string>
+    <string name="click_live800">点击Live800</string>
+    <!--ADD NT-SLJ 16/11/11 Live800 TO-->
+
+    <!--ADD NT-SLJ 16/11/11 AliPay Payment FR-->
+    <string name="order_list_go_to_pay">付款</string>
+    <string name="order_list_payment_type">支付方式</string>
+    <string name="order_list_payment_deadline">支付期限</string>
+    <string name="order_list_online_pay">在线支付</string>
+    <string name="order_pay_choose_type">选择支付方式</string>
+    <string name="order_pay_go_to_pay">立即支付</string>
+    <string name="show_order_status">该订单目前状态为%s，无法进行支付</string>
+    <string name="order_out_time">该订单不在支付期限内，无法进行支付</string>
+    <string name="order_payment_username">收货人</string>
+    <string name="order_payment_address">地址</string>
+    <string name="order_payment_tel">电话</string>
+    <string name="order_payment_money">应付金额</string>
+    <string name="login_info_fail">登录信息失效，现在返回主页面，请重新登录。</string>
+    <string name="login_info_unknown_fail">发生了无法预期的错误，现在返回主页面。</string>
+    <string name="login_info_time_out_fail">请求超时，现在返回主页面。</string>
+    <string name="login_info_statue_error">订单支付状态异常，请联系米思米客户</string>
+    <string name="pay_dialog_8000">正在处理中，请查询订单列表中订单的支付状态</string>
+    <string name="pay_dialog_6001">用户取消支付</string>
+    <string name="pay_dialog_5000">重复支付请求</string>
+    <string name="pay_dialog_error">订单支付失败</string>
+    <string name="search_keyword_count_str_tip">※本结果可能与网页版存在差异</string>
+    <!--ADD NT-SLJ 16/11/11 AliPay Payment TO-->
+
+    <!--ADD NT-LWL 17/05/18 QR scan FR-->
+    <string name="QR_tip">请将商品二维码放入框内</string>
+    <string name="share_title">分享到</string>
+    <string name="share_to_qq">QQ好友</string>
+    <string name="share_to_weixin">微信好友</string>
+    <string name="share_to_email">邮件</string>
+    <string name="share_click_text">交给采购购买</string>
+    <string name="QR_error">无法识别二维码</string>
+    <string name="email_detail_title">来自&lt;%1$s&gt;在闪购商城的商品分享</string>
+    <string name="email_itemdetail_text_format">
+        你好！\n我在闪购商城发现了以下商品，请确认。\n
+        ---------------------------------------------\n
+        【型　号】：%1$s\n
+        【商品名】：%2$s\n
+        【品　牌】：%3$s\n
+        【数　量】：%4$s\n
+        【合　计】：%5$s\n
+        【发货日】： %6$s\n
+        【单　价】：%7$s\n
+        【去网页版查看】:%8$s\n
+        ----------------------------------------------\n
+        注意事项：\n
+        ※ 价格及发货日信息可能发生变化，购买前请再次进行确认。\n
+        http://cn.misumi-ec.com/\n
+    </string>
+    <string name="email_cart_item_text_format">
+        【型　号】：%1$s\n
+        【商品名】：%2$s\n
+        【品　牌】：%3$s\n
+        【数　量】：%4$s\n
+        【发货日】： %5$s\n
+        【合　计】：%6$s元（含税：%7$s元）\n
+        【去网页版查看】：%8$s\n
+    </string>
+    <string name="share_cart_title_text_format">此购物车分享来自&lt;%1$s&gt;</string>
+    <string name="email_cart_title_text_format">来自&lt;%1$s&gt;的购物车分享</string>
+    <string name="email_cart_header">你好！\n这是我在闪购商城的购物清单，请确认。\n</string>
+    <string name="email_cart_line1">----------------------------------------------\n</string>
+    <string name="email_cart_line2">============================\n</string>
+    <string name="email_cart_line3">\n=============================\n</string>
+    <string name="email_cart_end">
+        注意事项：\n
+        ※ 价格及发货日信息可能发生变化，购买前请再次进行确认。\n
+        http://cn.misumi-ec.com/
+    </string>
+    <string name="email_qt_item_text_format">
+        【型　号】：%1$s\n
+        【商品名】：%2$s\n
+        【品　牌】：%3$s\n
+        【数　量】：%4$s\n
+        【发货日】： %5$s\n
+        【小　计】：%6$s元（含税：%7$s元）\n
+    </string>
+    <string name="email_qt_title_text_format">来自&lt;%1$s&gt;的报价单分享\n</string>
+    <string name="email_qt_header">
+        ============================\n
+        【报价单号】：%1$s\n
+        【报价日期】：%2$s\n
+        【报价有效期】：%3$s\n
+        【订购人】：%4$s\n
+        【商品件数】：%5$s\n
+        【合计金额（不含税）】：%6$s元\n
+        【合计金额（含税）】：%7$s元\n
+        ----------------------------------------------\n
+        ↓↓报价单所含商品↓↓\n
+        ----------------------------------------------\n
+    </string>
+    <string name="email_qt_line1">----------------------------------------------\n</string>
+    <string name="email_qt_line2">\n=============================\n</string>
+    <string name="email_qt_end">
+        注意事项：\n
+        ※ 价格及发货日信息可能发生变化，购买前请再次进行确认。\n
+        http://cn.misumi-ec.com/
+    </string>
+    <string name="text_empty">-</string>
+    <string name="share_fail">分享失败！</string>
+    <string name="share_number_tip">数量已变更，请确认价格后再次分享。（如继续将使用变更前数量）</string>
+    <string name="share_continue">继续</string>
+    <string name="total_price_format">%1$s元（含税：%2$s元）</string>
+    <string name="unconfirmed">（未确认）</string>
+    <string name="misumi_name">米思米用户</string>
+    <string name="share_cart_content">这是我在闪购商城的购物清单，请确认</string>
+    <string name="share_detail_title">此商品分享来自&lt;%1$s&gt;</string>
+    <string name="address_attention_tip">以下配送地址超出闪达服务范围。</string>
+    <string name="confirm_express_type_caution_normal">根据数量有可能无法使用瞬达服务。</string>
+    <!--ADD NT-LWL 17/05/18 QR scan TO-->
+    <!--ADD NT-LWL 17/08/22 Depo FR-->
+    <string name="so_dialog_info_6">・您指定的闪达（V）服务必须在17:00前提交订购。
+                \n点击【返回】，可将商品放入购物车重新报价或订购。
+                \n点击【继续订购】，订购您选择的商品并闪达（V）服务将被自动取消。</string>
+    <string name="label_stoke_v">闪达（V）</string>
+    <string name="label_stoke_v0">闪达（V）</string>
+    <!--ADD NT-LWL 17/08/22 Depo TO-->
+    <string name="start_app_text">立即体验</string>
+    <string name="branc_search_title">按品牌筛选（%1$s）</string>
+    <string name="brand_selected_tip">*您最多可筛选6个品牌</string>
+    <string name="clear">清空</string>
+    <!--ADD NT-LWL 17/09/29 ExcludeFreight FR -->
+    <string name="order_quote_hist_detail_tip">※以上金额不含运费。</string>
+    <!--ADD NT-LWL 17/09/29 ExcludeFreight TO -->
+</resources>

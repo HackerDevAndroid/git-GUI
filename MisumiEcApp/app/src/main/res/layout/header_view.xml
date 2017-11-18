@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_header_background"
+    android:weightSum="82">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="25">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonBack"
+            android:background="@drawable/header_back_button_selector" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonOpenMenu"
+            android:src="@drawable/header_menu_icon"
+            android:background="@drawable/header_menu_button_selector" />
+        <!--ADD NT-LWL 17/05/18 QR scan FR-->
+        <ImageView
+            android:id="@+id/scan"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:src="@drawable/header_scan_button_selector"/>
+        <!--ADD NT-LWL 17/05/18 QR scan TO-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="33"
+        android:weightSum="4"
+        android:id="@+id/layourtLogoArea"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewLogo"
+            android:layout_weight="3"
+            android:src="@drawable/header_logo_mjp" />
+	    <!--ADD NT-SLJ 16/11/12 Alipay payment FR-->
+        <ImageView
+            android:id="@+id/buttonConsulting"
+            android:visibility="visible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/dp_7"
+            android:paddingBottom="@dimen/dp_7"
+            android:src="@drawable/consul_selector"/>
+        <!--ADD NT-SLJ 16/11/12 Alipay payment FR-->
+    </LinearLayout>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/buttonSearch"
+        android:layout_weight="8"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/header_search_button_selector" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMyParts"
+        android:layout_weight="8"
+        android:background="@drawable/header_myparts_button_selector" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonCart"
+            android:background="@drawable/header_cart_button_selector" />
+
+        <TextView
+            android:id="@+id/txtCartBadge"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/header_cart_badge2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_10"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

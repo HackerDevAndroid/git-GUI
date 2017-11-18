@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="vn.edu.topica.hocradiobutton.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review System" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radVeryGood"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Very Good" />
+
+        <RadioButton
+            android:id="@+id/radGood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good" />
+
+        <RadioButton
+            android:id="@+id/radNor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Normal" />
+
+        <RadioButton
+            android:id="@+id/radBad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bad" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnVote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vote"
+        android:textAllCaps="false" />
+
+</LinearLayout>

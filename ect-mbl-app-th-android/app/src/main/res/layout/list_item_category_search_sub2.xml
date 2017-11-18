@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15">
+
+
+            <!-- 商品画像エリア -->
+            <FrameLayout
+                android:layout_width="@dimen/dp_76"
+                android:layout_height="@dimen/dp_31"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp_15">
+
+                <!-- 画像本体 -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/subCategoryImage"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter" />
+
+                <!-- 読み込み中 -->
+                <ProgressBar
+                    android:id="@+id/progressView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/subcategoryName"
+                android:text="@string/dummy_string"
+                android:textSize="@dimen/dp_14"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@color/color_text_default"
+                android:maxLines="2"
+                android:editable="false"
+                android:ellipsize="end" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_17"
+                android:layout_height="@dimen/dp_11"
+                android:id="@+id/list_arrorw_right"
+                android:src="@drawable/image_next_arrow"
+                android:layout_gravity="center|right" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_list_divider_9C" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/layoutTapItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_item_selector" />
+
+</FrameLayout>
+

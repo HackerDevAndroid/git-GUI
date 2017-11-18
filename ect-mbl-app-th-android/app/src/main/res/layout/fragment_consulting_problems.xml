@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><!--ADD NT-SLJ 16/11/12 Alipay payment FR-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_header_background"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:text="@string/consulting_problems_tile"
+        android:textColor="@color/color_detail_text"
+        android:textSize="@dimen/dp_16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_background_CC"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_10"
+        android:text="@string/consulting_problems_header"
+        android:textColor="@color/color_text_default"
+        android:textSize="@dimen/dp_14" />
+
+    <ListView
+        android:id="@+id/listView_questtions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_background_CC"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/color_background_CC"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/tell_description" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tell"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:textSize="@dimen/dp_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="@string/work_time" />
+    </LinearLayout>
+</LinearLayout><!--ADD NT-SLJ 16/11/12 Alipay payment TO-->

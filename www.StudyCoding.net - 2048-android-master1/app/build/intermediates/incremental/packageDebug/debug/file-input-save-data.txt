@@ -1,0 +1,36 @@
+#Internal package file, do not edit.
+#Mon Nov 06 15:02:46 ICT 2017
+2.base=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+5.file=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\layout\\activity_main.xml
+5.set=ANDROID_RESOURCE
+3.base=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+6.file=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\resources.arsc
+2.set=DEX
+10.set=DEX
+10.file=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16\\classes.dex
+4.base=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+7.file=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14\\classes.dex
+7.set=DEX
+count=11
+0.file=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13\\classes.dex
+5.base=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+8.file=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11\\classes.dex
+4.set=ANDROID_RESOURCE
+6.base=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+1.file=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\menu\\main.xml
+9.set=ANDROID_RESOURCE
+9.file=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_launcher.png
+10.base=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
+1.set=ANDROID_RESOURCE
+7.base=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+2.file=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12\\classes.dex
+6.set=ANDROID_RESOURCE
+0.base=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+8.base=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+3.file=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15\\classes.dex
+3.set=DEX
+1.base=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+9.base=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+4.file=D\:\\AndroidStudioProjects\\www.StudyCoding.net - 2048-android-master1\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\AndroidManifest.xml
+8.set=DEX
+0.set=DEX

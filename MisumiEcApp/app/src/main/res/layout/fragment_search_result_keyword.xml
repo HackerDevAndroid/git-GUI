@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fragment_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+		android:id="@+id/search_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+		android:gravity="center_vertical"
+        android:background="@color/color_top_search_background">
+
+
+		<!-- 商品画像エリア -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+			>
+
+	        <AutoCompleteTextView
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/dp_36"
+	            android:id="@+id/editPartNumber"
+	            android:background="@drawable/input_text"
+	            android:textSize="@dimen/dp_12"
+	            android:inputType="text"
+	            android:singleLine="true"
+	            android:maxLength="255"
+				android:layout_gravity="center_vertical"
+	            android:paddingLeft="@dimen/dp_18"
+	            android:paddingRight="@dimen/dp_40"/>
+
+	        <Button
+	            android:layout_width="@dimen/dp_20"
+	            android:layout_height="@dimen/dp_20"
+	            android:id="@+id/buttonKeywordClear"
+	            android:layout_gravity="center_vertical|right"
+	            android:background="@drawable/search_keyword_clearselected"
+	            android:layout_marginRight="@dimen/dp_10" />
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:background="@drawable/search_button_selector"
+			/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_list_divider_33"
+        android:id="@+id/category_diviver"/>
+
+    <include layout="@layout/include_empty_list_item"
+        android:id="@+id/emptyList"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LinearCategory">
+
+        <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@null"
+
+            android:id="@+id/seriesList" />
+
+    </LinearLayout>
+</LinearLayout>

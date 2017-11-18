@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_app_text">立即体验</string>
+    <string name="branc_search_title">按品牌筛选（%1$s）</string>
+    <string name="brand_selected_tip">*您最多可筛选6个品牌</string>
+    <string name="clear">清空</string>
+    <string name="selected_brands">已选品牌（已选%1$s项）：</string>
+</resources>

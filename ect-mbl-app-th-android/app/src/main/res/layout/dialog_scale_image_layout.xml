@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 読込み中インジケータ付きのImageView -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_10"
+    android:background="#FFF"
+    android:splitMotionEvents="false">
+
+    <jp.co.misumi.misumiecapp.widget.ScaleImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <ProgressBar
+        android:id="@+id/progressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ListView</string>
+    <string-array name="arrDay">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wenesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+</resources>

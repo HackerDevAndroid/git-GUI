@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Top"
+    android:background="@color/color_fragment_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=""
+        android:id="@+id/textViewLabel"
+        android:gravity="center_vertical" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=""
+        android:id="@+id/textViewColon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical" />
+
+    <jp.co.misumi.misumiecapp.widget.AutoFitTextView
+        android:id="@+id/textViewDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	        android:maxLines="1"
+			android:ellipsize="none"
+			android:scrollHorizontally="true"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/dp_12"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=""
+        android:id="@+id/textViewPeriod"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewDay"
+        android:layout_toEndOf="@+id/textViewDay"
+        android:gravity="center_vertical" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=""
+        android:id="@+id/textViewTilde"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewDay"
+        android:layout_toEndOf="@+id/textViewDay"
+        android:gravity="center_vertical" />
+</LinearLayout>

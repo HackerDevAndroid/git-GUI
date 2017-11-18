@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "999824194658",
+    "project_id": "misumiecapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999824194658:android:1b918f96401fab99",
+        "android_client_info": {
+          "package_name": "com.misumi_ec.jp.misumi_ec"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNduXeX-LJkCqWg-LndiRa45z1TwSCWvA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-6311415-25"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999824194658:android:e50b811501360aeb",
+        "android_client_info": {
+          "package_name": "com.misumi_ec.cn.misumi_ec"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNduXeX-LJkCqWg-LndiRa45z1TwSCWvA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-6311415-25"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

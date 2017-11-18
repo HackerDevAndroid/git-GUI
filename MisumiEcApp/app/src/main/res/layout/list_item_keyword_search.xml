@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/color_background_FF"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10">
+
+	<!-- 商品画像エリア -->
+	<FrameLayout
+        android:layout_width="@dimen/dp_67"
+        android:layout_height="@dimen/dp_67"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_5">
+
+		<!-- 画像本体 -->
+	    <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:id="@+id/productImage"
+	        android:adjustViewBounds="true"
+            android:layout_gravity="center"
+	        android:scaleType="fitCenter" />
+
+		<!-- 読み込み中 -->
+        <ProgressBar
+            android:id="@+id/progressView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+			/>
+
+		<!-- 枠線 -->
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/text_frame_image_view_1dp"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/dp_15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:weightSum="3"
+                    android:id="@+id/layoutPictArea">
+
+                    <TextView
+	                    android:id="@+id/textViewPict1"
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginRight="@dimen/dp_4"
+	                    android:text="@string/dummy_string"
+	                    android:textSize="@dimen/dp_10"
+	                    android:gravity="center"
+	                    android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textViewPict2"
+	                    android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_4"
+                        android:text="@string/dummy_string"
+                        android:textSize="@dimen/dp_10"
+                        android:gravity="center"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textViewPict3"
+	                    android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:gravity="center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_string"
+                    android:id="@+id/textPartsName"
+                    android:textColor="@color/color_text_default"
+                    android:layout_marginBottom="@dimen/dp_5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seriesName"
+                    android:text="@string/dummy_string"
+                    android:textSize="@dimen/font_name_15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_text_default"
+                    android:layout_marginBottom="@dimen/dp_10" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/brandName"
+                    android:text="@string/dummy_string"
+                    android:textSize="@dimen/dp_12"
+                    android:textStyle="normal"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_text_default"
+                    android:layout_marginBottom="@dimen/dp_10" />
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="@dimen/dp_10"-->
+                    <!--android:layout_marginTop="@dimen/dp_5"-->
+                    <!--android:layout_marginBottom="@dimen/dp_5"-->
+                    <!--android:id="@+id/catchCopy"-->
+                    <!--android:maxLines="2"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:text="キャッチコピー"-->
+                    <!--android:textSize="@dimen/dp_10"/>-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <view
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/dp_1"
+                class="jp.co.misumi.misumiecapp.widget.UnitPriceLayout"
+                android:id="@+id/viewUnitPrice"
+                android:layout_weight="1"
+                android:background="@color/color_fragment_background"
+                android:padding="@dimen/dp_5" />
+
+            <view
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                class="jp.co.misumi.misumiecapp.widget.DayToShipLayout"
+                android:id="@+id/viewDayToShip"
+                android:layout_weight="1"
+                android:background="@color/color_fragment_background"
+                android:padding="@dimen/dp_5" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

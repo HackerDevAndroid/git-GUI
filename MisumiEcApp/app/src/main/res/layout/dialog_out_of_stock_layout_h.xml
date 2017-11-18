@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	>
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="@dimen/dp_15"
+	        android:background="@color/color_background_error">
+
+	        <ImageView
+	            android:layout_width="@dimen/dp_14"
+	            android:layout_height="@dimen/dp_11"
+	            android:background="@drawable/icon_attention"
+	            android:layout_gravity="center_vertical"/>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="@dimen/dp_5"
+	            android:text="@string/out_of_stock_dialog_titlle"
+	            android:textColor="@color/color_error_frame_red_DD"
+	            android:textSize="@dimen/dp_15"
+	            android:textStyle="bold"
+	            android:gravity="center_vertical"
+	            />
+	    </LinearLayout>
+
+
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="@dimen/dp_15"
+	        android:paddingBottom="@dimen/dp_10"
+	        android:paddingRight="@dimen/dp_30"
+	        android:paddingLeft="@dimen/dp_30"
+	        android:text="@string/out_of_stock_dialog_info"
+	        android:textSize="@dimen/dp_12"
+	        android:textColor="@color/color_text_default"
+	        />
+
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="@dimen/dp_30"
+	        android:layout_marginLeft="@dimen/dp_30"
+	        android:orientation="vertical">
+
+	        <TextView
+				android:id="@+id/textCount"
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/dp_25"
+	            android:background="@drawable/out_of_stock_list_title"
+	            android:textColor="@color/color_text_default"
+		        android:textSize="@dimen/dp_12"
+	            android:gravity="center"
+	    		/>
+
+		</LinearLayout>
+
+</LinearLayout>

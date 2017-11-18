@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fragment_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d2d2d2"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/categoryName"
+            android:textColor="@color/color_text_default"
+            android:textSize="@dimen/dp_14"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <!--ADD NT-LWL 17/09/07 BrandSearch FR -->
+    <LinearLayout
+        android:id="@+id/layoutSlideTrigger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+
+        android:background="@color/color_text_white_FF">
+
+        <TextView
+            android:id="@+id/textSlideSwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:text="@string/branc_search_title"
+            android:textSize="@dimen/dp_12"
+            android:textColor="@color/color_category_label_color" />
+
+        <ImageView
+            android:id="@+id/imageSlideSwitch"
+            android:layout_width="@dimen/dp_17"
+            android:layout_height="@dimen/dp_11"
+
+            android:src="@drawable/slide_switch_image_selector"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_list_divider_9C" />
+    <!--ADD NT-LWL 17/09/07 BrandSearch FR -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LinearCategory">
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/nullCheck"-->
+        <!--android:text="@string/search_series_count_0"-->
+        <!--android:textSize="@dimen/dp_20"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:textColor="@color/color_text_default" />-->
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@drawable/list_item_selector"
+            android:drawSelectorOnTop="true"
+            android:id="@+id/seriesList">
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
+

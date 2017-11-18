@@ -1,0 +1,46 @@
+{
+    "prefixURL": "http://care3.live800.com/live800/chatClient/chatbox.jsp",
+    "tel":"021-6710-8701",
+    "questionList": [
+        {
+            "question":"如何与米思米交易？",
+            "companyID": "8102",
+            "configID": "1172",
+            "codeType": "steady",
+            "name": "",
+            "live800_ud_CellCD": "NEW"
+        },
+        {
+            "question":"如何获得报价、如何订货",
+            "companyID": "8102",
+            "configID": "1096",
+            "codeType": "steady",
+            "name": "",
+            "live800_ud_CellCD": ""
+        },
+        {
+            "question":"如何查看发货状态",
+            "companyID": "8102",
+            "configID": "1175",
+            "codeType": "steady",
+            "name": "",
+            "live800_ud_CellCD": ""
+        },
+        {
+            "question":"退货及投诉",
+            "companyID": "8102",
+            "configID": "1176",
+            "codeType": "steady",
+            "name": "",
+            "live800_ud_CellCD": ""
+        },
+        {
+            "question":"其他",
+            "companyID": "8102",
+            "configID": "1177",
+            "codeType": "steady",
+            "name": "",
+            "live800_ud_CellCD": ""
+        }
+    ]
+}

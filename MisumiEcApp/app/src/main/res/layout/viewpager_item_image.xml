@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 商品画像エリア -->
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	>
+
+	<!-- 画像本体 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter" />
+
+	<!-- 読み込み中 -->
+    <ProgressBar
+        android:id="@+id/progressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+		/>
+
+	<!-- 枠線 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#0000"/>
+
+<!--
+        android:background="@drawable/text_frame_black_1dp"
+-->
+
+</FrameLayout>

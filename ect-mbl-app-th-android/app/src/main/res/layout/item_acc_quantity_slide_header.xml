@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_35"
+    android:weightSum="3">
+
+    <jp.co.misumi.misumiecapp.widget.AutoFitTextView
+        android:id="@+id/textQuantityTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:text="@string/item_detail_slide_head1"
+        android:textColor="@color/color_emergency_header_text"
+        android:textSize="@dimen/dp_13"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/emergency_header_left_line" />
+
+    <jp.co.misumi.misumiecapp.widget.AutoFitTextView
+        android:id="@+id/textNormalPriceTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:text="@string/item_detail_slide_head2"
+        android:textColor="@color/color_emergency_header_text"
+        android:textSize="@dimen/dp_13"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/emergency_header_right_line" />
+
+    <jp.co.misumi.misumiecapp.widget.AutoFitTextView
+        android:id="@+id/textDaysToShipTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:text="@string/item_detail_slide_head3"
+        android:textColor="@color/color_emergency_header_text"
+        android:textSize="@dimen/dp_13"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/emergency_header_right_line" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_200"
+    android:layout_height="@dimen/dp_100"
+    android:gravity="center"
+    android:background="@drawable/progress_background">
+
+    <ImageView
+        android:id="@+id/loading_progress"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="55dp"
+        android:layout_height="39dp"
+        android:background="@drawable/loading_progress" />
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+	android:gravity="center_vertical"
+	>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+	    android:paddingLeft="@dimen/dp_15"
+		android:gravity="center_vertical"
+
+        android:text="@string/top_label_status_title"
+        android:textSize="15dp"
+        android:textColor="@color/color_text_default"
+		android:background="@color/color_background_EE"
+		/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_list_divider_9C"
+        />
+
+
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="@dimen/dp_30"
+	    android:layout_marginRight="@dimen/dp_30"
+	    android:layout_marginTop="@dimen/dp_15"
+	    android:layout_marginBottom="@dimen/dp_10"
+
+		android:gravity="center_vertical"
+		android:background="@drawable/list_item_frame_1dp"
+		>
+
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp_1"
+	        android:background="@color/color_list_divider_9C"
+	        />
+
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="25dp"
+			android:gravity="center"
+
+	        android:text="@string/top_label_quotation_status_title"
+	        android:textSize="@dimen/font_body_12dp"
+	        android:textColor="@color/color_text_default"
+			android:background="@color/color_background_D2"
+			/>
+
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp_1"
+	        android:background="@color/color_list_divider_9C"
+	        />
+
+
+		<LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="42dp"
+			android:orientation="horizontal"
+
+	        android:gravity="center"
+			>
+
+	        <ImageView
+	            android:layout_width="@dimen/dp_20"
+	            android:layout_height="@dimen/dp_20"
+	            android:id="@+id/imageViewEstimateStatus"
+	            android:src="@drawable/top_icon_status_ok" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+			    android:layout_marginLeft="@dimen/dp_5"
+
+	            android:id="@+id/autoTextViewEstimateStatus"
+	            android:text="@string/dummy_string"
+	            android:textSize="@dimen/dp_12"
+	            android:textColor="@color/color_text_default"
+	            android:layout_gravity="center_vertical" />
+	    </LinearLayout>
+
+
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp_1"
+	        android:background="@color/color_list_divider_9C"
+	        />
+
+
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="25dp"
+			android:gravity="center"
+
+	        android:text="@string/top_label_order_status_title"
+	        android:textSize="@dimen/font_body_12dp"
+	        android:textColor="@color/color_text_default"
+			android:background="@color/color_background_D2"
+			/>
+
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dp_1"
+	        android:background="@color/color_list_divider_9C"
+	        />
+
+
+		<LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="42dp"
+			android:orientation="horizontal"
+
+	        android:gravity="center"
+			>
+
+	        <ImageView
+	            android:layout_width="@dimen/dp_20"
+	            android:layout_height="@dimen/dp_20"
+	            android:id="@+id/imageViewOrderStatus"
+	            android:src="@drawable/top_icon_status_ng" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+			    android:layout_marginLeft="@dimen/dp_5"
+
+	            android:id="@+id/autoTextViewOrderStatus"
+	            android:text="@string/dummy_string"
+	            android:textSize="@dimen/dp_12"
+	            android:textColor="@color/color_text_default"
+	            android:layout_gravity="center_vertical" />
+	    </LinearLayout>
+
+
+	</LinearLayout>
+
+</LinearLayout>

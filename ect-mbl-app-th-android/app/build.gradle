@@ -1,0 +1,308 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+
+// ビルド環境毎の設定ファイルの有無を確認
+// 自サーバ環境でビルドする場合はapp配下にuser.propertiesを作成しサーバアドレスを設定すること
+// 例）ext.LocalApiServer="\"http://172.16.109.119/server/\""
+def ApiServer
+def NasServer
+def UseLocalSetting
+if (file('user.properties').exists()) {
+    print "user.properties\n"
+    apply from: "user.properties"
+    ApiServer = ext.LocalApiServer
+    NasServer = ext.LocalNasServer
+    UseLocalSetting = true
+} else {
+    print "not user.properties\n"
+    UseLocalSetting = false
+    ApiServer = NasServer = ""
+}
+
+android {
+    signingConfigs {
+        release {
+        }
+    }
+    //--ADD NT-LWL 17/05/20 Share FR -
+    // 微信分享测试
+    signingConfigs {
+        debug {
+            def propsFile = rootProject.file('./app/keystore.properties')
+            def props = new Properties()
+            props.load(new FileInputStream(propsFile))
+            storeFile = file(props['storeFile'])
+            storePassword = props['storePassword']
+            keyAlias = props['keyAlias']
+            keyPassword = props['keyPassword']
+        }
+    }
+    //--ADD NT-LWL 17/05/20 Share FR -
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    lintOptions {
+        abortOnError false
+        ignoreWarnings true
+        disable 'MissingTranslation', 'TypographyQuotes'
+        disable 'ExtraTranslation', 'TypographyQuotes'
+    }
+    defaultConfig {
+        applicationId 'com.misumi_ec.cn.misumieccnent'
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 10100  //10010
+        versionName '1.20.30'  //'1.20.20'
+        multiDexEnabled true
+//        buildConfigField "Integer", "ConnectTimeout", "(20*1000)"
+        buildConfigField "Integer", "ConnectTimeout", "(300*1000)"
+        //-- ADD NT-LWL 16/12/28 AliPay Payment FR -
+        //验证倒计时设置
+        buildConfigField "Integer", "VerificationCountdown", "(5*1000)"
+        //-- ADD NT-LWL 16/12/28 AliPay Payment TO -
+        buildConfigField "String", "subsidiaryCode", "\"MJP\""
+        buildConfigField "String", "AppIDforAPI", "\"db28096e-1b6d-4056-bf72-f79882918bb4\""
+        //-- UDP NT-LWL 17/03/21 AliPay Payment FR -
+//        buildConfigField "Integer", "ListMaxCount", "200"
+        buildConfigField "Integer", "ListMaxCount", "500"
+        //-- UDP NT-LWL 17/03/21 AliPay Payment TO -
+        buildConfigField "Integer", "fragmentMaxCount", "10"
+
+        buildConfigField "String", "SaicataAppIDWebview", "\"android-jp-catalog-inapp\""
+        buildConfigField "String", "SaicataAppIDBrowser", "\"android-jp-catalog-brows\""
+
+        buildConfigField "boolean", "hideWechatShare", "true"
+        //--ADD NT-LWL 17/05/20 Share FR -
+        // 微信 appId
+        buildConfigField "String", "weixinAppId", "\"wx927d38d1ea3e8baa\""
+        // QQ appId
+        buildConfigField "String", "tencentAppId", "\"1106114988\""
+        // 内部测试环境
+//        buildConfigField "String", "ShareUrl", "\"http://192.168.7.132:8081/Misumi/\""
+        // 分享url stg环境
+//        buildConfigField "String", "ShareUrl", "\"http://cn.m.stg.misumi-ec.com:8080/Misumi/\""
+        // 分享url 生产环境
+        buildConfigField "String", "ShareUrl", "\"http://cn.m.misumi-ec.com:8080/Misumi/\""
+        //--ADD NT-LWL 17/05/20 Share TO -
+    }
+    applicationVariants.all { variant ->
+        if (variant.buildType.name.equals("release")) {
+            variant.outputs.each { output ->
+                if (output.outputFile != null && output.outputFile.name.endsWith('.apk')) {
+                    // Rename APK
+                    def baseName = "MisumiEcApp"
+                    def versionCode = defaultConfig.versionCode
+                    def versionName = defaultConfig.versionName
+                    def subsidiaryCode = variant.flavorName
+                    def date = new SimpleDateFormat("yyyyMMdd_HHmm").format(new Date())
+                    def newName = "${baseName}_${subsidiaryCode}_r${versionCode}_v${versionName}_${date}.apk"
+                    output.outputFile = new File(output.outputFile.parent, newName)
+                }
+            }
+        }
+        if (variant.buildType.name.equals("debug")) {
+            variant.outputs.each { output ->
+                if (output.outputFile != null && output.outputFile.name.endsWith('.apk')) {
+                    // Rename APK
+                    def baseName = "MisumiEcAppDeb"
+                    def versionCode = defaultConfig.versionCode
+                    def versionName = defaultConfig.versionName
+                    def subsidiaryCode = variant.flavorName
+                    def newName = "${baseName}_${subsidiaryCode}_r${versionCode}_v${versionName}.apk"
+                    output.outputFile = new File(output.outputFile.parent, newName)
+                }
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "LogV", "false"
+            buildConfigField "boolean", "LogE", "false"
+            buildConfigField "boolean", "LogD", "false"
+            buildConfigField "boolean", "LogF", "false"
+            buildConfigField "boolean", "ConfigLog", "false"
+            buildConfigField "Boolean", "DebugMode", "false"
+            buildConfigField "Integer", "ListMaxCount", "200"
+//            buildConfigField "Integer", "ConnectTimeout", "(20*1000)"
+            buildConfigField "Integer", "ConnectTimeout", "(300*1000)"
+            signingConfig signingConfigs.release
+        }
+        debug {
+            if (UseLocalSetting) {
+                print "use local url\n"
+                buildConfigField "String", "ApiUrl", ApiServer
+                buildConfigField "String", "NasUrl", NasServer
+            }
+            buildConfigField "boolean", "LogV", "true"
+            buildConfigField "boolean", "LogE", "true"
+            buildConfigField "boolean", "LogD", "true"
+            buildConfigField "boolean", "LogF", "true"
+            buildConfigField "boolean", "ConfigLog", "true"
+            buildConfigField "Boolean", "DebugMode", "true"
+        }
+    }
+    productFlavors {
+        develop {
+            buildConfigField "String", "ApiUrl", "\"https://jpm.dev.misumi-ec.com/api/v1/\""
+            buildConfigField "String", "NasUrl", "\"https://dev-static-contents-mbl-jp-apn1.s3.amazonaws.com/app/\""
+//            subsidiaryCode = "DEV"
+        }
+        china {
+            applicationId 'com.misumi_ec.cn.misumi_ec'
+            //2015/11/12 NPF_SP-482版
+            // 開発
+//            buildConfigField "String", "ApiUrl", "\"https://cnm.dev.misumi-ec.com/api/v1/\""
+//            buildConfigField "String", "AppIDforAPI", "\"ded86a16-4ca6-46d5-b8f2-8796a3b7c57d-dev\""
+//            buildConfigField "String", "NasUrl", "\"https://dev-static-contents-mbl-cn-apn1.s3.amazonaws.com/app/\""
+
+            // ステージ
+            buildConfigField "String", "ApiUrl", "\"https://cnm.stg.misumi-ec.com/api/v1/\""
+            buildConfigField "String", "AppIDforAPI", "\"ded86a16-4ca6-46d5-b8f2-8796a3b7c57d-stg\""
+            buildConfigField "String", "NasUrl", "\"http://stg-static-contents-mbl-cn-cnn1.s3.cn-north-1.amazonaws.com.cn/app/\""
+            /*分享url stg环境*/
+            buildConfigField "String", "ShareUrl", "\"http://cn.m.stg.misumi-ec.com:8080/Misumi/\""
+
+            // プロダクト
+//            buildConfigField "String", "ApiUrl", "\"https://cnm.misumi-ec.com/api/v1/\""
+//            buildConfigField "String", "AppIDforAPI", "\"ded86a16-4ca6-46d5-b8f2-8796a3b7c57d\""
+//            buildConfigField "String", "NasUrl", "\"http://prd-static-contents-mbl-cn-cnn1.s3.cn-north-1.amazonaws.com.cn/app/\""
+//            /*分享url 生产环境*/
+//            buildConfigField "String", "ShareUrl", "\"http://cn.m.misumi-ec.com:8080/Misumi/\""
+
+            buildConfigField "String", "subsidiaryCode", "\"CHN\""
+
+            buildConfigField "String", "SaicataAppIDWebview", "\"android-cn-catalog-inapp\""
+            buildConfigField "String", "SaicataAppIDBrowser", "\"android-cn-catalog-brows\""
+        }
+
+        japan {
+            applicationId 'com.misumi_ec.jp.misumi_ec'
+            //2015/11/12 NPF_SP-482版
+            // 開発
+            //buildConfigField "String", "ApiUrl", "\"https://jpm.dev.misumi-ec.com/api/v1/\""
+            //buildConfigField "String", "AppIDforAPI", "\"db28096e-1b6d-4056-bf72-f79882918bb4-dev\""
+            //buildConfigField "String", "NasUrl", "\"https://dev-static-contents-mbl-jp-apn1.s3.amazonaws.com/app/\""
+
+            // ステージ
+            buildConfigField "String", "ApiUrl", "\"https://jpm.stg.misumi-ec.com/api/v1/\""
+            buildConfigField "String", "AppIDforAPI", "\"db28096e-1b6d-4056-bf72-f79882918bb4-stg\""
+            buildConfigField "String", "NasUrl", "\"http://stg-static-contents-mbl-jp-apn1.s3.amazonaws.com/app/\""
+
+            // プロダクト
+//            buildConfigField "String", "ApiUrl", "\"https://jpm.misumi-ec.com/api/v1/\""
+//            buildConfigField "String", "AppIDforAPI", "\"db28096e-1b6d-4056-bf72-f79882918bb4\""
+//            buildConfigField "String", "NasUrl", "\"http://prd-static-contents-mbl-jp-apn1.s3.amazonaws.com/app/\""
+
+
+            buildConfigField "String", "subsidiaryCode", "\"MJP\""
+
+            buildConfigField "String", "SaicataAppIDWebview", "\"android-jp-catalog-inapp\""
+            buildConfigField "String", "SaicataAppIDBrowser", "\"android-jp-catalog-brows\""
+        }
+
+        korea {
+            applicationId 'com.misumi_ec.kr.misumi_ec'
+//            開発
+//            buildConfigField "String", "ApiUrl", "\"https://cnm.dev.misumi-ec.com/api/v1/\""
+//            buildConfigField "String", "AppIDforAPI", "\"ded86a16-4ca6-46d5-b8f2-8796a3b7c57d-dev\""
+//            buildConfigField "String", "NasUrl", "\"https://dev-static-contents-mbl-cn-apn1.s3.amazonaws.com/app/\""
+//            buildConfigField "String", "ShareUrl", "\"http://cn.m.stg.misumi-ec.com:8080/Misumi/\""
+
+//            ステージ
+            buildConfigField "String", "ApiUrl", "\"https://cnm.stg.misumi-ec.com/api/v1/\""
+            buildConfigField "String", "AppIDforAPI", "\"ded86a16-4ca6-46d5-b8f2-8796a3b7c57d-stg\""
+            buildConfigField "String", "NasUrl", "\"http://stg-static-contents-mbl-cn-cnn1.s3.cn-north-1.amazonaws.com.cn/app/\""
+            buildConfigField "String", "ShareUrl", "\"http://cn.m.stg.misumi-ec.com:8080/Misumi/\""
+//
+//            プロダクト
+//            buildConfigField "String", "ApiUrl", "\"https://cnm.misumi-ec.com/api/v1/\""
+//            buildConfigField "String", "AppIDforAPI", "\"ded86a16-4ca6-46d5-b8f2-8796a3b7c57d\""
+//            buildConfigField "String", "NasUrl", "\"http://prd-static-contents-mbl-cn-cnn1.s3.cn-north-1.amazonaws.com.cn/app/\""
+//            buildConfigField "String", "ShareUrl", "\"http://cn.m.misumi-ec.com:8080/Misumi/\""
+
+            buildConfigField "String", "subsidiaryCode", "\"KOR\""
+            buildConfigField "String", "SaicataAppIDWebview", "\"android-kr-catalog-inapp\""
+            buildConfigField "String", "SaicataAppIDBrowser", "\"android-kr-catalog-brows\""
+        }
+
+        thailand {
+            applicationId 'com.misumi_ec.th.misumi_ec'
+//            開発
+//            buildConfigField "String", "ApiUrl", "\"https://cnm.dev.misumi-ec.com/api/v1/\""
+//            buildConfigField "String", "AppIDforAPI", "\"ded86a16-4ca6-46d5-b8f2-8796a3b7c57d-dev\""
+//            buildConfigField "String", "NasUrl", "\"https://dev-static-contents-mbl-cn-apn1.s3.amazonaws.com/app/\""
+//            buildConfigField "String", "ShareUrl", "\"http://cn.m.stg.misumi-ec.com:8080/Misumi/\""
+
+//            ステージ
+            buildConfigField "String", "ApiUrl", "\"https://cnm.stg.misumi-ec.com/api/v1/\""
+            buildConfigField "String", "AppIDforAPI", "\"ded86a16-4ca6-46d5-b8f2-8796a3b7c57d-stg\""
+            buildConfigField "String", "NasUrl", "\"http://stg-static-contents-mbl-cn-cnn1.s3.cn-north-1.amazonaws.com.cn/app/\""
+            buildConfigField "String", "ShareUrl", "\"http://cn.m.stg.misumi-ec.com:8080/Misumi/\""
+//
+//            プロダクト
+//            buildConfigField "String", "ApiUrl", "\"https://cnm.misumi-ec.com/api/v1/\""
+//            buildConfigField "String", "AppIDforAPI", "\"ded86a16-4ca6-46d5-b8f2-8796a3b7c57d\""
+//            buildConfigField "String", "NasUrl", "\"http://prd-static-contents-mbl-cn-cnn1.s3.cn-north-1.amazonaws.com.cn/app/\""
+//            buildConfigField "String", "ShareUrl", "\"http://cn.m.misumi-ec.com:8080/Misumi/\""
+
+            buildConfigField "String", "subsidiaryCode", "\"CHN\""
+            buildConfigField "String", "SaicataAppIDWebview", "\"android-th-catalog-inapp\""
+            buildConfigField "String", "SaicataAppIDBrowser", "\"android-th-catalog-brows\""
+        }
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['assets']
+        }
+    }
+}
+
+allprojects {
+
+    afterEvaluate { project ->
+        def propsFile = rootProject.file('./app/keystore.properties')
+        def configName = 'release'
+
+        if (propsFile.exists() && android.signingConfigs.hasProperty(configName)) {
+            def props = new Properties()
+            props.load(new FileInputStream(propsFile))
+            android.signingConfigs[configName].storeFile = file(props['storeFile'])
+            android.signingConfigs[configName].storePassword = props['storePassword']
+            android.signingConfigs[configName].keyAlias = props['keyAlias']
+            android.signingConfigs[configName].keyPassword = props['keyPassword']
+        }
+    }
+}
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+    maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    compile 'com.google.android.gms:play-services:8.1.0'
+    //    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    //    compile 'com.google.android.gms:play-services:9.2.0'  23.4.0
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'com.google.android.gms:play-services-analytics:9.2.0'
+    // QR扫码库
+    compile 'cn.yipianfengye.android:zxing-library:2.1'
+    //    compile(name: 'lib-zxing-release', ext: 'aar')
+    // 微信分享库
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:1.4.0'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+
+}
+apply plugin: 'com.google.gms.google-services'

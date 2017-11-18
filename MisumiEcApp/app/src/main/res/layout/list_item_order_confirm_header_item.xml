@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_10dp"
+    android:orientation="vertical">
+
+
+	<!-- 進行ゲージ -->
+	<include layout="@layout/include_progress_header"
+		android:id="@+id/progressHeader"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/padding_15dp"
+		android:paddingRight="@dimen/padding_15dp"
+	    android:paddingTop="@dimen/padding_15dp"
+        android:paddingBottom="@dimen/padding_10dp"
+
+        android:text="@string/order_confirm_not_yet"
+        android:textSize="@dimen/font_body_12dp"
+        android:textColor="@color/color_text_black_00"
+		/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/padding_15dp"
+		android:paddingRight="@dimen/padding_15dp"
+		>
+
+		<View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+			android:background="@color/color_list_divider_9C"
+			/>
+
+		<include layout="@layout/include_item_text_1_1"
+			android:id="@+id/totalCount"/>
+
+		<include layout="@layout/include_item_text_1_1"
+			android:id="@+id/deliveryCharge"/>
+
+		<include layout="@layout/include_item_text_1_1"
+			android:id="@+id/deliveryChargeDiscount"/>
+
+		<include layout="@layout/include_item_text_1_1"
+			android:id="@+id/totalPrice"/>
+
+		<include layout="@layout/include_item_text_1_1"
+			android:id="@+id/totalPriceWithTax"/>
+
+		<include layout="@layout/include_item_text_1_1r"
+			android:id="@+id/codCharge"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingBottom="@dimen/padding_10dp"
+		android:paddingLeft="@dimen/padding_15dp"
+
+        android:text="@string/order_confirm_order_title"
+        android:textSize="@dimen/font_title_15dp"
+        android:textColor="@color/color_text_black_00"
+        android:textStyle="bold"
+		/>
+
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+		android:background="@color/color_list_divider_9C"
+		/>
+
+
+</LinearLayout>

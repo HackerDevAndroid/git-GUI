@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/color_menu_background"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:background="@color/color_menu_background">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/menu_border_line"
+            android:dividerHeight="5dp"
+            android:showDividers="middle"
+            android:background="@color/color_menu_background"
+            android:dividerPadding="@dimen/dp_15">
+
+            <FrameLayout
+                android:id="@+id/frameDebug"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_debug"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/frameTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_top"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLogin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_login"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLogout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_logout"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameCategoryList"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_category_list"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameCart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_cart"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameMyParts"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_my_parts"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameEstimateHistory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_estimate_history"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameOrderHistory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_order_history"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameWorkingHours"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_working_hour"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameGuide"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_guide"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameAgreements"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_agreements"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framePersonalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_personal_info"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_register"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameContact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_contact"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameDeviceInfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_device_information"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLanguageSetting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_language_setting"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameSmsSetting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/menu_button_selector">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_label_sms_setting"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:textColor="@color/color_menu_label"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/dp_15"
+                    android:gravity="center_vertical|left"
+                    android:background="@color/color_menu_label_background"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

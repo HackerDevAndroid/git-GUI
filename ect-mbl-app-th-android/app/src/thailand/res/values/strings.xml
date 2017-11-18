@@ -1,0 +1,914 @@
+<resources>
+    <string name="app_name">闪购商城</string>
+
+    <string name="label_day_to_ship_0">当天出货</string>
+    <string name="label_day_to_ship_1ro98_1"/>
+    <string name="label_day_to_ship_1ro98_2">天</string>
+    <string name="label_day_to_ship_1ro98_1_quote"/>
+    <string name="label_day_to_ship_1ro98_2_quote">天</string>
+    <string name="label_day_to_ship_99">每次进行询价</string>
+    <string name="label_shiptype_1">库存品</string>
+    <string name="label_shiptype_2">库存安排中</string>
+    <string name="label_shiptype_3"/>
+    <string name="label_shiptype_4"/>
+    <string name="label_shiptype_5"/>
+
+    <string name="label_hyphen">&#8211;</string>
+    <string name="label_stoke_t">当日出货（瞬达T）</string>
+    <string name="label_stoke_a">次日出货（瞬达A）</string>
+    <string name="label_stoke_a_rapid">次日出货（瞬达A早期折扣）</string>
+    <string name="label_stoke_b">3天出货（瞬达B）</string>
+    <string name="label_stoke_c">5天出货（瞬达C）</string>
+    <string name="label_stoke_z">瞬达Z</string>
+    <string name="label_stoke_l">瞬达L</string>
+    <string name="label_stoke_v">闪达（V）</string>
+    <string name="label_express_deadline">后截止受理</string>
+
+    <string name="text_quantity_hint"/>
+
+    <!--アクティビティ-->
+    <string name="main_label_input_keyword_hint">请输入关键字或型号</string>
+
+    <!--ログイン-->
+    <string name="login_label_title">登录</string>
+    <string name="login_label_login_id">登录ID</string>
+    <string name="login_label_password">密码</string>
+    <string name="login_label_hint_login_id">登录ID</string>
+    <string name="login_label_hint_password">密码</string>
+    <string name="login_label_password_forget">忘记登录ID、密码时请点击这里　＞</string>
+    <string name="login_label_check_input_omit">自动登录</string>
+    <string name="login_label_mode_normal"/>
+    <string name="login_label_mode_session">对话已过期，请重新进行登录</string>
+    <string name="login_label_mode_require">请登录后再继续操作</string>
+    <string name="login_button_label_login">登录</string>
+    <string name="login_button_label_close">关闭</string>
+
+    <!--トップ-->
+    <string name="top_label_welcome">欢迎光临米思米</string>
+    <string name="top_label_login">登录</string>
+    <string name="top_label_logout">退出</string>
+    <string name="top_label_status_check">状态确认</string>
+    <string name="top_label_customer_code">（客户编码：%s）</string>
+    <string name="top_label_status_title">报价、订单受理状况</string>
+    <string name="top_label_quotation_status_title">报价</string>
+    <string name="top_label_order_status_title">订单</string>
+    <string name="top_label_status_accept">可受理</string>
+    <string name="top_label_status_accept_next_day">可临时受理</string>
+    <string name="top_label_status_maintenance">维护中</string>
+    <string name="top_label_status_unset">&#8211;</string>
+    <string name="top_label_status_day_of_week_1">日</string>
+    <string name="top_label_status_day_of_week_2">一</string>
+    <string name="top_label_status_day_of_week_3">二</string>
+    <string name="top_label_status_day_of_week_4">三</string>
+    <string name="top_label_status_day_of_week_5">四</string>
+    <string name="top_label_status_day_of_week_6">五</string>
+    <string name="top_label_status_day_of_week_7">六</string>
+    <string name="top_label_information">现在没有通知事项</string>
+    <!-- UDP NT-LWL 17/03/21 AliPay Payment FR - -->
+    <!--<string name="top_label_input_keyword_hint">请输入关键字或型号。</string>-->
+    <string name="top_label_input_keyword_hint">请输入关键字或型号</string>
+    <!-- UDP NT-LWL 17/03/21 AliPay Payment TO - -->
+    <string name="top_label_calendar_01">top_cal_month_1.png</string>
+    <string name="top_label_calendar_02">top_cal_month_2.png</string>
+    <string name="top_label_calendar_03">top_cal_month_3.png</string>
+    <string name="top_label_calendar_04">top_cal_month_4.png</string>
+    <string name="top_label_calendar_05">top_cal_month_5.png</string>
+    <string name="top_label_calendar_06">top_cal_month_6.png</string>
+    <string name="top_label_calendar_07">top_cal_month_7.png</string>
+    <string name="top_label_calendar_08">top_cal_month_8.png</string>
+    <string name="top_label_calendar_09">top_cal_month_9.png</string>
+    <string name="top_label_calendar_10">top_cal_month_10.png</string>
+    <string name="top_label_calendar_11">top_cal_month_11.png</string>
+    <string name="top_label_calendar_12">top_cal_month_12.png</string>
+    <string name="top_label_category_list">分类检索</string>
+    <string name="top_label_my_parts">我的零件表</string>
+    <string name="top_label_estimate_history">报价记录</string>
+    <string name="top_label_order_history">订购记录</string>
+    <string name="top_label_guide">操作指南</string>
+
+    <!-- メニューボタン -->
+    <string name="menu_label_debug">debug</string>
+    <string name="menu_label_top">TOP</string>
+    <string name="menu_label_login">登录</string>
+    <string name="menu_label_logout">退出</string>
+    <string name="menu_label_category_list">分类检索</string>
+    <string name="menu_label_cart">购物车</string>
+    <string name="menu_label_my_parts">我的零件表</string>
+    <string name="menu_label_estimate_history">报价记录</string>
+    <string name="menu_label_order_history">订购记录</string>
+    <string name="menu_label_working_hour">营业日・营业时</string>
+    <string name="menu_label_guide">操作指南</string>
+    <string name="menu_label_agreements">使用规则</string>
+    <string name="menu_label_personal_info">用户信息</string>
+    <string name="menu_label_register">新会员注册</string>
+    <string name="menu_label_contact">咨询</string>
+    <string name="menu_label_device_information">手机信息</string>
+    <string name="menu_label_language_setting">言語設定</string>
+
+    <!-- メッセージ　-->
+    <string name="message_timeout_error">无法连接米思米APP。\n1.账号长时间登录未使用，请退出后重新登录。\n2.连接不到网络，请确认网络状态后重试。</string>
+    <string name="message_network_error">无法连接米思米APP。\n1.账号长时间登录未使用，请退出后重新登录。\n2.连接不到网络，请确认网络状态后重试。</string>
+    <string name="message_session_error">长时间没有操作或者已经通过其他设备登录，需要重新登录。\n重新登录吗？</string>
+    <string name="message_session_scheme_error">SESSION无效。</string>
+    <string name="message_logout">要退出吗？</string>
+    <string name="message_logout_success">已退出。</string>
+    <string name="message_update_require">发现新版本。\n请升级。</string>
+    <string name="message_update_exist">发现新版本\n现在升级吗？</string>
+    <!--<string name="message_maintenance_error">维护中。\n请稍后再试。</string>-->
+    <string name="message_request_copy">复制</string>
+    <!--<string name="message_request_tell">通过电话来咨询吗？</string>-->
+    <!--<string name="message_request_sms">通过短信来咨询吗？</string>-->
+    <string name="message_apllication_finish">要终止程序吗？</string>
+    <string name="message_write_file_error">发生了无法预期的错误。\n请确认空闲容量。\n</string>
+    <!--<string name="message_ascii_error">型号请用半角英文和数字输入。</string>-->
+    <string name="message_progress_transmitting">连接中…</string>
+    <string name="message_unknown_error">发生了无法预期的错误。\n请重启手机后再次尝试。\n仍无法解决的话请联系米思米客服(021&#8211;6710&#8211;8701)。\n</string>
+    <!--<string name="message_limited_session">ログインしていないと云々</string>-->
+    <string name="message_input_qty">请输入数量</string>
+
+
+    <!-- ダイアログ用ボタン -->
+    <!--<string name="dialog_button_ok">确认</string>-->
+    <string name="dialog_button_yes">确认</string>
+    <string name="dialog_button_kettei">确定</string>
+    <string name="dialog_button_no">取消</string>
+    <string name="dialog_button_retry">确认</string>
+    <string name="dialog_button_cancel">取消</string>
+    <string name="dialog_button_close">关闭</string>
+    <string name="dialog_button_add">追加</string>
+    <string name="dialog_button_delete">删除</string>
+    <string name="dialog_button_go_cart">查看购物车</string>
+    <!-- UDP NT-LWL 17/03/22 AliPay Payment FR - -->
+    <!--<string name="dialog_button_go_my_part">打开我的零件表</string>-->
+    <string name="dialog_button_go_my_part">打开</string>
+    <!-- UDP NT-LWL 17/03/22 AliPay Payment TO - -->
+
+
+
+    <string name="message_and_over">〜</string>
+
+
+
+    <!--<string name="emergency_header_service">瞬达服务（加急出货）</string>-->
+    <!--<string name="emergency_header_price">料 金</string>-->
+
+    <string name="money_format">%1$,3.0f</string>
+
+    <!--<string name="spinnerSortType">並べ替え</string>-->
+    <!--<string name="spinnerSortTypeOrder">並べ替え</string>-->
+    <!--<string name="spinnerCreditDiv">お支払い回数</string>-->
+
+    <string name="label_currency_jpy">円</string>
+    <string name="label_currency_rmb">元</string>
+    <string name="label_currency_usd">＄</string>
+    <string name="label_currency_none"/>
+
+    <string name="format_currency_jpy">%s円</string>
+    <string name="format_currency_rmb">%s元</string>
+    <string name="format_currency_usd">＄%s</string>
+    <string name="format_currency_none">%s</string>
+
+
+    <!--前表記式-->
+    <string name="label_currency_jpy_pre">￥</string>
+    <string name="label_currency_rmb_pre">￥</string>
+    <string name="label_currency_usd_pre">＄</string>
+
+    <string name="format_currency_jpy_wtax">%s円(内税)</string>
+    <string name="format_currency_rmb_wtax">%s元(含税)</string>
+    <string name="format_currency_usd_wtax">＄%s(含税)</string>
+
+
+    <!-- SPv1_09 My部品表 -->
+    <string name="my_parts_title">我的零件表</string>
+    <string name="my_parts_folder_label">文件夹列表</string>
+    <string name="my_parts_add_card">添加到购物车</string>
+    <string name="my_parts_count_str">件</string>
+    <!--<string name="my_parts_empty_str">TODO:0件UI、My部品表情報がありません。</string>-->
+    <string name="my_parts_item_count_1">商品</string>
+    <string name="my_parts_item_count_2">件</string>
+    <string name="my_parts_item_colon">：</string>
+    <string name="my_parts_quantity_main">数　量：</string>
+    <string name="my_parts_parts_number">型号：</string>
+    <string name="my_parts_product_name">品名：</string>
+    <string name="my_parts_unit_price">单价：</string>
+    <string name="my_parts_quantity">数量：</string>
+    <string name="my_parts_quantity_unit">个</string>
+    <string name="my_parts_module_label">浏览零件列表</string>
+    <string name="my_parts_pack_quantity">（内含%s个）</string>
+    <string name="my_parts_dialog_added_cart">已将商品添加到了购物车</string>
+    <string name="my_parts_dialog_added_cart_title">已添加</string>
+    <string name="my_parts_dialog_added_my_parts">追加到了我的零件表。</string>
+    <string name="my_parts_dialog_moved_my_parts">已添加至我的零件表。</string>
+
+
+    <!-- SPv1_11 見積履歴一覧 -->
+    <string name="quote_hist_title">报价记录</string>
+    <string name="quote_hist_count_str1">有</string>
+    <string name="quote_hist_count_str2">件报价记录</string>
+    <!--<string name="quote_hist_empty_str">履歴情報がありません。</string>-->
+    <string name="quote_hist_slip_no">报价单号</string>
+    <string name="quote_hist_date">报价日期</string>
+    <string name="quote_hist_expire">报价有效期</string>
+    <string name="quote_hist_item_count">商品件数</string>
+    <string name="quote_hist_count_unit">件</string>
+    <string name="quote_hist_misumi_check_str">米思米确认中%s件</string>
+    <string name="quote_hist_total_price">合计金额</string>
+    <string name="quote_hist_total_price_unit">（不含税）</string>
+    <string name="quote_hist_total_price_tax">合计金额</string>
+    <!--UDP NT-LWL 17/09/29 ExcludeFreight FR -->
+    <!--<string name="quote_hist_total_price_tax_unit">（含税）</string>-->
+    <string name="quote_hist_total_price_tax_unit">（含税/不含运费）</string>
+    <!--UDP NT-LWL 17/09/29 ExcludeFreight TO -->
+    <string name="quote_hist_empty_list_item">没有报价记录。</string>
+
+    <!--ADD NT-LWL 17/09/29 ExcludeFreight FR -->
+    <string name="order_quote_hist_detail_tip">※以上金额不含运费。</string>
+    <!--ADD NT-LWL 17/09/29 ExcludeFreight TO -->
+
+    <!--SPv1_12 見積履歴詳細-->
+    <string name="quote_hist_detail_slip_no">报价单号</string>
+    <string name="quote_hist_detail_date">报价日期</string>
+    <string name="quote_hist_detail_expire">报价有效期</string>
+    <string name="quote_hist_detail_user_name">订购人</string>
+    <string name="quote_hist_detail_item_count">商品件数</string>
+    <string name="quote_hist_detail_count_unit">件</string>
+    <string name="quote_hist_detail_misumi_check_str">米思米确认中%s件</string>
+    <string name="quote_hist_detail_total_price">合计金额（不含税）</string>
+    <!--<string name="quote_hist_detail_total_price_unit">円</string>-->
+    <string name="quote_hist_detail_total_price_tax">合计金额（含税）</string>
+    <!--UDP NT-LWL 17/09/29 ExcludeFreight FR -->
+    <!--<string name="quote_hist_detail_total_price_checking">※此金额不包含米思米确认中的商品。</string>-->
+    <string name="quote_hist_detail_total_price_checking">※此金额不包含米思米确认中的商品。\n※以上金额不含运费。</string>
+    <!--UDP NT-LWL 17/09/29 ExcludeFreight FR -->
+    <string name="quote_hist_detail_add_my">添加到我的零件表</string>
+    <string name="quote_hist_detail_add_card">添加到购物车</string>
+    <string name="quote_hist_detail_price_checking">此商品米思米正在确认中，请等待</string>
+    <string name="quote_hist_detail_unit_price_main">单　　价：</string>
+    <string name="quote_hist_detail_unit_price_unit_main">（不含税）</string>
+    <string name="quote_hist_detail_unit_price_unit_main_CHN">（不含税）</string>
+    <string name="quote_hist_detail_quantity_main">数　　量：</string>
+    <string name="quote_hist_detail_shipdate_main">发货天数：</string>
+    <string name="quote_hist_detail_emarg_main">瞬达服务（加急出货）：</string>
+    <string name="quote_hist_detail_status_main">状　　态：</string>
+    <string name="quote_hist_detail_subtotal_main">小计：</string>
+    <string name="quote_hist_detail_subtotal_unit_main">（不含税）</string>
+    <string name="quote_hist_detail_subtotal_unit_main_CHN">（不含税）</string>
+    <string name="quote_hist_detail_subtotal_unit_main_tax">（含税）</string>
+    <string name="quote_hist_detail_pack_quantity">（内含%s个）</string>
+    <string name="common_sale_format">SALE %s为止</string>
+    <string name="quote_hist_detail_dialog_added_cart">已将商品添加到了购物车</string>
+    <string name="quote_hist_detail_dialog_added_my_parts">追加到了我的零件表。</string>
+
+
+
+
+
+    <string name="label_stoke_t0">当日出货（瞬达T）</string>
+    <string name="label_stoke_a0">次日出货（瞬达A）</string>
+    <string name="label_stoke_b0">3天出货（瞬达B）</string>
+    <string name="label_stoke_c0">5天出货（瞬达C）</string>
+    <string name="label_stoke_0z">瞬达Z</string>
+    <string name="label_stoke_0l">瞬达L</string>
+    <!--<string name="label_stoke_0v">Ｖストーク</string>-->
+    <string name="label_stoke_0a">次日出货（瞬达A早期折扣）</string>
+    <string name="label_stoke_v0">闪达（V）</string>
+    <string name="label_stoke_etc">不使用</string>
+    <string name="label_stoke_etc2">&#8211;</string>
+
+    <!-- SPv1_13 注文履歴一覧 -->
+    <string name="order_hist_title">订购记录</string>
+    <string name="order_hist_count_str1">有</string>
+    <string name="order_hist_count_str2">件订购记录</string>
+    <string name="order_hist_status">状　　态</string>
+    <string name="order_hist_slip_no">订购单号</string>
+    <string name="order_hist_date">订购日期</string>
+    <string name="order_hist_item_count">商品件数</string>
+    <string name="order_hist_count_unit">件</string>
+    <string name="order_hist_misumi_check_str">米思米确认中%s件</string>
+    <string name="order_hist_total_price">合计金额</string>
+    <!--<string name="order_hist_total_price_unit">円(外税)</string>-->
+    <string name="order_hist_total_price_tax">合计金额</string>
+    <!--<string name="order_hist_total_price_tax_unit">(含税)</string>-->
+    <string name="order_hist_empty_list_item">没有订购记录。</string>
+
+    <!--注文履歴詳細-->
+    <string name="order_detail_cod_charge">ー</string>
+
+    <string name="order_detail_add_my_parts">已添加</string>
+    <string name="order_detail_slip_no">订购单号</string>
+    <string name="order_detail_date">订购日期</string>
+    <string name="order_detail_expire">报价有效期限</string>
+    <string name="order_detail_user_name">订购人/</string>
+    <string name="order_detail_user_method">订购方式</string>
+    <string name="order_detail_deliverycompanyname">配送公司</string>
+    <string name="order_detail_item_count">商品件数</string>
+    <string name="order_detail_count_unit">件</string>
+    <string name="order_detail_misumi_check_str">米思米确认中%s件</string>
+    <!--<string name="order_detail_total_price">合计金额(不含税)</string>-->
+    <!--<string name="order_detail_total_price_unit">re円</string>-->
+    <!--<string name="order_detail_total_price_tax">合计金额(含税)</string>-->
+    <string name="order_detail_total_price_checking">※此金额不包含米思米确认中的商品。</string>
+    <string name="order_detail_deadline_info1">尊敬的客户您好，因为贵公司是预付款客户，因此请您选择以下方式向我司付款。\n1、付款专用账号客户付款信息：\n请您参考【米思米账号变更通知函】付款或致电以下号码咨询：021–67108701转5\n</string>
+    <string name="order_detail_deadline_info2">2、普通客户付款信息：\n银行名称：中国工商银行上海虹桥开发区支行\n银行账号：1001–2427–1930–0333–218\n</string>
+    <string name="order_detail_deadline_info3">注意事项：汇款完成后请将汇款凭证发送至我司。（传真号：021–6710–8687；E-mail: cs@misumi.sh.cn）</string>
+    <string name="order_detail_deadline_info4">此订单有效期为【%s】，过期后此单将自动取消，请在此日期之前支付。</string>
+    <string name="order_detail_add_my">添加到我的零件表</string>
+    <string name="order_detail_add_card">添加到购物车</string>
+    <string name="order_detail_price_checking">此商品米思米正在确认中，请等待</string>
+    <string name="order_detail_unit_price_main">单　　价：</string>
+    <string name="order_detail_unit_price_unit_main">（不含税）</string>
+    <string name="order_detail_unit_price_unit_main_CHN">（不含税）</string>
+    <string name="order_detail_subtotal_unit_main_tax">（含税）</string>
+    <string name="order_detail_quantity_main">数　量：</string>
+    <string name="order_detail_shipdate_main">发货日：</string>
+    <string name="order_detail_emarg_main">瞬达服务（加急出货）：</string>
+    <string name="order_detail_status_main">状　　态：</string>
+    <string name="order_detail_status_invoice">配送单号：</string>
+    <string name="order_detail_subtotal_main">小计：</string>
+    <string name="order_detail_pack_quantity">（内含%s个）</string>
+
+    <string name="order_detail_misumi_No">ー：</string>
+
+    <!--<string name="order_detail_type_mail">MAIL</string>-->
+    <!--<string name="order_detail_type_fax">FAX</string>-->
+    <!--<string name="order_detail_type_tel">TEL</string>-->
+    <!--<string name="order_detail_type_edi">EDI</string>-->
+    <string name="order_detail_type_other">その他</string>
+    <!--<string name="order_detail_type_web">WEB</string>-->
+    <string name="order_detail_type_default">&#8211;</string>
+    <string name="order_detail_type_srash">/</string>
+    <string name="order_detail_cancel_info">如有订单变更／取消／退货等要求 ， 请点击这里</string>
+    <string name="order_detail_cancel_info_link">这里</string>
+
+    <!--注文完了-->
+    <string name="order_complete_title">订单已完成。\n将向您登记的邮箱发送确认邮件，请注意查收。</string>
+    <string name="order_complete_confirm_info_title">关于待确认的商品</string>
+    <string name="order_complete_confirm_info_memo1">订购已完成，但是包含部分需米思米确认出货日和价格的商品。\n米思米客服将会尽快对应并为您提供相应的解决方案。</string>
+    <string name="order_complete_confirm_info_memo2">您提交的待确认商品米思米客服会尽快对应。\n如果您收到米思米的邮件、传真或PC网站通知，请及时确认。</string>
+    <string name="order_complete_confirm_info_memo3">包含需要米思米确认的商品。</string>
+    <string name="order_complete_cancel_info_title">关于订单变更/取消/退货的说明</string>
+    <string name="order_complete_cancel_info_memo">如有订单变更／取消／退货等要求 ， 请点击[这里]</string>
+    <string name="order_complete_cancel_info_memo_link">[这里]</string>
+    <string name="order_complete_info_title">订单概要</string>
+    <string name="order_complete_info_image_message">有网站通知时的页面参考如下</string>
+    <string name="order_complete_button_return_cart">返回购物车</string>
+    <string name="order_complete_button_return_quote">返回报价记录</string>
+
+    <string name="order_complete_slip_no">订购单号</string>
+    <string name="order_complete_item_count">商品件数</string>
+    <string name="order_complete_count_unit">件</string>
+    <string name="order_complete_misumi_check_str">（米思米确认中的商品%s件）</string>
+    <string name="order_complete_total_price">合计金额（不含税）</string>
+    <string name="order_complete_total_price_unit_yen">円</string>
+    <string name="order_complete_total_price_unit_gen">元</string>
+    <string name="order_complete_total_price_unit_dollar">＄</string>
+    <string name="order_complete_total_price_tax">合计金额（含税）</string>
+    <!--<string name="order_complete_total_price_tax_unit">円</string>-->
+    <string name="order_complete_price_checking">※此金额不包含米思米确认中的商品。</string>
+    <string name="order_complete_date">订购日期</string>
+
+
+    <!--注文確認 直送先の選択-->
+    <string name="order_confirm_directship_select_title">选择其他收货地址</string>
+    <string name="order_confirm_directship_select_info">从下面选择希望的收货地址</string>
+    <string name="order_confirm_directship_select_label">送货地址一览</string>
+    <string name="order_confirm_directship_select">选择</string>
+    <string name="confirm_directship_selected">已选择</string>
+
+
+    <!--注文確認 ストークの選択-->
+    <string name="order_confirm_express_type_select_title">请选择瞬达服务。</string>
+    <string name="order_confirm_express_type_select_info">请先确认发货日，然后从下面选择瞬达方式。</string>
+    <string name="quote_confirm_express_type_select_info">请选择您希望的发货日。</string>
+    <string name="order_confirm_express_type_label">可使用的紧急出货服务（瞬达）</string>
+    <string name="order_confirm_express_type_select">选择</string>
+    <string name="confirm_express_type_express">瞬达类型：</string>
+    <string name="confirm_express_type_days">发货日：</string>
+    <string name="confirm_express_type_days_quote">发货天数：</string>
+    <string name="confirm_express_type_dead">截止时间：</string>
+    <string name="confirm_express_type_charge">追加费用：</string>
+    <string name="confirm_express_type_charge_unit">元</string>
+    <string name="confirm_express_type_charge_unit_dollar">$</string>
+    <string name="confirm_express_type_selected">已选择</string>
+    <string name="confirm_express_type_disable">不能选择</string>
+    <string name="confirm_express_type_limit">数量%s以上的场合，无法使用瞬达服务。</string>
+    <string name="confirm_express_type_caution_label">注意事项</string>
+    <!--UDP NT-LWL 17/07/31 Depo FR-->
+    <string name="confirm_express_type_caution_normal">根据数量有可能无法使用瞬达服务。</string>
+    <string name="confirm_express_type_caution">・闪达服务目前仅限苏州工业园区。支付完成后最快4小时内送达（当日17点前到账为准），解释权归本公司所有！</string>
+    <!--UDP NT-LWL 17/07/31 Depo TO-->
+
+
+
+    <!-- SPv1_16 見積り完了 -->
+    <string name="quote_comp_title">您的报价已完成。</string>
+    <string name="quote_comp_checking_str1">报价已完成，但是包含部分需米思米确认出货日和价格的商品。\n米思米客服将会尽快对应并为您提供相应的解决方案。</string>
+    <string name="quote_comp_info">报价概要</string>
+    <string name="quote_comp_close">返回购物车</string>
+
+    <string name="quote_comp_slip_no">报价单号</string>
+    <string name="quote_comp_date">报价日期</string>
+    <string name="quote_comp_item_count">订购商品</string>
+    <string name="quote_comp_count_unit">件</string>
+    <string name="quote_comp_misumi_check_str">（米思米确认中的商品%s件）</string>
+    <string name="quote_comp_total_price">合计金额（不含税）</string>
+    <string name="quote_comp_total_price_tax">合计金额（含税）</string>
+    <string name="quote_comp_price_checking">※此金额不包含米思米确认中的商品。</string>
+
+    <string name="common_footer_look_pc">因检索结果过多而无法显示，请修改检索条件。</string>
+    <string name="common_footer_error_progress">数据读取中发生错误。\n请点击重新进行信息获取。</string>
+
+    <!--SPv1_07 シリーズ検索結果一覧-->
+    <string name="search_series_total">件</string>
+    <!--<string name="search_series_daytoship">一般出货日</string>-->
+    <string name="search_series_count_str">商品数：</string>
+    <!--<string name="search_series_count_0">商品がありません。</string>-->
+    <string name="search_series_recommend">推荐</string>
+    <string name="search_series_grade">经济实惠</string>
+
+    <!--UDP NT-SLJ 16/11/11 AliPay Payment FR-->
+    <!--<string name="search_series_empty_list_item">未找到符合的产品</string>-->
+
+    <!--<string name="search_category_empty_list_item">未找到符合的产品</string>-->
+    <string name="search_series_empty_list_item">未找到符合的商品。可通过网页版查看更多商品。</string>
+
+    <string name="search_category_empty_list_item">未找到符合的商品。可通过网页版查看更多商品。</string>
+
+    <!--キーワード検索結果-->
+    <string name="search_keyword_total">件</string>
+    <string name="search_keyword_count_str">检索结果：</string>
+    <string name="search_keyword_count_str_tip">※本结果可能与网页版存在差异</string>
+    <string name="search_keyword_category_count">分类（%s件）</string>
+    <!--<string name="search_keyword_empty_list_item">未找到符合的产品</string>-->
+    <string name="search_keyword_empty_list_item">未找到符合的商品。可通过网页版查看更多商品。</string>
+    <!--UDP NT-SLJ 16/11/11 AliPay Payment TO-->
+
+    <!-- SPv1_08 カート -->
+    <string name="cart_select_all">全选</string>
+    <string name="cart_go_estimate">报价</string>
+    <string name="cart_go_order">订购</string>
+    <string name="cart_update">确认价格/发货日</string>
+    <string name="cart_caution_title">注意事项</string>
+    <!--UDP NT-SLJ 16/11/11 AliPay Payment FR-->
+    <!--<string name="cart_caution_str">・因商品价格和在库状况的变动，有可能与您追加到购物车时的价格、发货日不同。最新的价格、发货日信息还请点击【确认价格/发货日】按钮进行确认。</string>-->
+    <string name="cart_caution_str">商品价格及库存可能会发生变化，最新价格及交货日请点击【确认价格/发货日】更新进行确认。购物车价格仅供参考，实际请以下订时价格为准。</string>
+    <!--UDP NT-SLJ 16/11/11 AliPay Payment TO-->
+    <string name="cart_delete_cart">从购物车删除</string>
+    <string name="cart_add_my">添加到我的零件表</string>
+    <string name="cart_empty_str">您购物车里没有保存的商品</string>
+    <string name="cart_unit_price">单　价：</string>
+    <string name="cart_quantity">数　量：</string>
+    <string name="cart_pack_quantity">（内含%s个）</string>
+    <string name="cart_register">购物车更新时间：</string>
+    <string name="cart_ship_date">发货日：</string>
+    <string name="cart_item_campaign_1">促销已结束,请点击</string>
+    <string name="cart_item_campaign_2">确认最新单价</string>
+    <string name="cart_app_campaign_1">有%s件商品的单价有变动。</string>
+    <string name="cart_app_campaign_2">请确认商品</string>
+    <string name="cart_selected_item">已选商品：</string>
+    <string name="cart_selected_item_unit">件</string>
+    <string name="cart_total_price">合计金额：</string>
+    <string name="cart_total_price_unit">円(不含税)</string>
+    <string name="cart_total_price_wtax">合计金额：</string>
+    <string name="cart_total_price_unit_wtax">元(含税)</string>
+    <string name="cart_total_price_unit_dollar">＄</string>
+    <string name="cart_total_price_unit_wtax_dollar">(含税)</string>
+    <string name="cart_subtotal_main">小计（不含税）：</string>
+    <string name="cart_subtotal_unit_main">円</string>
+    <string name="cart_subtotal_main_wtax">小计（含税）：</string>
+    <string name="cart_subtotal_unit_main_wtax">円</string>
+
+    <string name="cart_dialog_delete_cart">从购物车删除</string>
+    <string name="cart_dialog_delete_cart_msg">将商品从购物车里删除吗？</string>
+    <string name="cart_dialog_add_my">添加到我的零件表</string>
+
+    <!-- SPv1_17 注文内容確認 -->
+    <string name="order_check_emarg_main">瞬达服务（加急出货）：</string>
+    <string name="confirm_total_price">订购金额总计（不含税）</string>
+    <string name="confirm_total_price_wtax">订购金额总计（含税）</string>
+    <string name="confirm_item_count">订购商品</string>
+    <string name="confirm_item_count_unit">件</string>
+    <string name="confirm_delivery">运费</string>
+    <string name="confirm_delivery_discount">运费折扣</string>
+    <string name="confirm_subtotal_main">小计：</string>
+    <string name="confirm_subtotal_unit_main">（不含税）</string>
+    <string name="confirm_subtotal_main_wtax">小计：</string>
+    <string name="confirm_subtotal_unit_main_wtax">（含税）</string>
+    <string name="confirm_cod_charge">(未提供)うち代引き手数料（内税）</string>
+    <string name="confirm_unit_price">单　价：</string>
+    <string name="confirm_quantity">数　量：</string>
+    <string name="confirm_pack_quantity">（内含%s个）</string>
+    <string name="confirm_ship_date">发货日：</string>
+    <string name="confirm_ship_date_quote">发货天数：</string>
+    <string name="confirm_emarg_main">瞬达服务（加急出货）：</string>
+
+    <string name="order_confirm_not_yet">订购还没有完成。\n请确认订购商品内容和发货信息无误后，点击【订购】。 </string>
+    <string name="order_confirm_order_title">订购内容</string>
+
+    <string name="confirm_shipping_option_title">发货方式</string>
+    <string name="confirm_shipping_option_1">一起发货: 所有商品到齐后一起发货。</string>
+    <string name="confirm_shipping_option_2">分批发货： 商品将会被按照最早的发货时间来发货，发货日为同一日期的商品将被一起发送。</string>
+
+    <string name="confirm_require_title">※此标记项目为必填项</string>
+
+    <string name="confirm_user_info_title">订购人信息</string>
+    <string name="confirm_user_company_label">公司名称</string>
+    <string name="confirm_user_code_label">客户编码</string>
+    <string name="confirm_user_dept_label">部门</string>
+    <string name="confirm_user_name_label">订购人</string>
+
+    <string name="confirm_destination_info_title">收货人信息</string>
+    <string name="confirm_destination_address_label">收货地址</string>
+    <string name="confirm_destination_dept_label">收货部门</string>
+    <string name="confirm_destination_name_label">收货人</string>
+
+    <string name="confirm_destination_address_title">收货地址</string>
+    <string name="confirm_order_status">因现在是非营业时间，订单受理日期将自动默认为下个营业日。请务必在营业时间内从订购记录中再次确认发货日和价格。\n米思米营业时间为8：30～17：30（周一至周六、中国的法定节假日除外）。</string>
+    <string name="confirm_annotation_title">注意事项</string>
+    <string name="confirm_annotation_text">・点击【确认订购】即可完成订单提交，同时代表您已阅读并同意“商品变更及取消政策”和“MISUMI&#8211;VONA使用规则”</string>
+    <string name="confirm_annotation_text_quote">・代扣进行支付的场合，之后将另外请求代扣的手续费\n・因为消费税等条件的变更，询价金额有时会和发注金额产生差异，还请事先进行谅解</string>
+
+    <string name="edit_hint_zenkaku_1">请用全角进行输入</string>
+    <string name="edit_hint_zenkaku_2">请用全角进行输入</string>
+    <string name="edit_hint_zenkaku_3">请用全角进行输入</string>
+    <string name="edit_hint_zenkaku_4">请用全角进行输入</string>
+
+    <string name="confirm_back_from_cart">返回购物车</string>
+    <string name="confirm_back_from_quote">报价记录</string>
+    <string name="confirm_oreder">确认订购</string>
+
+    <string name="progress_order_from_cart">购物车</string>
+    <string name="progress_order_from_quote">报价记录</string>
+    <string name="progress_order_2">订单确认</string>
+    <string name="progress_order_3">订单提交</string>
+
+    <string name="confirm_change_destination">选择其他收货地址</string>
+    <!--UDP NT-LWL 17/07/31 Depo FR-->
+    <!--<string name="confirm_change_stoke">想要更快吗？</string>-->
+    <string name="confirm_change_stoke">更改配送方式</string>
+    <!--<string name="confirm_change_stoke2">变更</string>-->
+    <string name="confirm_change_stoke2">更改配送方式</string>
+    <!--UDP NT-LWL 17/07/31 Depo TO-->
+    <string name="confirm_change_today_ship">当天发货</string>
+    <string name="confirm_change_today_ship_2">变更</string>
+    <string name="require_mark">※</string>
+
+    <string name="cart_change_quantity">确认价格/发货日</string>
+
+    <!--在庫切れ確認ダイアログ-->
+    <string name="out_of_stock_dialog_titlle">此商品库存不足，请调整出货日。</string>
+    <string name="out_of_stock_dialog_info">订购商品中存在因库存不足，需要调整出货日的商品。\n请确认以下出货日之后，点击「提交」按钮。</string>
+    <string name="out_of_stock_dialog_list_title">确认对象商品：</string>
+    <string name="out_of_stock_dialog_list_title_unit">件</string>
+    <string name="out_of_stock_dialog_list_day_to_ship">最短发货日：</string>
+    <string name="out_of_stock_dialog_yes">提交</string>
+    <string name="out_of_stock_dialog_no">取消</string>
+
+    <!--アンフィット-->
+    <string name="unfit_type_dialog_titlle">本商品为需要米思米进行出货日、价格确认的商品。</string>
+    <string name="unfit_type_dialog_titlle_quote">本商品为需要米思米进行实际工作日、价格确认的商品。</string>
+    <string name="unfit_type_dialog_info_2">含有需要米思米进行确认的商品，客服会为您进行修正。\n点击【生成报价单】所有错误商品修正后一起下订。</string>
+    <string name="unfit_type_dialog_info_3">含有需要米思米进行确认的商品，客服会为您进行修正。\n点击【订购】先行下订正确的商品。</string>
+    <string name="unfit_type_dialog_info_4">含有需要米思米进行确认的商品，客服会为您进行修正。\n点击【订购】先行下订正确的商品。点击【生成报价单】所有错误商品修正后一起下订。</string>
+    <string name="unfit_type_dialog_list_title">确认对象商品：</string>
+    <string name="unfit_type_dialog_list_title_unit">件</string>
+    <string name="unfit_type_dialog_list_unit_price_main">单　价：</string>
+    <string name="unfit_type_dialog_list_quantity_main">数　量：</string>
+    <string name="unfit_type_dialog_list_shipdate_main">发货日：</string>
+    <string name="unfit_type_dialog_list_shipdate_main_quote">发货天数：</string>
+    <string name="unfit_type_dialog_list_emarg_main">瞬达服务（加急出货）：</string>
+    <string name="unfit_type_dialog_list_main">小计：</string>
+    <string name="unfit_type_dialog_list_unit_main">（不含税）</string>
+    <string name="unfit_type_dialog_list_wtax">小计：</string>
+    <string name="unfit_type_dialog_list_main_wtax">（含税）</string>
+    <string name="unfit_type_dialog_yes_quote">生成报价单</string>
+    <string name="unfit_type_dialog_yes_order">订购</string>
+    <string name="unfit_type_dialog_no">返回</string>
+
+    <!--素通し不可、注文-->
+    <string name="orderable_type_dialog_titlle">有关订购商品，请确认相关信息。</string>
+    <string name="orderable_type_dialog_info">如果对待确认的商品有疑问，请联系米思米客服：021–67108701</string>
+    <string name="orderable_type_dialog_info_3"/>
+    <string name="orderable_type_dialog_list_title">确认对象商品：</string>
+    <string name="orderable_type_dialog_list_title_unit">件</string>
+    <string name="orderable_type_dialog_list_unit_price_main">单　价：</string>
+    <string name="orderable_type_dialog_list_quantity_main">数　量：</string>
+    <string name="orderable_type_dialog_list_ship_main">发货日：</string>
+    <string name="orderable_type_dialog_list_main">小计：</string>
+    <string name="orderable_type_dialog_list_unit_main">（不含税）</string>
+    <string name="orderable_type_dialog_list_wtax">小计：</string>
+    <string name="orderable_type_dialog_list_main_wtax">（含税）</string>
+    <string name="orderable_type_dialog_yes">确认对象商品以外进行订购</string>
+    <string name="orderable_type_dialog_no">返回</string>
+
+    <!--素通し不可、見積-->
+    <string name="orderable_type_dialog_titlle_quotation">有关报价商品，请确认相关信息。</string>
+    <string name="orderable_type_dialog_info_quotation_type2">请点击【提交米思米确认】</string>
+    <string name="orderable_type_dialog_info_quotation_type3"/>
+    <string name="orderable_type_dialog_info_quotation_3">如果对待确认的商品有疑问，请联系米思米客服：021–67108701</string>
+    <string name="orderable_type_dialog_info_quotation_4">本商品的相关情况，还请联系米思米进行咨询。</string>
+    <string name="orderable_type_dialog_list_day_main">发货天数：</string>
+    <string name="orderable_type_dialog_yes_quotation">确认对象商品以外进行报价</string>
+
+    <!--SOコンバート-->
+    <string name="so_dialog_titlle">报价内容中有发生变更的商品。</string>
+    <string name="so_dialog_info_1">・您指定的瞬达T服务必须在12:00前提交订购。\n点击【返回】，可将商品放入购物车重新报价或订购。\n点击【继续订购】，订购您选择的商品并瞬达T服务将被自动取消。</string>
+    <string name="so_dialog_info_2"/>
+    <string name="so_dialog_info_3"/>
+    <string name="so_dialog_info_4"/>
+    <string name="so_dialog_info_5"/>
+    <!--ADD NT-LWL 17/08/22 Depo FR-->
+    <string name="so_dialog_info_6">・您指定的闪达（V）服务必须在17:00前提交订购。
+                \n点击【返回】，可将商品放入购物车重新报价或订购。
+                \n点击【继续订购】，订购您选择的商品并闪达（V）服务将被自动取消。</string>
+    <!--ADD NT-LWL 17/08/22 Depo TO-->
+    <string name="so_dialog_yes">继续订购</string>
+    <string name="so_dialog_no">返回</string>
+
+	<!-- SPv1_15 見積内容確認 -->
+    <string name="quote_shipping_option_title">次日出货（瞬达A）信息？</string>
+    <string name="quote_shipping_option_title2">包含有因下注时间而导致价格变动的商品</string>
+    <string name="quote_shipping_option_1">以瞬达A早单（15点为止的下单）的适用价格作成询价单</string>
+    <string name="quote_shipping_option_2">以通常的瞬达A费用作成询价单</string>
+
+    <string name="quote_confirm_not_yet">请在确认报价内容之后，点击[完成报价]来提交报价。</string>
+    <string name="quote_confirm_stoke_a">当您选择瞬达服务「次日出货（瞬达A）」后，商品单价已发生更新，请确认。</string>
+    <string name="confirm_quote">完成报价</string>
+
+    <string name="progress_quote_2">确认报价</string>
+    <string name="progress_quote_3">报价完成</string>
+
+    <!-- SPv1_10 商品詳細 -->
+    <string name="item_detail_part_pc">十分抱歉，此商品请使用PC进行确认</string>
+    <string name="item_detail_part_select">请选择型号</string>
+    <string name="item_detail_no_part">此产品目前不出售。</string>
+    <string name="item_detail_icon_recommend">推荐</string>
+    <string name="item_detail_icon_grade">经济实惠</string>
+    <string name="item_detail_icon_cvalue">C&#8211;Value</string>
+    <string name="item_detail_icon_slide">数量浮动折扣</string>
+    <string name="item_detail_change_quantity">确认价格/发货日</string>
+    <string name="item_detail_add_my">添加到我的零件表</string>
+    <string name="item_detail_add_card">添加到购物车</string>
+    <string name="item_detail_copy">复制型号和数量</string>
+    <string name="item_detail_copy_message">型号和数量已复制</string>
+    <string name="item_detail_part_number">型号选择</string>
+    <string name="item_detail_order_quantity">数量</string>
+    <string name="item_detail_total_price">合计</string>
+    <string name="item_detail_total_price_wtax">"含税 "</string>
+    <string name="item_detail_ship">发货日</string>
+    <string name="item_detail_unit_price">单价</string>
+    <string name="item_detail_pack_quantity">（内含%s个）</string>
+    <string name="item_detail_slide_label">数量越多越优惠</string>
+    <string name="item_detail_slide_head1">数量</string>
+    <string name="item_detail_slide_head2">单价</string>
+    <string name="item_detail_slide_head3">发货日</string>
+    <string name="item_detail_express_label">瞬达服务（加急出货）</string>
+    <string name="item_detail_express_head1">瞬达服务（加急出货）</string>
+    <string name="item_detail_express_head2">费用</string>
+    <string name="item_detail_express_deadline">后截止受理</string>
+    <string name="item_detail_stokez_label">早订优惠30/早订优惠25</string>
+    <string name="item_detail_stokez_head1">早订优惠30/早订优惠25</string>
+    <string name="item_detail_stokez_head2">折扣</string>
+    <string name="item_detail_stokez_text">瞬达Z</string>
+    <string name="item_detail_selected_label">指定中的规格/尺寸信息</string>
+    <string name="item_detail_selected_warn">有部分型号的规格/尺寸没有刊载，明细请浏览品牌产品目录。</string>
+    <string name="item_detail_spec_label">基本信息</string>
+    <string name="item_detail_dialog_added_cart">购物车内有%s件商品</string>
+    <!-- UDP NT-LWL 17/03/22 AliPay Payment FR - -->
+    <!--<string name="item_detail_dialog_added_my_parts">追加到了我的零件表。\n需要移动到我的零件表吗？</string>-->
+    <string name="item_detail_dialog_added_my_parts">已添加到我的零件表。\n需要打开我的零件表吗？</string>
+    <!-- UDP NT-LWL 17/03/22 AliPay Payment TO - -->
+    <string name="item_detail_dialog_added_cart_title">已将商品添加到了购物车</string>
+    <string name="item_detail_dialog_added_my_parts_title">添加到我的零件表</string>
+
+    <!--出荷日-->
+    <string name="daytoship_label_title">一般发货日：</string>
+    <string name="daytoship_label_colon_day"></string>
+    <string name="daytoship_label_day">当天出货</string>
+    <string name="daytoship_label_estimate">每次进行询价</string>
+    <string name="daytoship_label_tilde">〜</string>
+    <string name="daytoship_label_days">天</string>
+
+    <!--価格-->
+    <string name="unitprice_label_title">价格：</string>
+    <string name="unitprice_label_title_usd">价格：＄</string>
+    <string name="unitprice_label_period">円</string>
+    <string name="unitprice_label_period_tilde">円～</string>
+    <string name="unitprice_label_period_gen">元</string>
+    <string name="unitprice_label_period_gen_tilde">元～</string>
+    <string name="unitprice_label_period_usd_tilde">～</string>
+    <string name="unitprice_label_title_sale">特别价格</string>
+
+    <!--ステータス(見積履歴詳細など)-->
+    <string name="common_status_unknown">&#8211;</string>
+    <string name="common_status_1">处理中</string>
+    <string name="common_status_2">报价完成</string>
+    <string name="common_status_3">订购完成</string>
+    <string name="common_status_4">发货完成</string>
+    <string name="common_status_f">失败</string>
+    <string name="common_status_z">确认中</string>
+    <string name="common_status_c">超过有效期</string>
+    <string name="common_status_e">错误信息</string>
+    <string name="common_status_w">等待付款</string>
+    <string name="common_status_x">已取消</string>
+    <string name="common_status_a1">等待承认</string>
+    <string name="common_status_a2">否认</string>
+    <string name="common_status_a3">退回</string>
+
+    <!--デバイス情報-->
+    <string name="deviceinfo_label_title">手机信息</string>
+    <string name="deviceinfo_label_os_ver">操作系统版本</string>
+    <string name="deviceinfo_label_device_name">手机名</string>
+    <string name="deviceinfo_label_app_ver">APP版本</string>
+    <string name="deviceinfo_label_copy">复制手机信息</string>
+    <string name="deviceinfo_format_copy">操作系统版本：%1$s\n手机名：%2$s\nAPP版本：%3$s</string>
+
+    <!-- AutoComplete -->
+    <string name="autocomplete_keyword_title">关联关键字</string>
+    <string name="autocomplete_category_title">关联商品</string>
+
+    <!--ダミー用データ-->
+    <string name="dummy_string">dummy</string>
+    <string name="dummy_num">99</string>
+
+    <!--debug-->
+    <string name="debug_label_api_addr">API</string>
+    <string name="debug_label_nas_addr">NAS</string>
+    <string name="debug_label_update_button">UP</string>
+    <string name="debug_label_category_clear">保持カテゴリを削除</string>
+    <string name="debug_message_category_deleted">保持カテゴリを削除しました</string>
+    <string name="debug_label_login_id">保持ログインIDを設定</string>
+    <string name="debug_message_set_login">保持ログインIDを開発サーバー用に変更しました</string>
+    <string name="debug_message_set_login2">保持ログインIDを変更しました</string>
+    <string name="debug_label_radio_group">現地コード変更</string>
+    <string name="debug_label_radio_japanese">日本モード</string>
+    <string name="debug_label_radio_chinese">中国モード</string>
+    <string name="debug_label_currency_group">通貨コード変更</string>
+    <string name="debug_label_radio_yen">円</string>
+    <string name="debug_label_radio_gen">元</string>
+    <string name="debug_label_radio_doller">ドル</string>
+
+    <!--型番選択-->
+    <string name="part_number_select_more">查看更多</string>
+    <string name="part_number_select_minus">关闭</string>
+    <string name="part_number_select_select">选择此型号</string>
+    <string name="part_number_select_reset_value">重置</string>
+    <string name="part_number_select_label">请选择</string>
+    <string name="part_number_not_select_label">不选择</string>
+    <string name="part_number_select_tab_condition">过滤条件</string>
+    <string name="part_number_select_tab_partlist_front">备选型号（</string>
+    <string name="part_number_select_tab_partlist_period">件</string>
+    <string name="part_number_select_dialog_msg_confirm">已选型号：</string>
+    <string name="part_number_select_dialog_msg">是否确定选择以上型号？</string>
+    <string name="part_number_select_dialog_confirm">确定</string>
+    <string name="part_number_select_dialog_cancel">取消</string>
+    <string name="part_number_select_notfount">未找到与选择条件一致的型号</string>
+
+    <string name="today_express_deadline">17:00</string>
+
+
+    <string name="today_ship_dialog_label_1">发货日指定</string>
+    <string name="today_ship_dialog_label_2">此商品可以指定当天发货，如需当天发货，请在下方选择。</string>
+
+    <string name="today_ship_dialog_select_1">当天出货</string>
+    <string name="today_ship_dialog_select_2">不使用</string>
+
+    <string name="so430_dialog_titlle">确认内容中有发生变更的商品。\n请选择「返回」重新选择商品，</string>
+    <string name="so430_dialog_button">关闭</string>
+     <!--ADD NT-SLJ 16/11/11 Live800 FR-->
+    <string name="consulting_problems_tile">在线客服</string>
+    <string name="consulting_problems_header">请选择您要咨询的问题种类</string>
+    <string name="tell_description">询价/订购/售后咨询电话</string>
+    <string name="work_time">受理时间：8:00-18:00（周一~周六，不包括中国法定节假日）</string>
+    <string name="open_permission">米思米没有电话呼出权限，立即设置吗？</string>
+    <string name="open_error_tip">请去设置画面设置！</string>
+    <string name="cancel">取消</string>
+    <string name="cancel_call">取消拨号</string>
+    <string name="call">拨号</string>
+    <string name="set">立即设置</string>
+    <string name="cancel_set">取消设置</string>
+    <string name="click_live800">点击Live800</string>
+    <!--ADD NT-SLJ 16/11/11 Live800 TO-->
+
+    <!--ADD NT-SLJ 16/11/11 AliPay Payment FR-->
+    <string name="order_list_go_to_pay">付款</string>
+    <string name="order_list_payment_type">支付方式</string>
+    <string name="order_list_payment_deadline">支付期限</string>
+    <string name="order_list_online_pay">在线支付</string>
+    <string name="order_pay_choose_type">选择支付方式</string>
+    <string name="order_pay_go_to_pay">立即支付</string>
+    <string name="show_order_status">该订单目前状态为%s，无法进行支付</string>
+    <string name="order_out_time">该订单不在支付期限内，无法进行支付</string>
+    <string name="order_payment_username">收货人</string>
+    <string name="order_payment_address">地址</string>
+    <string name="order_payment_tel">电话</string>
+    <string name="order_payment_money">应付金额</string>
+    <string name="login_info_fail">登录信息失效，现在返回主页面，请重新登录。</string>
+    <string name="login_info_unknown_fail">发生了无法预期的错误，现在返回主页面。</string>
+    <string name="login_info_time_out_fail">请求超时，现在返回主页面。</string>
+    <string name="login_info_statue_error">订单支付状态异常，请联系米思米客户</string>
+    <string name="pay_dialog_8000">正在处理中，请查询订单列表中订单的支付状态</string>
+    <string name="pay_dialog_6001">用户取消支付</string>
+    <string name="pay_dialog_5000">重复支付请求</string>
+    <string name="pay_dialog_error">订单支付失败</string>
+    <!--ADD NT-SLJ 16/11/11 AliPay Payment TO-->
+
+    <!--ADD NT-LWL 17/05/18 QR scan FR-->
+    <string name="QR_tip">请将商品二维码放入框内</string>
+    <string name="share_title">分享到</string>
+    <string name="share_to_qq">QQ好友</string>
+    <string name="share_to_weixin">微信好友</string>
+    <string name="share_to_email">邮件</string>
+    <string name="share_click_text">交给采购购买</string>
+    <string name="QR_error">无法识别二维码</string>
+    <string name="email_detail_title">来自&lt;%1$s&gt;在闪购商城的商品分享</string>
+    <string name="email_itemdetail_text_format">
+        你好！\n我在闪购商城发现了以下商品，请确认。\n
+        ---------------------------------------------\n
+        【型　号】：%1$s\n
+        【商品名】：%2$s\n
+        【品　牌】：%3$s\n
+        【数　量】：%4$s\n
+        【合　计】：%5$s\n
+        【发货日】： %6$s\n
+        【单　价】：%7$s\n
+        【去网页版查看】:%8$s\n
+        ----------------------------------------------\n
+        注意事项：\n
+        ※ 价格及发货日信息可能发生变化，购买前请再次进行确认。\n
+        http://cn.misumi-ec.com/\n
+    </string>
+    <string name="email_cart_item_text_format">
+        【型　号】：%1$s\n
+        【商品名】：%2$s\n
+        【品　牌】：%3$s\n
+        【数　量】：%4$s\n
+        【发货日】： %5$s\n
+        【合　计】：%6$s元（含税：%7$s元）\n
+        【去网页版查看】：%8$s\n
+    </string>
+    <string name="share_cart_title_text_format">此购物车分享来自&lt;%1$s&gt;</string>
+    <string name="email_cart_title_text_format">来自&lt;%1$s&gt;的购物车分享</string>
+    <string name="email_cart_header">你好！\n这是我在闪购商城的购物清单，请确认。\n</string>
+    <string name="email_cart_line1">----------------------------------------------\n</string>
+    <string name="email_cart_line2">============================\n</string>
+    <string name="email_cart_line3">\n=============================\n</string>
+    <string name="email_cart_end">
+        注意事项：\n
+        ※ 价格及发货日信息可能发生变化，购买前请再次进行确认。\n
+        http://cn.misumi-ec.com/
+    </string>
+    <string name="email_qt_item_text_format">
+        【型　号】：%1$s\n
+        【商品名】：%2$s\n
+        【品　牌】：%3$s\n
+        【数　量】：%4$s\n
+        【发货日】： %5$s\n
+        【小　计】：%6$s元（含税：%7$s元）\n
+    </string>
+    <string name="email_qt_title_text_format">来自&lt;%1$s&gt;的报价单分享\n</string>
+    <string name="email_qt_header">
+        ============================\n
+        【报价单号】：%1$s\n
+        【报价日期】：%2$s\n
+        【报价有效期】：%3$s\n
+        【订购人】：%4$s\n
+        【商品件数】：%5$s\n
+        【合计金额（不含税）】：%6$s元\n
+        【合计金额（含税）】：%7$s元\n
+        ----------------------------------------------\n
+        ↓↓报价单所含商品↓↓\n
+        ----------------------------------------------\n
+    </string>
+    <string name="email_qt_line1">----------------------------------------------\n</string>
+    <string name="email_qt_line2">\n=============================\n</string>
+    <string name="email_qt_end">
+        注意事项：\n
+        ※ 价格及发货日信息可能发生变化，购买前请再次进行确认。\n
+        http://cn.misumi-ec.com/
+    </string>
+    <string name="text_empty">-</string>
+    <string name="share_fail">分享失败！</string>
+    <string name="share_number_tip">数量已变更，请确认价格后再次分享。（如继续将使用变更前数量）</string>
+    <string name="share_continue">继续</string>
+    <string name="total_price_format">%1$s元（含税：%2$s元）</string>
+    <string name="unconfirmed">（未确认）</string>
+    <string name="misumi_name">米思米用户</string>
+    <string name="share_cart_content">这是我在闪购商城的购物清单，请确认</string>
+    <string name="share_detail_title">此商品分享来自&lt;%1$s&gt;</string>
+    <string name="address_attention_tip">以下配送地址超出闪达服务范围。</string>
+    <!--ADD NT-LWL 17/05/18 QR scan TO-->
+    <string name="start_app_text">立即体验</string>
+    <string name="branc_search_title">按品牌筛选（%1$s）</string>
+    <string name="brand_selected_tip">*您最多可筛选6个品牌</string>
+    <string name="clear">清空</string>
+    <string name="selected_brands">已选品牌（已选%1$s项）：</string>
+
+    <!-- SPv1_40_言語設定_画面定義書_v07 -->
+    <string name="language_setting_screen_label">言語設定</string>
+    <string name="select_your_language">使用する言語を選択してください。</string>
+    <string name="thailand_language">タイ語</string>
+    <string name="england_language">英語</string>
+    <string name="done">完了</string>
+</resources>
